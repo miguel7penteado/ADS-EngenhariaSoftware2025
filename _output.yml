@@ -7,13 +7,14 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/%s
-    download: ["pdf", "epub"]
+    download: ["pdf", "epub", "word"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
+  geometry: "a4paper,margin=2cm"
 bookdown::epub_book:
   fig_width: 5
   fig_height: 4
@@ -31,4 +32,7 @@ bookdown::epub_book:
   #global_numbering: !number_sections
   pandoc_args: NULL
   template: "default"
+bookdown::word_document2:
+  toc: true
+
 

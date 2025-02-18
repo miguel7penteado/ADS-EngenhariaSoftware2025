@@ -20,15 +20,19 @@ No mundo dos negócios como é conceituado um processo ?
 
 **POR QUAIS ATIVIDADES VOCÊ (NECESSÁRIAMENTE) PASSA ?**
 
++--------------+--------------+--------------+--------------+--------------+
 | ATIVIDADE #1 | ATIVIDADE #2 | ATIVIDADE #3 | ATIVIDADE #4 | ATIVIDADE #5 |
-|--------------|--------------|--------------|--------------|--------------|
++==============+==============+==============+==============+==============+
 | comunicação  | planejamento | modelagem    | construção   | entrega      |
++--------------+--------------+--------------+--------------+--------------+
 
 : PROCESSO DE SOFTWARE - ATIVIDADES - PRESSMAN
 
++---------------+--------------+---------------+--------------+--------------+
 | ATIVIDADE #1  | ATIVIDADE #2 | ATIVIDADE #3  | ATIVIDADE #4 | ATIVIDADE #5 |
-|---------------|--------------|---------------|--------------|--------------|
++===============+==============+===============+==============+==============+
 | especificação | projeto      | implementação | validação    | evolução     |
++---------------+--------------+---------------+--------------+--------------+
 
 : PROCESSO DE SOFTWARE - ATIVIDADES - SOMMERVILLE
 
@@ -38,11 +42,53 @@ No mundo dos negócios como é conceituado um processo ?
 
 ### ABORDAGEM CASCATA
 
--   todas as atividades são executadas do começo ao fim;
+#### VANTAGENS DESSE MODELO
 
--   Fácil gerenciar o projeto: controlar TEMPO E RECURSOS definidos no CONTRATO (DINHEIRO);
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Vantagem                        | Descrição                                                                                                                                  |   |
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Simplicidade                    | -   fácil de entender e implementar;                                                                                                       |   |
+|                                 |                                                                                                                                            |   |
+|                                 | -   pois possui fases sequenciais bem definidas, com entregas e revisões em cada etapa;                                                    |   |
+|                                 |                                                                                                                                            |   |
+|                                 | -   facilita o gerenciamento do projeto, especialmente para equipes menores;                                                               |   |
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Documentação                    | -   Natureza estruturada do                                                                                                                |   |
+|                                 |                                                                                                                                            |   |
+|                                 | -    Exige a produção de documentação completa em cada fase;                                                                               |   |
+|                                 |                                                                                                                                            |   |
+|                                 | -   Útil para rastrear o progresso, facilitar a comunicação entre as partes;                                                               |   |
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Controle                        | -   maior controle sobre o projeto, escopo, os prazos e os custos são definidos no início e seguidos rigorosamente;                        |   |
+|                                 |                                                                                                                                            |   |
+|                                 | -   Cliente tenha previsão precisa do resultado final e investimento necessário.;                                                          |   |
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Adequado para projetos estáveis | -   Adequado para projetos com requisitos bem definidos e estáveis e que não devem sofrer muitas alterações ao longo do desenvolvimento.   |   |
++---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---+
 
--   se houver alguma falha de entendimento dos REQUISITOS do cliente, TODO O PROCESSO deve ser REFEITO;
+#### DESVANTAGENS DESSE MODELO
+
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Desvantagem        | Descrição                                                                                                                                           |   |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Inflexibilidade    | -   Rigidez. Uma vez que uma fase é concluída, é difícil voltar atrás e fazer alterações.                                                           |   |
+|                    |                                                                                                                                                     |   |
+|                    | -   problemático se os requisitos mudarem ou se surgirem problemas inesperados                                                                      |   |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Feedback tardio    | -   O cliente só tem contato com o produto final nas últimas fases do projeto;                                                                      |   |
+|                    |                                                                                                                                                     |   |
+|                    | -   Difícil identificação de erros ou inadequações;                                                                                                 |   |
+|                    |                                                                                                                                                     |   |
+|                    | -   Atrasos, custos adicionais e insatisfação do cliente;                                                                                           |   |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Longos prazos      | -   prazos de entrega mais longos,                                                                                                                  |   |
+|                    |                                                                                                                                                     |   |
+|                    | -   cada fase precisa ser concluída antes da próxima ser iniciada.                                                                                  |   |
+|                    |                                                                                                                                                     |   |
+|                    | -   problemático em projetos com restrições de tempo ou em mercados dinâmicos.                                                                      |   |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| Risco de insucesso | Falta de flexibilidade e feedback tardio podem aumentar o risco de o projeto não atender às expectativas do cliente ou às necessidades do mercado.  |   |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---+
 
 ### ABORDAGEM INCREMENTAL
 
