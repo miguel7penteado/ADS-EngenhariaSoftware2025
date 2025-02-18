@@ -15,7 +15,7 @@ processo-de-software
 conceito-de-processo-atividades-e-tarefas
 o-processo-de-software
 atividades-fundamentais-de-um-processo-de-software
-modelos-de-processo-de-software
+modelos-de-processo-de-software-clássicos
 abordagem-cascata
 vantagens-desse-modelo
 desvantagens-desse-modelo
@@ -24,6 +24,7 @@ vantagens-desse-modelo-1
 desvantagens-desse-modelo-1
 abordagem-espiral
 abordagem-rup-rational-unified-process
+modelos-de-processo-de-software-ágeis
 abordagemens-ágileis
 modelagem-de-software
 gestão-de-qualidade-de-software

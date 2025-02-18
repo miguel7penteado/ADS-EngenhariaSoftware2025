@@ -2,7 +2,9 @@
 
 ## CONCEITO DE PROCESSO, ATIVIDADES E TAREFAS
 
-No mundo dos negócios como é conceituado um processo ?
+No mundo dos negócios como é conceituado um processo mapeado ?
+
+![](images/processos/ProcessosNegocio.jpg)
 
 > *Um PROCESSO é um conjunto de atividades que são executadas para atingir um objetivo* (Business Process Model and Notation - BPMN)
 >
@@ -36,7 +38,7 @@ No mundo dos negócios como é conceituado um processo ?
 
 : PROCESSO DE SOFTWARE - ATIVIDADES - SOMMERVILLE
 
-## MODELOS DE PROCESSO DE SOFTWARE
+## MODELOS DE PROCESSO DE SOFTWARE CLÁSSICOS
 
 **COMO VOCÊ PASSA POR ESSAS ATIVIDADES ?**
 
@@ -144,4 +146,8 @@ No mundo dos negócios como é conceituado um processo ?
 
 ![](images/modelos_processos_software/rup.png)
 
+## MODELOS DE PROCESSO DE SOFTWARE ÁGEIS
+
 ### ABORDAGEM(ENS) ÁGIL(EIS)
+
+Coming soon
