@@ -1,5 +1,7 @@
 acesso-ao-gitbook-celular
 httpsmiguel7penteado.github.ioads-engenhariasoftware2025
+app-epub-android
+moon-reader
 livros-texto-da-disciplina
 engenharia-de-software-do-autor-roger-s-pressman
 engenharia-de-software-do-autor-ian-sommerville
@@ -18,7 +20,10 @@ abordagem-cascata
 vantagens-desse-modelo
 desvantagens-desse-modelo
 abordagem-incremental
-abordagem-rup
+vantagens-desse-modelo-1
+desvantagens-desse-modelo-1
+abordagem-espiral
+abordagem-rup-rational-unified-process
 abordagemens-ágileis
 modelagem-de-software
 gestão-de-qualidade-de-software

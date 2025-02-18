@@ -25,6 +25,12 @@ Estas anotações são apenas lembretes das aulas expostas em sala, durante a di
 
 ![](images/clipboard-3692082511.png)
 
+## APP EPUB ANDROID
+
+## **Moon+ Reader**
+
+![](images/qrcode/leitor_epub/MoonReaderPlus.jpg)
+
 # Livros Texto da Disciplina
 
 #### "Engenharia de Software" do autor "Roger S Pressman"

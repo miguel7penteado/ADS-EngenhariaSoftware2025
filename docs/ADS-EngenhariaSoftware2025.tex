@@ -140,6 +140,12 @@ Estas anotações são apenas lembretes das aulas expostas em sala, durante a di
 
 \includegraphics{images/clipboard-3692082511.png}
 
+\section{APP EPUB ANDROID}\label{app-epub-android}
+
+\section{\texorpdfstring{\textbf{Moon+ Reader}}{Moon+ Reader}}\label{moon-reader}
+
+\includegraphics{images/qrcode/leitor_epub/MoonReaderPlus.jpg}
+
 \chapter{Livros Texto da Disciplina}\label{livros-texto-da-disciplina}
 
 \subsubsection{``Engenharia de Software'' do autor ``Roger S Pressman''}\label{engenharia-de-software-do-autor-roger-s-pressman}
@@ -396,17 +402,19 @@ especificação & projeto & implementação & validação & evolução \\
 
 \subsection{ABORDAGEM CASCATA}\label{abordagem-cascata}
 
+\includegraphics{images/modelos_processos_software/Cascata.jpg}
+
 \subsubsection{VANTAGENS DESSE MODELO}\label{vantagens-desse-modelo}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1889}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7833}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0222}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1828}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7581}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0538}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Vantagem & Descrição & \\
+Vantagem & Descrição & Exemplo \\
 Simplicidade & \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
 \item
@@ -447,14 +455,14 @@ Adequado para projetos estáveis & \begin{minipage}[t]{\linewidth}\raggedright
 \subsubsection{DESVANTAGENS DESSE MODELO}\label{desvantagens-desse-modelo}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1193}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8523}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0227}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0413}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2947}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6621}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Desvantagem & Descrição & \\
+Desvantagem & Descrição & Exemplos \\
 Inflexibilidade & \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
 \item
@@ -462,7 +470,7 @@ Inflexibilidade & \begin{minipage}[t]{\linewidth}\raggedright
 \item
   problemático se os requisitos mudarem ou se surgirem problemas inesperados
 \end{itemize}
-\end{minipage} & \\
+\end{minipage} & Se o projeto é feito em um produto comercial (biblioteca) e ela deixa de ser suportada pelo fabricante, o projeto vai ter que nascer com uma tecnologia morta; Seu projeto nasceu no skype, não vai poder migrar para o teams no meio da construção; \\
 Feedback tardio & \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
 \item
@@ -472,7 +480,7 @@ Feedback tardio & \begin{minipage}[t]{\linewidth}\raggedright
 \item
   Atrasos, custos adicionais e insatisfação do cliente;
 \end{itemize}
-\end{minipage} & \\
+\end{minipage} & O cliente iniciou um projeto de aplicativo na plataforma ANDROID. Durante o desenvolvimento o cliente que o aplicativo rode em plataforma IOS (iPHONE). Não é possível, mesmo que o cliente tenha um pequeno montante de dinheiro para investir; \\
 Longos prazos & \begin{minipage}[t]{\linewidth}\raggedright
 \begin{itemize}
 \item
@@ -482,13 +490,116 @@ Longos prazos & \begin{minipage}[t]{\linewidth}\raggedright
 \item
   problemático em projetos com restrições de tempo ou em mercados dinâmicos.
 \end{itemize}
-\end{minipage} & \\
-Risco de insucesso & Falta de flexibilidade e feedback tardio podem aumentar o risco de o projeto não atender às expectativas do cliente ou às necessidades do mercado. & \\
+\end{minipage} & Você definiu o prazo de entrega em 6 meses, mas devido a rotatividade de funcionários, seu projeto atrasou 3 meses; Os funcionários de equipes de etapas dependentes ficam ociosos naquele projeto; \\
+Risco de insucesso & Falta de flexibilidade e feedback tardio podem aumentar o risco de o projeto não atender às expectativas do cliente ou às necessidades do mercado. & O cliente do estacionamento comprou um sistema ERP para uma loja de calçados; O sistema foi desenhado para cadastrar calçados; Contudo a loja é uma magazine e o cliente durante o projeto começou a vender roupas; O cadastro de mercadorias não suporta roupas; O cliente só descobriu a falta de suporte no momento da entrega do software; \\
 \end{longtable}
 
 \subsection{ABORDAGEM INCREMENTAL}\label{abordagem-incremental}
 
-\subsection{ABORDAGEM RUP}\label{abordagem-rup}
+\includegraphics{images/modelos_processos_software/Incremental.jpg}
+
+\subsubsection{VANTAGENS DESSE MODELO}\label{vantagens-desse-modelo-1}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2810}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6863}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0261}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Vantagem & Descrição & \\
+Entrega antecipada de software funcional & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  permite que o cliente tenha acesso a funcionalidades do software em estágios iniciais do projeto.
+\item
+  possibilita feedback do cliente;
+\end{itemize}
+\end{minipage} & \\
+Melhor gerenciamento de riscos & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  Divide o projeto em incrementos menores;
+\item
+  Riscos menores possível identificar e corrigir problemas em etapas iniciais;
+\end{itemize}
+\end{minipage} & \\
+Flexibilidade para mudanças & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Mais adaptável a mudanças nos requisitos do cliente, sem comprometer o andamento do projeto.
+\end{itemize}
+\end{minipage} & \\
+Feedback contínuo do cliente & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  incentiva o envolvimento do cliente durante todo o processo de desenvolvimento;
+\item
+  Cliente testa e avalia as funcionalidades em cada incremento;
+\item
+  Produto final torna-se mais alinhado com as expectativas do cliente.
+\end{itemize}
+\end{minipage} & \\
+Melhor aproveitamento de recursos & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  Equipe de desenvolvimento trabalhe mais eficiente, concentrando-se em um incremento de cada vez;
+\item
+  ``Pode'' reduzir os custos do projeto;
+\end{itemize}
+\end{minipage} & \\
+\end{longtable}
+
+\subsubsection{DESVANTAGENS DESSE MODELO}\label{desvantagens-desse-modelo-1}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0688}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2063}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7230}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Desvantagem & Descrição & \\
+Requisitos bem definidos & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Se os requisitos não estão bem definidos, o orçamento vai estourar;
+\end{itemize}
+\end{minipage} & Um software foi projetado para ter frontend em janelas e computadores; No primeiro incremento o cliente resolve que é melhor acrescentar suporte a WEB (frontend no navegador); No segundo incremento o cliente resolve que o software deve ter suporte a frontend de dispositivos móveis (app); \\
+Planejamento cuidadoso & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Se o incremento não for bem planejado, gera mais incrementos ; Bola de Neve
+\end{itemize}
+\end{minipage} & O time de Planejamento definou que o software seria no code e seria feito em plataforma Buble (onde o Banco de dados é interno da solução). Surgiu a necessidade de integração com outros bancos de dados pré-existentes de terceiros. Precisa mudar a solução para WeWEB. Surgiu a necessidade de inserir gateway de pagamento. Melhor migrar o projeto para python e FLASK; \\
+Integração dos incrementos & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Incrementos não são necessáriamente lineares se existirem funcionalidades forem dependentes;
+\end{itemize}
+\end{minipage} & Seu sistema gera um relatório de uso de veículos da empresa por funcionários; Você vai construir banco de dados próprio, mas precisa acessar a base de dados do RH e a base de dados da Gerencia de Materiais da empresa; O acesso da tabela depende de aprovação das áreas; Seu sistema não anda enquanto dos outrso bancos não sair; \\
+Necessidade de equipe experiente & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Exige um alinhamento e comunicação muito grande entre a equipe de desenvolvimento; Time entrosado;
+\end{itemize}
+\end{minipage} & Tanto na atividade de planejamento quanto na de execução, Equipe de frontend precisa de informações de APIs da equipe de backend; Equipe de backend precisa de acessos a fontes de dados externas, caso seja necessário; \\
+\end{longtable}
+
+\subsection{ABORDAGEM Espiral}\label{abordagem-espiral}
+
+\includegraphics{images/modelos_processos_software/espiral.png}
+
+\subsection{ABORDAGEM RUP (Rational Unified Process)}\label{abordagem-rup-rational-unified-process}
+
+\includegraphics{images/modelos_processos_software/rup.png}
 
 \subsection{ABORDAGEM(ENS) ÁGIL(EIS)}\label{abordagemens-uxe1gileis}
 
