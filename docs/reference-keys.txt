@@ -1,3 +1,5 @@
+acesso-ao-gitbook-celular
+httpsmiguel7penteado.github.ioads-engenhariasoftware2025
 livros-texto-da-disciplina
 engenharia-de-software-do-autor-roger-s-pressman
 engenharia-de-software-do-autor-ian-sommerville

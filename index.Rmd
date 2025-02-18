@@ -19,6 +19,12 @@ github-repo: rstudio/bookdown-demo
 
 Estas anotações são apenas lembretes das aulas expostas em sala, durante a disciplina de ENGENHARIA DE SOFTWARE.
 
+## ACESSO AO GITBOOK CELULAR
+
+## <https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025>
+
+![](images/clipboard-3692082511.png)
+
 # Livros Texto da Disciplina
 
 #### "Engenharia de Software" do autor "Roger S Pressman"
