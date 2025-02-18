@@ -1,0 +1,6 @@
+output_dir: "docs"
+book_filename: "ADS-EngenhariaSoftware2025"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Aula "
