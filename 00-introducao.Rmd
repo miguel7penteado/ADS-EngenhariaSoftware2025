@@ -8,10 +8,10 @@ Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?
 
 > **Engenharia de Software** *é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.* (***Roger S. Pressman***)
 
-![](images/sommerville.jfif){width="102"}
+![](images/sommerville.jpg){width="102"}
 
 > **Engenharia de Software** *é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.* (**Ian Sommerville**)
 
 É atribuído a **Margaret Hamilton,** desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.
 
-![](images/Margaret_Hamilton.gif){width="50%"}
+![](images/Margaret_Hamilton.jpg){width="50%"}
