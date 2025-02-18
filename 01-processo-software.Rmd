@@ -2,6 +2,14 @@
 
 ## CONCEITO DE PROCESSO, ATIVIDADES E TAREFAS
 
+**A ORGANIZAÇÃO**
+
+Um exemplo de organograma : a Unidade do IBGE de São Paulo:
+
+![](images/organogramas/SES-SP.jpg)
+
+#### OS PROCESSOS
+
 No mundo dos negócios como é conceituado um processo mapeado ?
 
 ![](images/processos/ProcessosNegocio.jpg)
