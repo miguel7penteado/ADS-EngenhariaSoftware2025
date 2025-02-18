@@ -18,6 +18,8 @@ No mundo dos negócios como é conceituado um processo ?
 
 ## ATIVIDADES FUNDAMENTAIS DE UM PROCESSO DE SOFTWARE
 
+**POR QUAIS ATIVIDADES VOCÊ (NECESSÁRIAMENTE) PASSA ?**
+
 | ATIVIDADE #1 | ATIVIDADE #2 | ATIVIDADE #3 | ATIVIDADE #4 | ATIVIDADE #5 |
 |--------------|--------------|--------------|--------------|--------------|
 | comunicação  | planejamento | modelagem    | construção   | entrega      |
@@ -31,3 +33,19 @@ No mundo dos negócios como é conceituado um processo ?
 : PROCESSO DE SOFTWARE - ATIVIDADES - SOMMERVILLE
 
 ## MODELOS DE PROCESSO DE SOFTWARE
+
+**COMO VOCÊ PASSA POR ESSAS ATIVIDADES ?**
+
+### ABORDAGEM CASCATA
+
+-   todas as atividades são executadas do começo ao fim;
+
+-   Fácil gerenciar o projeto: controlar TEMPO E RECURSOS definidos no CONTRATO (DINHEIRO);
+
+-   se houver alguma falha de entendimento dos REQUISITOS do cliente, TODO O PROCESSO deve ser REFEITO;
+
+### ABORDAGEM INCREMENTAL
+
+### ABORDAGEM RUP
+
+### ABORDAGEM(ENS) ÁGIL(EIS)
