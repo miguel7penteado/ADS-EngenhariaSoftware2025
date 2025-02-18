@@ -2,11 +2,32 @@
 
 ## CONCEITO DE PROCESSO, ATIVIDADES E TAREFAS
 
-O que é um processo segundo o padrão BPMN ?
+No mundo dos negócios como é conceituado um processo ?
+
+> *Um PROCESSO é um conjunto de atividades que são executadas para atingir um objetivo* (Business Process Model and Notation - BPMN)
+>
+> *ATIVIDADES são os trabalhos que devem ser realizados para que um processo seja executado* (Business Process Model and Notation - BPMN)
+>
+> *TAREFAS são decomposições de atividades e representam um conjunto de passos ou ações executadas para realizar um trabalho. Essas tarefas logicamente relacionadas quando encadeadas completam a atividade.* (Business Process Model and Notation - BPMN)
 
 ## O PROCESSO DE SOFTWARE
 
+> *PROCESSO DE SOFTWARE é uma metodologia que define as atividades necessárias para desenvolver um software de qualidade* (Roger S Pressman)
+
+> *PROCESSO DE SOFTWARE é um conjunto de atividades que visam a produção de um software* (Ian Sommerville)
+
 ## ATIVIDADES FUNDAMENTAIS DE UM PROCESSO DE SOFTWARE
 
-## MODELOS DE PROCESSO DE SOFTWARE
+| ATIVIDADE #1 | ATIVIDADE #2 | ATIVIDADE #3 | ATIVIDADE #4 | ATIVIDADE #5 |
+|--------------|--------------|--------------|--------------|--------------|
+| comunicação  | planejamento | modelagem    | construção   | entrega      |
 
+: PROCESSO DE SOFTWARE - ATIVIDADES - PRESSMAN
+
+| ATIVIDADE #1  | ATIVIDADE #2 | ATIVIDADE #3  | ATIVIDADE #4 | ATIVIDADE #5 |
+|---------------|--------------|---------------|--------------|--------------|
+| especificação | projeto      | implementação | validação    | evolução     |
+
+: PROCESSO DE SOFTWARE - ATIVIDADES - SOMMERVILLE
+
+## MODELOS DE PROCESSO DE SOFTWARE
