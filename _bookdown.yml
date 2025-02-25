@@ -1,5 +1,5 @@
 output_dir: "docs"
-book_filename: "ADS-EngenhariaSoftware2025"
+book_filename: "ADS-EngenhariaSoftware II 2025"
 delete_merged_file: true
 language:
   ui:

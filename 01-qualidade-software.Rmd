@@ -1,0 +1,117 @@
+# QUALIDADE DE SOFTWARE
+
+## COMPLIANCE
+
+Para que uma organização consiga fechar contrados de venda ou fornecimento com outra organização, especialmente quando o valor do contrato de venda ou prestação é muito alto, há um processo de checagem de COMPLIANCE:
+
+![](images/qualidade-geral/compliance.png)
+
+## QUALIDADE
+
+O que é Qualidade ? (Definição ISO 9000)
+
+> Qualidade é definida como o grau em que um conjunto de características inerentes de um objeto satisfaz requisitos onde: **Características inerentes** São propriedades que fazem parte do objeto, onde:
+>
+> -   **Requisitos**: São as necessidades ou expectativas declaradas, geralmente implícitas ou obrigatórias;
+>
+> -   **objeto** pode ser representado por um produto, serviço, processo, organização, sistema ou pessoa;
+
+![](images/qualidade-geral/Qualidade.png)
+
+### QUALIDADE APLICADA A PRODUTO
+
+O CONTROLE DE QUALIDADE do PRODUTO concentra-se em aperfeiçoar:
+
+-   as **características** e
+
+-   o **desempenho** do produto em si,
+
+visando atender às necessidades e expectativas dos clientes.
+
+![](images/qualidade-geral/Qualidade_do_Produto.png)
+
+### QUALIDADE APLICADA A PROCESSO
+
+O CONTROLE DE QUALIDADE DE PROCESSO concentra-se em aperfeiçoar
+
+-   as **atividades** e
+
+-   melhor **aplicação dos recursos**
+
+utilizados para criar o produto, visando garantir a consistência e a eficácia da produção.
+
+![](images/qualidade-geral/Qualidade_do_Processo.png)
+
+### CASO MACDONALDS - Qualidade de Produto e Processo
+
+O filme "Fome de Poder" ("The Founder", no original) narra a história real da ascensão da rede McDonald's, desde sua origem como uma pequena hamburgueria na Califórnia até se tornar um império global do fast-food.
+
+-   Reconhecimento da **qualidade do produto** - hamburguers McDonalds
+
+![](images/mac-donalds/cozinha-mac.jpg)
+
+Reconhecimento da **Qualidade do Processo** de fabricação do Produto
+
+![](images/mac-donalds/modelo-mac.jpg)
+
+![](images/qualidade-geral/MacDonalds1.png)
+
+-   Reconhecimento da Capacidade de Franquia (Replicação):
+
+![](images/mac-donalds/Franquias.jpg){width="407"}
+
+### QUALIDADE NAS ORGANIZAÇÕES
+
+### Família ISO 9000
+
+**A NBR ISO 9000** é um conjunto de normas técnicas que estabelecem diretrizes e padrões para a criação de um **Sistema de Gestão da Qualidade (SGQ)**.
+
+O sistema SGQ (um si que pode ou não ser um pacote de software) deve mapear
+
+|  |  |  |  |  |
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| Áreas mapeadas por um sistema SGQ | PROCESSOS | POLÍTICAS | PROCEDIMENTOS | RESPONSABILIDADES |
+
+![](images/qualidade-geral/ISO-9000-SGQ.png){width="549"}
+
+### Família ISO 14000
+
+**A NBR ISO 14000** é um conjunto de normas técnicas que tratam de GESTÃO AMBIENTAL nas organizações. Estabelecem normas e diretrizes para criar **(SI) Sistemas de Gestão Ambiental (SGA)**:
+
+![](images/qualidade-geral/ISO-14000-SGQ.png)
+
+### Família ISO 27000
+
+**NBR ISO 27000**, trata de normas para **gestão segurança da Informação.** Fornecem um framework para a gestão da segurança da informação em organizações.
+
+Especifica os requisitos para um para a criação de um(SI) Sistema de Gestão de Segurança da Informação (SGSI).
+
+![](images/qualidade-geral/ISO-27000-SGSI.png)
+
+### Segmentos das Organizações e Adoção das normas de Qualidade
+
+![](images/qualidade-geral/segmentos.jpg)
+
+### QUALIDADE NA ENGENHARIA DE SOFTWARE
+
+A qualidade de software não define S.I.s
+
+### Família NBR ISO 9126
+
+Focava na qualidade do produto de software, definindo um conjunto de parâmetros para padronizar a avaliação dessa qualidade. Ela se enquadrava no modelo de qualidade das normas da família 9000.
+
+![](images/qualidade-geral/ISO-9126-SGSI.png)
+
+### Família NBR ISO 12207
+
+A norma ISO 12207 define um conjunto de processos para o ciclo de vida do software. Seu principal foco é estabelecer um framework padronizado para o desenvolvimento, manutenção e descarte de software, visando garantir a qualidade e a eficiência desses processos.
+
+![](images/modelos_processos_software/Cascata.jpg)
+
+![](images/qualidade-geral/ISO-12207-processos.png)
+
+### Família NBR ISO 25000
+
+**A NBR ISO 25000**, também conhecida como SQuaRE (Software Product Quality Requirements and Evaluation - Requisitos e Avaliação da Qualidade de Produtos de Software), é uma série de normas internacionais que fornecem um subconjunto de normas para a avaliação da qualidade de produtos de software. Este subconjunto é formado pelas normas **ISO/IEC 25000** , **ISO/IEC 25010**, **ISO/IEC 25020**, **ISO/IEC 25030** e **ISO/IEC 25040**.
+
+![](images/qualidade-geral/ISO-25000-SQuaRE.png)

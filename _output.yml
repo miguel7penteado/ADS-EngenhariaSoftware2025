@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">ADS - Engenharia de Software 2025 - Anotações de aula</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
     edit: https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/%s
     download: ["pdf", "epub", "word"]
 bookdown::pdf_book:
@@ -34,5 +34,3 @@ bookdown::epub_book:
   template: "default"
 bookdown::word_document2:
   toc: true
-
-

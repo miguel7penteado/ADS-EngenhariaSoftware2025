@@ -38,7 +38,7 @@ Estas anotações são apenas lembretes das aulas expostas em sala, durante a di
 ![](images/livros/engenharia_software_pressman.jpg)
 
 |  |  |
-|----------------------------------|--------------------------------------|
+|------------------------------------|------------------------------------|
 | **Autor(es)** | [Roger S. Pressman](https://www.indicalivros.com/autores?q=Roger%20S.%20Pressman) |
 | **Editora** | Pearson |
 | **Idioma** | Português |
@@ -65,13 +65,13 @@ Calendário das aulas
 
 ##### FEVEREIRO 2025
 
-|                 |               |       |
-|-----------------|---------------|-------|
-| Data            | Dia da semana | Aulas |
-| 4 de fevereiro  | Terça-feira   |       |
-| 11 de fevereiro | Terça-feira   |       |
-| 18 de fevereiro | Terça-feira   |       |
-| 25 de fevereiro | Terça-feira   |       |
+|                 |               |                |
+|-----------------|---------------|----------------|
+| Data            | Dia da semana | Aulas          |
+| 4 de fevereiro  | Terça-feira   |                |
+| 11 de fevereiro | Terça-feira   |                |
+| 18 de fevereiro | Terça-feira   | Aula Inaugural |
+| 25 de fevereiro | Terça-feira   |                |
 
 ##### MARÇO 2025
 

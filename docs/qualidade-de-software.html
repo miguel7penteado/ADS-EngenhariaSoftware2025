@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 2 QUALIDADE DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 2 QUALIDADE DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 2 QUALIDADE DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="livros-texto-da-disciplina.html"/>
-<link rel="next" href="qualidade-de-software.html"/>
+<link rel="prev" href="introdução-a-disciplina-de-engenharia-de-software.html"/>
+<link rel="next" href="modelagem-de-software.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -207,22 +207,122 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução-a-disciplina-de-engenharia-de-software" class="section level1 unnumbered hasAnchor">
-<h1>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#introdução-a-disciplina-de-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?</p>
-<div id="o-que-é-engenharia-de-software" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> O que é ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/pressman.jpg" width="92" /></p>
+<div id="qualidade-de-software" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Aula 2</span> QUALIDADE DE SOFTWARE<a href="qualidade-de-software.html#qualidade-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="compliance" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> COMPLIANCE<a href="qualidade-de-software.html#compliance" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para que uma organização consiga fechar contrados de venda ou fornecimento com outra organização, especialmente quando o valor do contrato de venda ou prestação é muito alto, há um processo de checagem de COMPLIANCE:</p>
+<p><img src="images/qualidade-geral/compliance.png" /></p>
+</div>
+<div id="qualidade" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> QUALIDADE<a href="qualidade-de-software.html#qualidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O que é Qualidade ? (Definição ISO 9000)</p>
 <blockquote>
-<p><strong>Engenharia de Software</strong> <em>é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.</em> (<strong><em>Roger S. Pressman</em></strong>)</p>
+<p>Qualidade é definida como o grau em que um conjunto de características inerentes de um objeto satisfaz requisitos onde: <strong>Características inerentes</strong> São propriedades que fazem parte do objeto, onde:</p>
+<ul>
+<li><p><strong>Requisitos</strong>: São as necessidades ou expectativas declaradas, geralmente implícitas ou obrigatórias;</p></li>
+<li><p><strong>objeto</strong> pode ser representado por um produto, serviço, processo, organização, sistema ou pessoa;</p></li>
+</ul>
 </blockquote>
-<p><img src="images/sommerville.jpg" width="102" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.</em> (<strong>Ian Sommerville</strong>)</p>
-</blockquote>
-<p>É atribuído a <strong>Margaret Hamilton,</strong> desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.</p>
-<p><img src="images/Margaret_Hamilton.jpg" style="width:50.0%" /></p>
+<p><img src="images/qualidade-geral/Qualidade.png" /></p>
+<div id="qualidade-aplicada-a-produto" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> QUALIDADE APLICADA A PRODUTO<a href="qualidade-de-software.html#qualidade-aplicada-a-produto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O CONTROLE DE QUALIDADE do PRODUTO concentra-se em aperfeiçoar:</p>
+<ul>
+<li><p>as <strong>características</strong> e</p></li>
+<li><p>o <strong>desempenho</strong> do produto em si,</p></li>
+</ul>
+<p>visando atender às necessidades e expectativas dos clientes.</p>
+<p><img src="images/qualidade-geral/Qualidade_do_Produto.png" /></p>
+</div>
+<div id="qualidade-aplicada-a-processo" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> QUALIDADE APLICADA A PROCESSO<a href="qualidade-de-software.html#qualidade-aplicada-a-processo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O CONTROLE DE QUALIDADE DE PROCESSO concentra-se em aperfeiçoar</p>
+<ul>
+<li><p>as <strong>atividades</strong> e</p></li>
+<li><p>melhor <strong>aplicação dos recursos</strong></p></li>
+</ul>
+<p>utilizados para criar o produto, visando garantir a consistência e a eficácia da produção.</p>
+<p><img src="images/qualidade-geral/Qualidade_do_Processo.png" /></p>
+</div>
+<div id="caso-macdonalds---qualidade-de-produto-e-processo" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> CASO MACDONALDS - Qualidade de Produto e Processo<a href="qualidade-de-software.html#caso-macdonalds---qualidade-de-produto-e-processo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O filme “Fome de Poder” (“The Founder”, no original) narra a história real da ascensão da rede McDonald’s, desde sua origem como uma pequena hamburgueria na Califórnia até se tornar um império global do fast-food.</p>
+<ul>
+<li>Reconhecimento da <strong>qualidade do produto</strong> - hamburguers McDonalds</li>
+</ul>
+<p><img src="images/mac-donalds/cozinha-mac.jpg" /></p>
+<p>Reconhecimento da <strong>Qualidade do Processo</strong> de fabricação do Produto</p>
+<p><img src="images/mac-donalds/modelo-mac.jpg" /></p>
+<p><img src="images/qualidade-geral/MacDonalds1.png" /></p>
+<ul>
+<li>Reconhecimento da Capacidade de Franquia (Replicação):</li>
+</ul>
+<p><img src="images/mac-donalds/Franquias.jpg" width="407" /></p>
+</div>
+<div id="qualidade-nas-organizações" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> QUALIDADE NAS ORGANIZAÇÕES<a href="qualidade-de-software.html#qualidade-nas-organizações" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="família-iso-9000" class="section level3 hasAnchor" number="2.2.5">
+<h3><span class="header-section-number">2.2.5</span> Família ISO 9000<a href="qualidade-de-software.html#família-iso-9000" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>A NBR ISO 9000</strong> é um conjunto de normas técnicas que estabelecem diretrizes e padrões para a criação de um <strong>Sistema de Gestão da Qualidade (SGQ)</strong>.</p>
+<p>O sistema SGQ (um si que pode ou não ser um pacote de software) deve mapear</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center">Áreas mapeadas por um sistema SGQ</td>
+<td align="center">PROCESSOS</td>
+<td align="center">POLÍTICAS</td>
+<td align="center">PROCEDIMENTOS</td>
+<td align="center">RESPONSABILIDADES</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/qualidade-geral/ISO-9000-SGQ.png" width="549" /></p>
+</div>
+<div id="família-iso-14000" class="section level3 hasAnchor" number="2.2.6">
+<h3><span class="header-section-number">2.2.6</span> Família ISO 14000<a href="qualidade-de-software.html#família-iso-14000" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>A NBR ISO 14000</strong> é um conjunto de normas técnicas que tratam de GESTÃO AMBIENTAL nas organizações. Estabelecem normas e diretrizes para criar <strong>(SI) Sistemas de Gestão Ambiental (SGA)</strong>:</p>
+<p><img src="images/qualidade-geral/ISO-14000-SGQ.png" /></p>
+</div>
+<div id="família-iso-27000" class="section level3 hasAnchor" number="2.2.7">
+<h3><span class="header-section-number">2.2.7</span> Família ISO 27000<a href="qualidade-de-software.html#família-iso-27000" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>NBR ISO 27000</strong>, trata de normas para <strong>gestão segurança da Informação.</strong> Fornecem um framework para a gestão da segurança da informação em organizações.</p>
+<p>Especifica os requisitos para um para a criação de um(SI) Sistema de Gestão de Segurança da Informação (SGSI).</p>
+<p><img src="images/qualidade-geral/ISO-27000-SGSI.png" /></p>
+</div>
+<div id="segmentos-das-organizações-e-adoção-das-normas-de-qualidade" class="section level3 hasAnchor" number="2.2.8">
+<h3><span class="header-section-number">2.2.8</span> Segmentos das Organizações e Adoção das normas de Qualidade<a href="qualidade-de-software.html#segmentos-das-organizações-e-adoção-das-normas-de-qualidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/qualidade-geral/segmentos.jpg" /></p>
+</div>
+<div id="qualidade-na-engenharia-de-software" class="section level3 hasAnchor" number="2.2.9">
+<h3><span class="header-section-number">2.2.9</span> QUALIDADE NA ENGENHARIA DE SOFTWARE<a href="qualidade-de-software.html#qualidade-na-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A qualidade de software não define S.I.s</p>
+</div>
+<div id="família-nbr-iso-9126" class="section level3 hasAnchor" number="2.2.10">
+<h3><span class="header-section-number">2.2.10</span> Família NBR ISO 9126<a href="qualidade-de-software.html#família-nbr-iso-9126" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Focava na qualidade do produto de software, definindo um conjunto de parâmetros para padronizar a avaliação dessa qualidade. Ela se enquadrava no modelo de qualidade das normas da família 9000.</p>
+<p><img src="images/qualidade-geral/ISO-9126-SGSI.png" /></p>
+</div>
+<div id="família-nbr-iso-12207" class="section level3 hasAnchor" number="2.2.11">
+<h3><span class="header-section-number">2.2.11</span> Família NBR ISO 12207<a href="qualidade-de-software.html#família-nbr-iso-12207" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A norma ISO 12207 define um conjunto de processos para o ciclo de vida do software. Seu principal foco é estabelecer um framework padronizado para o desenvolvimento, manutenção e descarte de software, visando garantir a qualidade e a eficiência desses processos.</p>
+<p><img src="images/modelos_processos_software/Cascata.jpg" /></p>
+<p><img src="images/qualidade-geral/ISO-12207-processos.png" /></p>
+</div>
+<div id="família-nbr-iso-25000" class="section level3 hasAnchor" number="2.2.12">
+<h3><span class="header-section-number">2.2.12</span> Família NBR ISO 25000<a href="qualidade-de-software.html#família-nbr-iso-25000" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>A NBR ISO 25000</strong>, também conhecida como SQuaRE (Software Product Quality Requirements and Evaluation - Requisitos e Avaliação da Qualidade de Produtos de Software), é uma série de normas internacionais que fornecem um subconjunto de normas para a avaliação da qualidade de produtos de software. Este subconjunto é formado pelas normas <strong>ISO/IEC 25000</strong> , <strong>ISO/IEC 25010</strong>, <strong>ISO/IEC 25020</strong>, <strong>ISO/IEC 25030</strong> e <strong>ISO/IEC 25040</strong>.</p>
+<p><img src="images/qualidade-geral/ISO-25000-SQuaRE.png" /></p>
 
+</div>
 </div>
 </div>
             </section>
@@ -230,8 +330,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="livros-texto-da-disciplina.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="qualidade-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introdução-a-disciplina-de-engenharia-de-software.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelagem-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -262,7 +362,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/00-introducao.Rmd",
+"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/01-qualidade-software.Rmd",
 "text": "Edit"
 },
 "history": {
