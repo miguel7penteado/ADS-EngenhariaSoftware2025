@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:2:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:2:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|solutionrelative:source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:1:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|solutionrelative:source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C67FAB1E-3E81-4CC2-B633-4694C215195A}|ERPAgrotech-Entrega01.vcxproj|solutionrelative:source\\ERPAgrotech-Entrega01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,19 +29,6 @@
               "ToolTip": "C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp",
               "RelativeToolTip": "source\\ERPAgrotech-Entrega01.cpp",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAG4AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-27T16:10:01.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ERPAgrotech-Entrega01.cpp",
-              "DocumentMoniker": "C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp",
-              "RelativeDocumentMoniker": "source\\ERPAgrotech-Entrega01.cpp",
-              "ToolTip": "C:\\Users\\miguel\\source\\repos\\ADS-EngenhariaSoftware2025\\ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\\source\\ERPAgrotech-Entrega01.cpp",
-              "RelativeToolTip": "source\\ERPAgrotech-Entrega01.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-27T16:10:01.323Z",
               "EditorCaption": ""
