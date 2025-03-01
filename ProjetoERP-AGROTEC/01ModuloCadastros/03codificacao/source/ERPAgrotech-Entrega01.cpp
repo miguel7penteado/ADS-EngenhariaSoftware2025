@@ -26,8 +26,58 @@
 #define Uses_TStatusDef
 #define Uses_TDeskTop
 
+#define cmClientes 
+#define cmFornecedores
+#define cmProdutos
+#define cmRelatorios
+
+#define relClientes
+#define relFornecedores
+#define relProdutos
+
 
 #include <tvision/tv.h>
+#include <tvision/dialogs.h>
+
+//=================
+// Janela para Clientes
+class JanelaClientes : public TWindow 
+{
+    public:
+    JanelaClientes() : TWindow(TRect(2, 2, 40, 10), "Clientes") 
+    {
+        //TLabel *label = new TLabel(TRect(2, 2, 38, 3), "CRUD de Clientes");
+        //insert(label);
+    }
+};
+
+// Janela para Fornecedores
+class JanelaFornecedores : public TWindow {
+public:
+    JanelaFornecedores() : TWindow(TRect(2, 2, 40, 10), "Fornecedores") {
+        //TLabel *label = new TLabel(TRect(2, 2, 38, 3), "CRUD de Fornecedores");
+        //insert(label);
+    }
+};
+
+// Janela para Produtos
+class JanelaProdutos : public TWindow {
+public:
+    JanelaProdutos() : TWindow(TRect(2, 2, 40, 10), "Produtos") {
+        //TLabel *label = new TLabel(TRect(2, 2, 38, 3), "CRUD de Produtos");
+        //insert(label);
+    }
+};
+
+// Janela para Relatórios
+class JanelaRelatorios : public TWindow {
+public:
+    JanelaRelatorios() : TWindow(TRect(2, 2, 40, 10), "Relatórios") {
+        //TLabel *label = new TLabel(TRect(2, 2, 38, 3), "CRUD de Relatórios");
+        //insert(label);
+    }
+};
+//=================
 
 
 
@@ -55,12 +105,6 @@ private:
     void desenhaCaixaBoasVindas();
 };
 
-// construtor do classe TipoJanelaPrincipalERPAgrotec que 
-// vai gerar um objeto "Janela Principal" na função main()
-TipoJanelaPrincipalERPAgrotec::TipoJanelaPrincipalERPAgrotec() : TProgInit(&TipoJanelaPrincipalERPAgrotec::iniciarLinhaDeStatus, &TipoJanelaPrincipalERPAgrotec::iniciarBarraMenus,&TipoJanelaPrincipalERPAgrotec::initDeskTop)
-{
-
-}
 
 void TipoJanelaPrincipalERPAgrotec::desenhaCaixaBoasVindas()
 {
@@ -76,22 +120,48 @@ void TipoJanelaPrincipalERPAgrotec::desenhaCaixaBoasVindas()
     destroy(caixaBoasVindas);
 }
 
-void TipoJanelaPrincipalERPAgrotec::handleEvent(TEvent& parametro_evento_mouse)
+void TipoJanelaPrincipalERPAgrotec::handleEvent(TEvent& event)
 {
-    TApplication::handleEvent( parametro_evento_mouse );
+    TApplication::handleEvent( event );
 
-    if (parametro_evento_mouse.what == evCommand)
-    {
-        switch (parametro_evento_mouse.message.command)
-        {
-        case GreetThemCmd:
-            desenhaCaixaBoasVindas();
-            clearEvent(parametro_evento_mouse);
-            break;
-        default:
+    if (event.what == evCommand) {
+        switch (event.message.command) {
+        case cmClientes: {
+            JanelaClientes* janelaClientes = new JanelaClientes();
+            deskTop->insert(janelaClientes);
             break;
         }
+        case cmFornecedores: {
+            JanelaFornecedores* janelaFornecedores = new JanelaFornecedores();
+            deskTop->insert(janelaFornecedores);
+            break;
+        }
+        case cmProdutos: {
+            JanelaProdutos* janelaProdutos = new JanelaProdutos();
+            deskTop->insert(janelaProdutos);
+            break;
+        }
+        case cmRelatorios: {
+            JanelaRelatorios* janelaRelatorios = new JanelaRelatorios();
+            deskTop->insert(janelaRelatorios);
+            break;
+        }
+        case relClientes: {
+
+            break;
+        }
+        case relFornecedores: {
+
+            break;
+        }
+        case relProdutos: {
+
+            break;
+        }
+        }
     }
+
+
 }
 
 TMenuBar* TipoJanelaPrincipalERPAgrotec::iniciarBarraMenus(TRect parametro_tamanho)
@@ -99,12 +169,37 @@ TMenuBar* TipoJanelaPrincipalERPAgrotec::iniciarBarraMenus(TRect parametro_taman
 
     parametro_tamanho.b.y = parametro_tamanho.a.y + 1;
 
-    return new TMenuBar(parametro_tamanho,
-                                         *new TSubMenu("~B~om Dia", kbAltH) +
-                                         *new TMenuItem("~Me~nsagem boas vindas...", GreetThemCmd, kbAltG) +
-                                         newLine() +
-                                         *new TMenuItem("~S~air", cmQuit, cmQuit, hcNoContext, "Alt-S")
+    TMenuBar* menuBar = new TMenuBar(
+        parametro_tamanho,        
+            *new TSubMenu("Cadastro", kbAltC) +
+            *new TMenuItem("Clientes", cmClientes, kbNoKey, hcNoContext, "") +
+            *new TMenuItem("Fornecedores", cmFornecedores, kbNoKey, hcNoContext, "") +
+            *new TMenuItem("Produtos", cmProdutos, kbNoKey, hcNoContext, "") +
+            *new TSubMenu("Relatórios...", cmRelatorios) +
+            *new TMenuItem("Relatório Clientes", relClientes, kbNoKey, hcNoContext, "") +
+            *new TMenuItem("Relatorio Fornecedores", relFornecedores, kbNoKey, hcNoContext, "") +
+            *new TMenuItem("Relatorio Produtos", relProdutos, kbNoKey, hcNoContext, "")        
     );
+
+    return menuBar;
+
+/*    return new TMenuBar(parametro_tamanho,
+                                         *new TSubMenu("Arquivo", kbAltH) +
+                                         newLine() +
+                                         *new TMenuItem("~S~air", cmQuit, cmQuit, hcNoContext, "Alt-S") +
+                                         *new TSubMenu("Cadastros", kbAltH) +
+                                         *new TMenuItem("Clientes...", GreetThemCmd, kbAltG) +
+                                         *new TMenuItem("Fornecedores...", GreetThemCmd, kbAltG) +
+                                         *new TMenuItem("Produtos...", GreetThemCmd, kbAltG) +
+                                         newLine() +
+                                         *new TMenuItem("Relatórios...", GreetThemCmd, kbAltG) +                                         
+                                         *new TSubMenu("~E~stoque", kbAltH) +
+                                         *new TMenuItem("Controle de Estoque...", GreetThemCmd, kbAltG) +
+                                         newLine() +
+                                         *new TMenuItem("Relatorio de Estoque...", GreetThemCmd, kbAltG)
+    );
+
+*/
 
 }
 
@@ -118,9 +213,26 @@ TStatusLine* TipoJanelaPrincipalERPAgrotec::iniciarLinhaDeStatus(TRect parametro
     );
 }
 
+
+// construtor do classe TipoJanelaPrincipalERPAgrotec que 
+// vai gerar um objeto "Janela Principal" na função main()
+TipoJanelaPrincipalERPAgrotec::TipoJanelaPrincipalERPAgrotec() : TProgInit(&TipoJanelaPrincipalERPAgrotec::iniciarLinhaDeStatus, 
+                                                                           &TipoJanelaPrincipalERPAgrotec::iniciarBarraMenus, 
+                                                                           &TipoJanelaPrincipalERPAgrotec::initDeskTop
+                                                                          )
+{
+
+}
+
+
+
 int main()
 {
     TipoJanelaPrincipalERPAgrotec janelaPrincipal;
     janelaPrincipal.run();
     return 0;
 }
+
+
+
+
