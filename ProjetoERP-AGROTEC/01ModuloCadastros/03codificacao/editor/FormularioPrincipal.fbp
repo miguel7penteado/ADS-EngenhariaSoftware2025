@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wxFormBuilder_Project>
+  <FileVersion major="1" minor="18"/>
+  <object class="Project" expanded="true">
+    <property name="code_generation">Python</property>
+    <property name="cpp_class_decoration">; </property>
+    <property name="cpp_disconnect_events">0</property>
+    <property name="cpp_event_generation">connect</property>
+    <property name="cpp_help_provider">none</property>
+    <property name="cpp_namespace"></property>
+    <property name="cpp_precompiled_header"></property>
+    <property name="cpp_use_array_enum">0</property>
+    <property name="cpp_use_enum">1</property>
+    <property name="embedded_files_path">res</property>
+    <property name="encoding">UTF-8</property>
+    <property name="file">ERPAgroTech</property>
+    <property name="first_id">6000</property>
+    <property name="internationalize">1</property>
+    <property name="lua_skip_events">1</property>
+    <property name="lua_ui_table">UI</property>
+    <property name="name">AplicacaoAgroTechERP</property>
+    <property name="path">C:\Users\miguel\source\repos\ADS-EngenhariaSoftware2025\ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\editor</property>
+    <property name="php_disconnect_events">0</property>
+    <property name="php_disconnect_mode">source_name</property>
+    <property name="php_skip_events">1</property>
+    <property name="python_disconnect_events">0</property>
+    <property name="python_disconnect_mode">source_name</property>
+    <property name="python_image_path_wrapper_function_name"></property>
+    <property name="python_indent_with_spaces">1</property>
+    <property name="python_skip_events">1</property>
+    <property name="relative_path">1</property>
+    <property name="use_microsoft_bom">0</property>
+    <property name="use_native_eol">0</property>
+    <object class="Frame" expanded="true">
+      <property name="aui_managed">0</property>
+      <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
+      <property name="bg"></property>
+      <property name="center">wxBOTH</property>
+      <property name="context_help"></property>
+      <property name="context_menu">1</property>
+      <property name="drag_accept_files">0</property>
+      <property name="enabled">1</property>
+      <property name="event_handler">impl_virtual</property>
+      <property name="extra_style"></property>
+      <property name="fg"></property>
+      <property name="font"></property>
+      <property name="hidden">0</property>
+      <property name="id">wxID_ANY</property>
+      <property name="maximum_size"></property>
+      <property name="minimum_size"></property>
+      <property name="name">TipoJanelaPrincipal</property>
+      <property name="pos"></property>
+      <property name="size">641,514</property>
+      <property name="style">wxDEFAULT_FRAME_STYLE</property>
+      <property name="subclass">; ; forward_declare</property>
+      <property name="title">ERP AGROTEC - Entrega 01</property>
+      <property name="tooltip"></property>
+      <property name="two_step_creation">0</property>
+      <property name="window_extra_style"></property>
+      <property name="window_name"></property>
+      <property name="window_style">wxTAB_TRAVERSAL</property>
+      <property name="xrc_skip_sizer">1</property>
+      <object class="wxMenuBar" expanded="true">
+        <property name="bg"></property>
+        <property name="context_help"></property>
+        <property name="context_menu">1</property>
+        <property name="drag_accept_files">0</property>
+        <property name="enabled">1</property>
+        <property name="fg"></property>
+        <property name="font"></property>
+        <property name="hidden">0</property>
+        <property name="id">wxID_ANY</property>
+        <property name="maximum_size"></property>
+        <property name="minimum_size"></property>
+        <property name="name">TipoMenuPrincipal</property>
+        <property name="permission">protected</property>
+        <property name="pos"></property>
+        <property name="size"></property>
+        <property name="style"></property>
+        <property name="subclass">; ; forward_declare</property>
+        <property name="tooltip"></property>
+        <property name="window_extra_style"></property>
+        <property name="window_name"></property>
+        <property name="window_style"></property>
+        <object class="wxMenu" expanded="true">
+          <property name="label">Arquivo</property>
+          <property name="name">TipoMenuArquivo</property>
+          <property name="permission">protected</property>
+          <object class="wxMenuItem" expanded="false">
+            <property name="bitmap"></property>
+            <property name="checked">0</property>
+            <property name="enabled">1</property>
+            <property name="help"></property>
+            <property name="id">wxID_ANY</property>
+            <property name="kind">wxITEM_NORMAL</property>
+            <property name="label">Sair</property>
+            <property name="name">TipoMenuItemSair</property>
+            <property name="permission">none</property>
+            <property name="shortcut"></property>
+            <property name="unchecked_bitmap"></property>
+            <event name="OnMenuSelection">EventoTerminarPrograma</event>
+          </object>
+        </object>
+        <object class="wxMenu" expanded="true">
+          <property name="label">Cadastro</property>
+          <property name="name">TipoMenuCadastro</property>
+          <property name="permission">protected</property>
+          <object class="wxMenuItem" expanded="false">
+            <property name="bitmap"></property>
+            <property name="checked">0</property>
+            <property name="enabled">1</property>
+            <property name="help"></property>
+            <property name="id">wxID_ANY</property>
+            <property name="kind">wxITEM_NORMAL</property>
+            <property name="label">Clientes</property>
+            <property name="name">TipoMenuItemClientes</property>
+            <property name="permission">none</property>
+            <property name="shortcut"></property>
+            <property name="unchecked_bitmap"></property>
+            <event name="OnMenuSelection">EventoAbrePainelClientes</event>
+          </object>
+          <object class="wxMenuItem" expanded="false">
+            <property name="bitmap"></property>
+            <property name="checked">0</property>
+            <property name="enabled">1</property>
+            <property name="help"></property>
+            <property name="id">wxID_ANY</property>
+            <property name="kind">wxITEM_NORMAL</property>
+            <property name="label">Fornecedores</property>
+            <property name="name">TipoMenuItemFornecedores</property>
+            <property name="permission">none</property>
+            <property name="shortcut"></property>
+            <property name="unchecked_bitmap"></property>
+            <event name="OnMenuSelection">EventoAbrePainelFornecedores</event>
+          </object>
+          <object class="wxMenuItem" expanded="false">
+            <property name="bitmap"></property>
+            <property name="checked">0</property>
+            <property name="enabled">1</property>
+            <property name="help"></property>
+            <property name="id">wxID_ANY</property>
+            <property name="kind">wxITEM_NORMAL</property>
+            <property name="label">Produtos</property>
+            <property name="name">TipoMenuItemProdutos</property>
+            <property name="permission">none</property>
+            <property name="shortcut"></property>
+            <property name="unchecked_bitmap"></property>
+            <event name="OnMenuSelection">EventoAbrePainelProdutos</event>
+          </object>
+          <object class="submenu" expanded="false">
+            <property name="bitmap"></property>
+            <property name="label">Relatórios</property>
+            <property name="name">TipoSubmenuRelatorios</property>
+            <property name="permission">protected</property>
+            <object class="wxMenuItem" expanded="false">
+              <property name="bitmap"></property>
+              <property name="checked">0</property>
+              <property name="enabled">1</property>
+              <property name="help"></property>
+              <property name="id">wxID_ANY</property>
+              <property name="kind">wxITEM_NORMAL</property>
+              <property name="label">Relatório de Clientes</property>
+              <property name="name">TipoMenuItemRelatorioClientes</property>
+              <property name="permission">none</property>
+              <property name="shortcut"></property>
+              <property name="unchecked_bitmap"></property>
+              <event name="OnMenuSelection">EventoAbrePainelRelatorioClientes</event>
+            </object>
+            <object class="wxMenuItem" expanded="false">
+              <property name="bitmap"></property>
+              <property name="checked">0</property>
+              <property name="enabled">1</property>
+              <property name="help"></property>
+              <property name="id">wxID_ANY</property>
+              <property name="kind">wxITEM_NORMAL</property>
+              <property name="label">Relatório de Fornecedores</property>
+              <property name="name">TipoMenuItemRelatorioFornecedores</property>
+              <property name="permission">none</property>
+              <property name="shortcut"></property>
+              <property name="unchecked_bitmap"></property>
+              <event name="OnMenuSelection">EventoAbrePainelRelatorioFornecedores</event>
+            </object>
+            <object class="wxMenuItem" expanded="false">
+              <property name="bitmap"></property>
+              <property name="checked">0</property>
+              <property name="enabled">1</property>
+              <property name="help"></property>
+              <property name="id">wxID_ANY</property>
+              <property name="kind">wxITEM_NORMAL</property>
+              <property name="label">Relatório de Produtos</property>
+              <property name="name">TipoMenuItemRelatorioProdutos</property>
+              <property name="permission">none</property>
+              <property name="shortcut"></property>
+              <property name="unchecked_bitmap"></property>
+              <event name="OnMenuSelection">EventoAbrePainelRelatorioProdutos</event>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="wxStatusBar" expanded="false">
+        <property name="bg">wxSYS_COLOUR_INFOBK</property>
+        <property name="context_help"></property>
+        <property name="context_menu">1</property>
+        <property name="drag_accept_files">0</property>
+        <property name="enabled">1</property>
+        <property name="fg"></property>
+        <property name="fields">1</property>
+        <property name="font"></property>
+        <property name="hidden">0</property>
+        <property name="id">wxID_ANY</property>
+        <property name="maximum_size"></property>
+        <property name="minimum_size"></property>
+        <property name="name">TipoBarraStatus</property>
+        <property name="permission">protected</property>
+        <property name="pos"></property>
+        <property name="size"></property>
+        <property name="style">wxSTB_SIZEGRIP</property>
+        <property name="subclass">; ; forward_declare</property>
+        <property name="tooltip"></property>
+        <property name="window_extra_style"></property>
+        <property name="window_name"></property>
+        <property name="window_style"></property>
+      </object>
+    </object>
+    <object class="Frame" expanded="true">
+      <property name="aui_managed">0</property>
+      <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
+      <property name="bg"></property>
+      <property name="center">wxBOTH</property>
+      <property name="context_help"></property>
+      <property name="context_menu">1</property>
+      <property name="drag_accept_files">0</property>
+      <property name="enabled">1</property>
+      <property name="event_handler">impl_virtual</property>
+      <property name="extra_style"></property>
+      <property name="fg"></property>
+      <property name="font"></property>
+      <property name="hidden">0</property>
+      <property name="id">wxID_ANY</property>
+      <property name="maximum_size"></property>
+      <property name="minimum_size"></property>
+      <property name="name">TipoCadastroClientes</property>
+      <property name="pos"></property>
+      <property name="size">800,564</property>
+      <property name="style">wxDEFAULT_FRAME_STYLE</property>
+      <property name="subclass">; ; forward_declare</property>
+      <property name="title">ERP Agrotech - Cadastro de Cleintes</property>
+      <property name="tooltip"></property>
+      <property name="two_step_creation">0</property>
+      <property name="window_extra_style"></property>
+      <property name="window_name"></property>
+      <property name="window_style">wxTAB_TRAVERSAL</property>
+      <property name="xrc_skip_sizer">1</property>
+    </object>
+  </object>
+</wxFormBuilder_Project>
