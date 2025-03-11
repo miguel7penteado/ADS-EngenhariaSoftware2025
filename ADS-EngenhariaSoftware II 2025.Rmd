@@ -526,7 +526,7 @@ nascimento date
 
 ## Cadastro de Produtos
 
-<!--chapter:end:03-gestao-qualidade.Rmd-->
+<!--chapter:end:03-Estudo-Entrega-01.Rmd-->
 
 # GERÊNCIA DE PROJETOS
 
