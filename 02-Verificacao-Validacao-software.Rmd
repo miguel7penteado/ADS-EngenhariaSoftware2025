@@ -1,0 +1,43 @@
+# Verificação de Validação de Software
+
+![](images/clipboard-2445384906.png)
+
+## Verificação de Softare:
+
+> **Definição de Verificação de Software**: *Assegurar que o software implementa corretamente uma função específica. "Estamos criando o produto corretamente?*".
+
+## Validação de Softare:
+
+> **Definição de Validação de Software**: *Assegurar que o software foi criado e pode ser rastreado segundo os requisitos do cliente. "Estamos criando o produto certo?". Validação tem sucesso quando o software funciona de uma maneira que pode ser razoavelmente esperada pelo cliente.*
+
+## Classificação das Técnicas:
+
+### Técnicas Estáticas
+
+As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo.
+
+### Técnicas Dinâmicas
+
+As Técnicas Dinâmicas são testes de software, nos quais o sistema é executado com dados de testes simulados.
+
+### Abordagens Formais
+
+Já as abordagens formais são técnicas usadas para softwares críticos (usinas nucleares, navegação aérea, cirurgia robótica). Os processo de Prova de correção, o processo sala limpa (clean room).
+
+## Revisões Técnicas: PASSEIO e INSPEÇÃO
+
+As **Revisões Técnicas (RT)** são Reuniões conduzidas por membros da equipe de software para avaliar a qualidade do software.
+
+#### As revisões técnicas podem ser "Informais" ou "Formais"
+
+As **Revisões Informais** incluem testes de mesa e reuniões informais com colegas.
+
+As **Revisões Técnicas Formais** são feitas com Reuniões estilizadas com papéis definidos, planejamento antecipado e manutenção de registros.
+
+### Passeio (Walkthrough)
+
+O produtor "repassa" o artefato, explicando o material, enquanto os revisores levantam questões com base em sua preparação prévia.
+
+### Inspeção do produto
+
+Uma pequena equipe verifica o código sistematicamente, procurando por possíveis erros e omissões.

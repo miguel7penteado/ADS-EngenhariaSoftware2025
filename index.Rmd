@@ -38,7 +38,7 @@ Estas anotações são apenas lembretes das aulas expostas em sala, durante a di
 ![](images/livros/engenharia_software_pressman.jpg)
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | **Autor(es)** | [Roger S. Pressman](https://www.indicalivros.com/autores?q=Roger%20S.%20Pressman) |
 | **Editora** | Pearson |
 | **Idioma** | Português |

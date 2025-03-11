@@ -1,3 +1,212 @@
-# GESTÃO DE QUALIDADE DE SOFTWARE
+# Estudo da Entrega #01 - ERP Agrotec - Módulo Cadastros
 
-Coming soon
+## Interface JanelaPrincipal
+
+Os aquivos estão na pasta "ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\source" do repositório da disciplina
+
+Arquivo *ERPAgroTech.py*
+
+``` python
+
+# -*- coding: utf-8 -*-
+
+###########################################################################
+## Python code generated with wxFormBuilder (version 4.2.1-0-g80c4cb6)
+## http://www.wxformbuilder.org/
+##
+## PLEASE DO *NOT* EDIT THIS FILE!
+###########################################################################
+
+import wx
+import wx.xrc
+
+import gettext
+_ = gettext.gettext
+
+
+from CadastroClientes import TipoCadastroClientes
+
+###########################################################################
+## Class TipoJanelaPrincipal
+###########################################################################
+
+class TipoJanelaPrincipal ( wx.Frame ):
+
+   def __init__( self, parent ):
+       wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = _(u"ERP AGROTEC - Entrega 01"), pos = wx.DefaultPosition, size = wx.Size( 641,514 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+
+       self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
+
+       self.TipoMenuPrincipal = wx.MenuBar( 0 )
+       self.TipoMenuArquivo = wx.Menu()
+       self.TipoMenuItemSair = wx.MenuItem( self.TipoMenuArquivo, wx.ID_ANY, _(u"Sair"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoMenuArquivo.Append( self.TipoMenuItemSair )
+
+       self.TipoMenuPrincipal.Append( self.TipoMenuArquivo, _(u"Arquivo") )
+
+       self.TipoMenuCadastro = wx.Menu()
+       self.TipoMenuItemClientes = wx.MenuItem( self.TipoMenuCadastro, wx.ID_ANY, _(u"Clientes"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoMenuCadastro.Append( self.TipoMenuItemClientes )
+
+       self.TipoMenuItemFornecedores = wx.MenuItem( self.TipoMenuCadastro, wx.ID_ANY, _(u"Fornecedores"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoMenuCadastro.Append( self.TipoMenuItemFornecedores )
+
+       self.TipoMenuItemProdutos = wx.MenuItem( self.TipoMenuCadastro, wx.ID_ANY, _(u"Produtos"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoMenuCadastro.Append( self.TipoMenuItemProdutos )
+
+       self.TipoSubmenuRelatorios = wx.Menu()
+       self.TipoMenuItemRelatorioClientes = wx.MenuItem( self.TipoSubmenuRelatorios, wx.ID_ANY, _(u"Relatório de Clientes"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoSubmenuRelatorios.Append( self.TipoMenuItemRelatorioClientes )
+
+       self.TipoMenuItemRelatorioFornecedores = wx.MenuItem( self.TipoSubmenuRelatorios, wx.ID_ANY, _(u"Relatório de Fornecedores"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoSubmenuRelatorios.Append( self.TipoMenuItemRelatorioFornecedores )
+
+       self.TipoMenuItemRelatorioProdutos = wx.MenuItem( self.TipoSubmenuRelatorios, wx.ID_ANY, _(u"Relatório de Produtos"), wx.EmptyString, wx.ITEM_NORMAL )
+       self.TipoSubmenuRelatorios.Append( self.TipoMenuItemRelatorioProdutos )
+
+       self.TipoMenuCadastro.AppendSubMenu( self.TipoSubmenuRelatorios, _(u"Relatórios") )
+
+       self.TipoMenuPrincipal.Append( self.TipoMenuCadastro, _(u"Cadastro") )
+
+       self.SetMenuBar( self.TipoMenuPrincipal )
+
+       self.TipoBarraStatus = self.CreateStatusBar( 1, wx.STB_SIZEGRIP, wx.ID_ANY )
+       self.TipoBarraStatus.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INFOBK ) )
+
+
+       self.Centre( wx.BOTH )
+
+       # Connect Events
+       self.Bind( wx.EVT_MENU, self.EventoTerminarPrograma,                id = self.TipoMenuItemSair.GetId()                  )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelClientes,              id = self.TipoMenuItemClientes.GetId()              )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelFornecedores,          id = self.TipoMenuItemFornecedores.GetId()          )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelProdutos,              id = self.TipoMenuItemProdutos.GetId()              )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelRelatorioClientes,     id = self.TipoMenuItemRelatorioClientes.GetId()     )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelRelatorioFornecedores, id = self.TipoMenuItemRelatorioFornecedores.GetId() )
+       self.Bind( wx.EVT_MENU, self.EventoAbrePainelRelatorioProdutos,     id = self.TipoMenuItemRelatorioProdutos.GetId()     )
+
+   def __del__( self ):
+       pass
+
+   def MakeModal(self, modal=True):
+       if modal and not hasattr(self, '_disabler'):
+           self._disabler = wx.WindowDisabler(self)
+       if not modal and hasattr(self, '_disabler'):
+           del self._disabler
+
+   # Virtual event handlers, override them in your derived class
+   def EventoTerminarPrograma( self, event ):
+       event.Skip()
+
+   def EventoAbrePainelClientes( self, event ):
+       janelaClientes = TipoCadastroClientes(None)
+       janelaClientes.MakeModal()
+       janelaClientes.Show()
+       
+
+   def EventoAbrePainelFornecedores( self, event ):
+       event.Skip()
+
+   def EventoAbrePainelProdutos( self, event ):
+       event.Skip()
+
+   def EventoAbrePainelRelatorioClientes( self, event ):
+       event.Skip()
+
+   def EventoAbrePainelRelatorioFornecedores( self, event ):
+       event.Skip()
+
+   def EventoAbrePainelRelatorioProdutos( self, event ):
+       event.Skip()
+```
+
+Arquivo main.py
+
+``` python
+
+# -*- coding: utf-8 -*-
+
+
+import wx
+
+from ERPAgroTech import TipoJanelaPrincipal
+
+class Programa(TipoJanelaPrincipal):
+    def __init__(self, parent):
+        TipoJanelaPrincipal.__init__(self, parent)
+
+
+
+
+app = wx.App(False)    # cria uma nova aplicação e não redireciona stdout e stderr para janela principal
+frame = Programa(None) # frame é uma janela de nível de topo
+frame.MakeModal()
+frame.Show()           # Mostra a janela
+app.MainLoop()         # aplicação entra em loop até finalizar
+```
+
+### Como executar a janela principal
+
+1.  Baixar o e instalar o Python (preferencialmente a [versão 3.9 para Windows 10 ou 11](https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe))
+
+2.  Abrir uma janela do MS-DOS (prompt de comando) e mandar o utilitário **PIP** instalar o pacote **wxpython:**
+
+``` cmd
+pip install --upgrade wxphython
+```
+
+3.  Abrir uma janela do MS-DOS (prompt de comando) e mandar o utilitário e baixar o repositório da disciplina com a ferramenta GIT:
+
+``` cmd
+git clone git@github.com:miguel7penteado/ADS-EngenhariaSoftware2025.git
+```
+
+4.  Pelo MS-DOS entrar na pasta ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\source :
+
+``` cmd
+cd ADS-EngenhariaSoftware2025\ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source
+```
+
+5.  Pelo MS-DOS mandar o interpretador python executar o ERP AGROTEC
+
+``` cmd
+python3 main.py
+```
+
+## Cadastro de Clientes
+
+Acesso ao Banco de Dados na núvem POSTGRES para você testar o seu:
+
+| host:    | pg-ads-engs2-miguel7penteado-ads-engs2.c.aivencloud.com |
+|----------|---------------------------------------------------------|
+| porta:   | 17135                                                   |
+| usuario: | SEU RA                                                  |
+| senha:   | SEU RA                                                  |
+| banco:   | banco-dados-ra                                          |
+| SSL:     | require                                                 |
+
+OBS: substitua "ra" pelo seu ra, obviamente.
+
+Cliente para testar via celular:
+
+Android Postgresql Client
+
+<https://play.google.com/store/apps/details?id=rafrobsystems.postgresclient&pcampaignid=web_share>
+
+![](images/clipboard-78059825.png)
+
+### Tabela Clientes
+
+``` sql
+CREATE TABLE clientes
+(
+id         varchar(15) unique not null,
+nome       varchar(500) not null ,
+endereco   varchar(500) not null ,
+nascimento date
+);
+```
+
+## Cadastro de Fornecedores
+
+## Cadastro de Produtos
