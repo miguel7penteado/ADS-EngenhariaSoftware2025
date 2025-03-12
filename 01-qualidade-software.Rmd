@@ -69,7 +69,7 @@ Reconhecimento da **Qualidade do Processo** de fabricação do Produto
 O sistema SGQ (um si que pode ou não ser um pacote de software) deve mapear
 
 |  |  |  |  |  |
-|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|:--:|:--:|:--:|:--:|:--:|
 | Áreas mapeadas por um sistema SGQ | PROCESSOS | POLÍTICAS | PROCEDIMENTOS | RESPONSABILIDADES |
 
 ![](images/qualidade-geral/ISO-9000-SGQ.png){width="549"}
