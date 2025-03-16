@@ -30,6 +30,8 @@ qualidade-na-engenharia-de-software
 família-nbr-iso-9126
 família-nbr-iso-12207
 família-nbr-iso-25000
+exercício-de-fixação
+repostas-dos-testes
 verificação-de-validação-de-software
 verificação-de-softare
 validação-de-softare
