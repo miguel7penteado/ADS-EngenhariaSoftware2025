@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.17)  11 MAR 2025 16:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.16)  16 MAR 2025 04:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,8 +404,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (c:/Users/miguel/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count326
-))
-No file ADS-EngenhariaSoftware-II-2025.aux.
+)) (./ADS-EngenhariaSoftware-II-2025.aux)
 \openout1 = `ADS-EngenhariaSoftware-II-2025.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -653,9 +652,6 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 125.
 Package hyperref Info: Link coloring OFF on input line 125.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 127.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -694,8 +690,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2
 
-]
-No file ADS-EngenhariaSoftware-II-2025.toc.
+] (./ADS-EngenhariaSoftware-II-2025.toc)
 \tf@toc=\write4
 \openout4 = `ADS-EngenhariaSoftware-II-2025.toc'.
 
@@ -752,61 +747,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 1.
 File: images/livros/engenharia_software_pressman.jpg Graphic file (type bmp)
 <images/livros/engenharia_software_pressman.jpg>
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.1 on input line 169.
-
 [9]
 File: images/livros/engenharia_software_sommerville.jpg Graphic file (type bmp)
 <images/livros/engenharia_software_sommerville.jpg>
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.2 on input line 187.
-
 [10]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.3 on input line 203.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.4 on input line 217.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.5 on input line 232.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.6 on input line 246.
-
-
 
 [11]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.7 on input line 260.
-
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 264.
-
-
 [12]
+Chapter 2.
+[13
+
+] [14]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 358.
+
+
+[15]
+
+[16
+
+]
 File: images/pressman.jpg Graphic file (type bmp)
 <images/pressman.jpg>
 File: images/sommerville.jpg Graphic file (type bmp)
 <images/sommerville.jpg>
 
 
-[13
-
-]
+[17]
 File: images/Margaret_Hamilton.jpg Graphic file (type bmp)
 <images/Margaret_Hamilton.jpg>
 
 
-[14]
-Chapter 2.
+[18]
+Chapter 3.
 File: images/qualidade-geral/compliance.png Graphic file (type bmp)
 <images/qualidade-geral/compliance.png>
 
@@ -814,7 +788,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[15
+[19
 
 ]
 File: images/qualidade-geral/Qualidade.png Graphic file (type bmp)
@@ -824,12 +798,12 @@ Underfull \vbox (badness 7486) has occurred while \output is active []
 
 
 
-[16]
+[20]
 File: images/qualidade-geral/Qualidade_do_Produto.png Graphic file (type bmp)
 <images/qualidade-geral/Qualidade_do_Produto.png>
 
 
-[17]
+[21]
 File: images/qualidade-geral/Qualidade_do_Processo.png Graphic file (type bmp)
 <images/qualidade-geral/Qualidade_do_Processo.png>
 
@@ -837,7 +811,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[18]
+[22]
 File: images/mac-donalds/cozinha-mac.jpg Graphic file (type bmp)
 <images/mac-donalds/cozinha-mac.jpg>
 
@@ -845,7 +819,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19]
+[23]
 File: images/mac-donalds/modelo-mac.jpg Graphic file (type bmp)
 <images/mac-donalds/modelo-mac.jpg>
 File: images/qualidade-geral/MacDonalds1.png Graphic file (type bmp)
@@ -855,7 +829,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[20]
+[24]
 File: images/mac-donalds/Franquias.jpg Graphic file (type bmp)
 <images/mac-donalds/Franquias.jpg>
 
@@ -863,29 +837,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21]
-Overfull \hbox (0.76091pt too wide) in paragraph at lines 390--390
+[25]
+Overfull \hbox (0.76091pt too wide) in paragraph at lines 484--484
  []|\TU/lmr/m/n/10 PROCESSOS| 
  []
 
 
-Overfull \hbox (31.59091pt too wide) in paragraph at lines 390--390
+Overfull \hbox (31.59091pt too wide) in paragraph at lines 484--484
  []|\TU/lmr/m/n/10 PROCEDIMENTOS| 
  []
 
 
-Overfull \hbox (50.90091pt too wide) in paragraph at lines 390--391
+Overfull \hbox (50.90091pt too wide) in paragraph at lines 484--485
  []|\TU/lmr/m/n/10 RESPONSABILIDADES| 
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.1 on input line 391.
 
 File: images/qualidade-geral/ISO-9000-SGQ.png Graphic file (type bmp)
 <images/qualidade-geral/ISO-9000-SGQ.png>
 
-Overfull \hbox (68.29431pt too wide) in paragraph at lines 393--394
+Overfull \hbox (68.29431pt too wide) in paragraph at lines 487--488
 [][] 
  []
 
@@ -894,7 +864,7 @@ Underfull \vbox (badness 2980) has occurred while \output is active []
 
 
 
-[22]
+[26]
 File: images/qualidade-geral/ISO-14000-SGQ.png Graphic file (type bmp)
 <images/qualidade-geral/ISO-14000-SGQ.png>
 
@@ -902,7 +872,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[23]
+[27]
 File: images/qualidade-geral/ISO-27000-SGSI.png Graphic file (type bmp)
 <images/qualidade-geral/ISO-27000-SGSI.png>
 
@@ -910,17 +880,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[24]
+[28]
 File: images/qualidade-geral/segmentos.jpg Graphic file (type bmp)
 <images/qualidade-geral/segmentos.jpg>
 
-Underfull \hbox (badness 3189) in paragraph at lines 413--413
+Underfull \hbox (badness 3189) in paragraph at lines 507--507
 []\TU/lmr/bx/n/12 QUALIDADE NA ENGENHARIA DE SOFT-
  []
 
 
 
-[25]
+[29]
 File: images/qualidade-geral/ISO-9126-SGSI.png Graphic file (type bmp)
 <images/qualidade-geral/ISO-9126-SGSI.png>
 File: images/modelos_processos_software/Cascata.jpg Graphic file (type bmp)
@@ -932,7 +902,7 @@ Underfull \vbox (badness 5787) has occurred while \output is active []
 
 
 
-[26]
+[30]
 File: images/qualidade-geral/ISO-25000-SQuaRE.png Graphic file (type bmp)
 <images/qualidade-geral/ISO-25000-SQuaRE.png>
 
@@ -940,10 +910,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[27]
+[31]
 
-[28]
-Chapter 3.
+[32]
+Chapter 4.
 File: images/clipboard-2445384906.png Graphic file (type bmp)
 <images/clipboard-2445384906.png>
 
@@ -951,28 +921,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[29
+[33
 
 ]
 
-[30]
+[34]
 
-[31]
+[35]
 
-[32
+[36
 
 ]
-Chapter 4.
+Chapter 5.
 ! Undefined control sequence.
-l.489 ...dastros\textbackslash03codificacao\source
-                                                  '' do repositório da disci... 
+l.583 ...dastros\textbackslash03codificacao\source
+                                                  '' do repositório da disci...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ 
 Here is how much of TeX's memory you used:
- 17621 strings out of 475845
- 327210 string characters out of 5773095
- 853912 words of memory out of 5000000
- 40311 multiletter control sequences out of 15000+600000
+ 17679 strings out of 475847
+ 328976 string characters out of 5772893
+ 858064 words of memory out of 5000000
+ 40361 multiletter control sequences out of 15000+600000
  565306 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,6n,114p,529b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on ADS-EngenhariaSoftware-II-2025.pdf (32 pages).
+ 90i,6n,114p,529b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on ADS-EngenhariaSoftware-II-2025.pdf (36 pages).

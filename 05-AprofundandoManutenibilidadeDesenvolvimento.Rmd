@@ -1,0 +1,26 @@
+# APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO
+
+
+## Manutenibilidade
+
+### Atributos da Manutenibilidade: 
+
+Detalhar as características que influenciam a manutenibilidade, como modularidade, clareza do código, documentação adequada, complexidade, acoplamento e coesão [Pressman, Sommerville]. A boa prática de engenharia de software demanda modularidade efetiva, com alta coesão e baixo acoplamento [Pressman, 45]. 
+
+###  Métricas de Manutenibilidade: 
+
+Introduzir a ideia de que a manutenibilidade pode ser avaliada e até mesmo medida através de métricas de software [Pressman, Sommerville]. O livro "Engenharia-de-software-8-ed-roger-pressman.pdf" menciona "Métricas para manutenção" no Capítulo 30. 
+
+## Técnicas de Desenvolvimento para a Manutenibilidade
+
+### Princípios de Projeto: 
+
+Discutir como princípios de projeto como separação de interesses, abstração, encapsulamento e baixo acoplamento impactam positivamente a manutenibilidade [Pressman, Sommerville]. A separação de interesses é um princípio-chave de projeto e implementação de software [Sommerville, 127]. 
+
+### Qualidade do Código: 
+
+Enfatizar a importância de práticas de codificação limpa, convenções de estilo consistentes e evitar construções complexas para facilitar a compreensão e modificação do código. 
+
+### Documentação: 
+
+Ressaltar a necessidade de documentação interna (comentários no código) e externa (manuais, diagramas de projeto) para auxiliar na manutenção [Sommerville, Pressman]. 

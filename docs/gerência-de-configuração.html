@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 10 Gerência de Configuração | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 10 Gerência de Configuração | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 10 Gerência de Configuração | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="alunos-2025.html"/>
-<link rel="next" href="qualidade-de-software.html"/>
+<link rel="prev" href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"/>
+<link rel="next" href="revisão-para-np2.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,21 +341,110 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução-a-disciplina-de-engenharia-de-software" class="section level1 unnumbered hasAnchor">
-<h1>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#introdução-a-disciplina-de-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?</p>
-<div id="o-que-é-engenharia-de-software" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> O que é ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/pressman.jpg" width="92" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.</em> (<strong><em>Roger S. Pressman</em></strong>)</p>
-</blockquote>
-<p><img src="images/sommerville.jpg" width="102" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.</em> (<strong>Ian Sommerville</strong>)</p>
-</blockquote>
-<p>É atribuído a <strong>Margaret Hamilton,</strong> desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.</p>
-<p><img src="images/Margaret_Hamilton.jpg" style="width:50.0%" /></p>
+<div id="gerência-de-configuração" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Aula 10</span> Gerência de Configuração<a href="gerência-de-configuração.html#gerência-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>(aula em processo de edição)</p>
+<p><img src="images/clipboard-871701020.png" /></p>
+<div id="introdução-à-gerência-de-configuração" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Introdução à Gerência de Configuração<a href="gerência-de-configuração.html#introdução-à-gerência-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="definição-de-gerência-de-configuração-gc" class="section level3 hasAnchor" number="10.1.1">
+<h3><span class="header-section-number">10.1.1</span> Definição de Gerência de Configuração (GC):<a href="gerência-de-configuração.html#definição-de-gerência-de-configuração-gc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GC é o nome do processo geral de gerenciamento de um sistema de software em mudança. O objetivo do gerenciamento de configuração é apoiar o processo de integração do sistema para que todos os desenvolvedores possam acessar o código do projeto e os documentos relacionados de forma controlada, descobrir quais mudanças foram feitas, bem como compilar e ligar componentes para criar um sistema.</p>
+</div>
+<div id="a-natureza-da-mudança-em-software" class="section level3 hasAnchor" number="10.1.2">
+<h3><span class="header-section-number">10.1.2</span> A Natureza da Mudança em Software:<a href="gerência-de-configuração.html#a-natureza-da-mudança-em-software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A mudança é uma realidade para grandes sistemas. As necessidades e requisitos organizacionais se alteram durante a vida útil de um sistema, bugs precisam ser reparados e os sistemas necessitam se adaptar às mudanças em seu ambiente. De fato, a Primeira Lei da Engenharia de Sistemas afirma que não importa em qual estágio do ciclo de vida, o sistema mudará.</p>
+</div>
+<div id="importância-da-gc" class="section level3 hasAnchor" number="10.1.3">
+<h3><span class="header-section-number">10.1.3</span> Importância da GC:<a href="gerência-de-configuração.html#importância-da-gc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sem o gerenciamento de configuração, as mudanças aplicadas ao sistema podem ocorrer de forma descontrolada, levando a inconsistências, perda de trabalho e dificuldades na manutenção e evolução do software. A GC garante que as mudanças sejam aplicadas ao sistema de uma forma controlada.</p>
+</div>
+</div>
+<div id="elementos-da-gerência-de-configuração" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Elementos da Gerência de Configuração<a href="gerência-de-configuração.html#elementos-da-gerência-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="itens-de-configuração-de-software-icis" class="section level3 hasAnchor" number="10.2.1">
+<h3><span class="header-section-number">10.2.1</span> Itens de Configuração de Software (ICIs)<a href="gerência-de-configuração.html#itens-de-configuração-de-software-icis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Os itens que compõem todas as informações produzidas como parte do processo de software são chamados coletivamente de configuração de software. Isso inclui programas de computador (código fonte e executável), produtos que descrevem os programas (documentação para diversos stakeholders) e dados ou conteúdo. Um ICI é um elemento de informação com nome, que pode variar desde um simples diagrama UML até um documento de projeto completo. Diferentes versões de um ICI podem existir.</p>
+</div>
+<div id="identificação" class="section level3 hasAnchor" number="10.2.2">
+<h3><span class="header-section-number">10.2.2</span> Identificação:<a href="gerência-de-configuração.html#identificação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cada ICI deve ter um nome único para permitir seu rastreamento e gerenciamento.</p>
+</div>
+<div id="controle-de-versão" class="section level3 hasAnchor" number="10.2.3">
+<h3><span class="header-section-number">10.2.3</span> Controle de Versão:<a href="gerência-de-configuração.html#controle-de-versão" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suporte para manter o controle das diferentes versões de ICIs ao longo do tempo. Isso permite rastrear o histórico de mudanças, reverter para versões anteriores e gerenciar múltiplas linhas de desenvolvimento.</p>
+</div>
+<div id="controle-de-mudanças" class="section level3 hasAnchor" number="10.2.4">
+<h3><span class="header-section-number">10.2.4</span> Controle de Mudanças:<a href="gerência-de-configuração.html#controle-de-mudanças" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O processo de garantia de que as mudanças em sistemas e componentes sejam registradas e mantidas para que as mudanças sejam gerenciadas e todas as versões de componentes sejam identificadas e armazenadas por todo o tempo de vida do sistema. Isso geralmente envolve solicitação de mudança, avaliação, aprovação e implementação controlada das alterações. Um formulário de solicitação de mudança pode ser utilizado.</p>
+</div>
+<div id="auditoria-de-configuração" class="section level3 hasAnchor" number="10.2.5">
+<h3><span class="header-section-number">10.2.5</span> Auditoria de Configuração:<a href="gerência-de-configuração.html#auditoria-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Avaliações para garantir que os ICIs e seus registros correspondam à configuração real do software em um determinado momento.</p>
+</div>
+<div id="relatório-de-status" class="section level3 hasAnchor" number="10.2.6">
+<h3><span class="header-section-number">10.2.6</span> Relatório de Status:<a href="gerência-de-configuração.html#relatório-de-status" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Documentação e comunicação sobre o status dos ICIs e das mudanças realizadas.</p>
+</div>
+</div>
+<div id="processo-de-gerência-de-configuração" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Processo de Gerência de Configuração<a href="gerência-de-configuração.html#processo-de-gerência-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="planejamento-da-gc" class="section level3 hasAnchor" number="10.3.1">
+<h3><span class="header-section-number">10.3.1</span> Planejamento da GC:<a href="gerência-de-configuração.html#planejamento-da-gc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Definição das políticas, procedimentos e ferramentas a serem utilizadas para a GC.</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="69%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Etapa</strong></td>
+<td><strong>Descrição</strong></td>
+</tr>
+<tr class="even">
+<td><strong>1-Identificação da Configuração</strong></td>
+<td>Seleção dos itens de trabalho que serão controlados pela GC.</td>
+</tr>
+<tr class="odd">
+<td><strong>2-Controle de Mudanças</strong></td>
+<td><p>Implementação do processo para gerenciar solicitações de mudança, incluindo:</p>
+<p>Solicitação formal de alteração.</p>
+<p>Avaliação da alteração (impacto, custo, etc.).</p>
+<p>Aprovação da alteração (geralmente por um Grupo de Controle de Alterações).</p>
+<p>Implementação da alteração.</p>
+<p>Verificação da alteração.</p></td>
+</tr>
+<tr class="even">
+<td><strong>3-Liberação da Configuração</strong></td>
+<td>Preparação e disponibilização de versões específicas do software para teste, implantação ou entrega.</td>
+</tr>
+<tr class="odd">
+<td><strong>4-Auditoria e Relatório da Configuração</strong></td>
+<td>Verificação da conformidade com o plano de GC e comunicação do status da configuração.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ferramentas-de-gerência-de-configuração" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Ferramentas de Gerência de Configuração<a href="gerência-de-configuração.html#ferramentas-de-gerência-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Muitas ferramentas de gerenciamento de configurações foram desenvolvidas para dar suporte aos processos de GC. Elas variam desde ferramentas simples que oferecem suporte a uma única tarefa (como rastreamento de bugs) até conjuntos complexos e caros de ferramentas integradas que oferecem suporte a todas as atividades de GC. Exemplos de funcionalidades comuns em ferramentas de GC incluem:</p>
+<pre><code>    *   Armazenamento e gerenciamento de versões de arquivos.
+    *   Controle de acesso e permissões.
+    *   Rastreamento de mudanças e histórico.
+    *   Suporte a ramificações (branches) e merges.
+    *   Gerenciamento de solicitações de mudança.
+    *   Construção automatizada de sistemas.
+*   Ambientes de Desenvolvimento Colaborativo (CDEs) como GForge, OneDesk e Rational Team Concert contêm recursos de gerenciamento de projeto e código, incluindo funcionalidades de GC.</code></pre>
+</div>
+<div id="gc-em-contextos-ágeis-e-tradicionais" class="section level2 hasAnchor" number="10.5">
+<h2><span class="header-section-number">10.5</span> GC em Contextos Ágeis e Tradicionais<a href="gerência-de-configuração.html#gc-em-contextos-ágeis-e-tradicionais" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A necessidade de gerenciamento de configuração é fundamental para todos os grandes sistemas desenvolvidos por equipes. Métodos ágeis também desenvolveram suas próprias terminologias de GC, às vezes para distinguir a abordagem ágil dos métodos tradicionais. Mesmo em desenvolvimento ágil, onde a mudança é bem-vinda, a GC é essencial para manter a organização e o controle sobre o software em evolução.</p>
+</div>
+<div id="referências" class="section level2 hasAnchor" number="10.6">
+<h2><span class="header-section-number">10.6</span> Referências:<a href="gerência-de-configuração.html#referências" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Leitura dos Capítulos 25 de “Engenharia-de-software-9-ed-Ian-Sommerville.pdf” Leitura dos Capítulos 29 de “Engenharia-de-software-8-ed-roger-pressman.pdf”. * Explorar ferramentas de Gerência de Configuração como Git, SVN, etc.</p>
 
 </div>
 </div>
@@ -364,8 +453,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="alunos-2025.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="qualidade-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="revisão-para-np2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -396,7 +485,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/00-introducao.Rmd",
+"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/08-GerenciaConfiguracao.Rmd",
 "text": "Edit"
 },
 "history": {

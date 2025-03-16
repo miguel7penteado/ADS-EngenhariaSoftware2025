@@ -1,0 +1,29 @@
+# PROCESSOS E PADRÕES NA MANUTENÇÃO DE SOFTWARE
+
+(Making off da aula )
+
+## Processos de Manutenção
+
+### Fluxo do Processo de Manutenção
+
+Apresentar as etapas típicas envolvidas em um processo de manutenção, como identificação da necessidade de mudança, análise da solicitação, projeto da modificação, implementação, teste e implantação [Pressman, Sommerville]. 
+
+### Gerenciamento de Mudanças
+
+Discutir a importância de um processo formal de gerenciamento de mudanças para controlar as alterações aplicadas ao software durante a manutenção [Pressman, Sommerville]. O Princípio 6 da prática da engenharia de software é "Gerencie mudanças" [Pressman, 44]. O gerenciamento de configuração (abordado em nossa aula anterior) está intimamente ligado ao gerenciamento de mudanças na manutenção [Pressman, Sommerville]. 
+
+## Padrões de Desenvolvimento
+
+### Impacto na Manutenção
+
+Explicar como a adoção de padrões de desenvolvimento bem estabelecidos (arquiteturais, de projeto, de implementação) pode melhorar significativamente a manutenibilidade, promovendo consistência e compreensão do código [Pressman, Sommerville]. O projeto baseado em padrões é considerado [Pressman, 5, 13, 354]. 
+
+### Exemplos de Padrões Relevantes 
+
+Apresentar exemplos de padrões que favorecem a manutenibilidade, como padrões de projeto GoF (Observer [Sommerville, 107]), padrões arquiteturais (camadas [Pressman, 15]), etc. 
+
+## Padrões de Manutenção
+
+### Conceito e Exemplos
+
+Introduzir a ideia de padrões específicos para atividades de manutenção, como padrões de refatoração [Pressman, 12, 52] para melhorar a estrutura do código sem alterar seu comportamento externo. 

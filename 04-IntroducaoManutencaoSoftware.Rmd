@@ -1,0 +1,29 @@
+# Introdução à Manutenção de Software
+
+## 1- Manutenção: definição e características"
+
+### Definição de Manutenção de Software:
+
+O processo de modificação de um produto de software após a entrega, para corrigir defeitos, melhorar o desempenho ou outros atributos [Sommerville]. A manutenção é uma parte importante da evolução do software [Sommerville].
+
+### Natureza da Mudança:
+
+Discutir por que o software precisa ser mantido, incluindo correções de bugs, adaptação a novos ambientes, implementação de novos requisitos e manutenção preventiva [Sommerville, Pressman]. A Primeira Lei da Engenharia de Sistemas afirma que não importa em qual estágio do ciclo de vida, o sistema mudará [Sommerville - referindo-se à inevitabilidade da mudança].
+
+### Tipos de Manutenção:
+
+Apresentar as categorias comuns de manutenção, como corretiva, adaptativa, perfectiva e preventiva [Pressman]. O livro "ENGENHARIA DE SOFTWARE II.pdf" lista "Tipos de manutenção" como um subtópico dentro de "Manutenção de software".
+
+### Custos da Manutenção:
+
+Mencionar que os custos de manutenção podem frequentemente exceder os custos iniciais de desenvolvimento [Sommerville, Pressman].
+
+## 2- Introdução à Manutenibilidade
+
+### Definição Preliminar:
+
+Apresentar o conceito de manutenibilidade como a facilidade com que o software pode ser modificado [Sommerville, Pressman]. A manutenibilidade é um atributo essencial de um bom software [Sommerville] e um indicativo qualitativo da facilidade de corrigir, adaptar ou melhorar o software [Pressman, 74].
+
+### Importância da Manutenibilidade:
+
+Discutir por que a manutenibilidade é crucial para reduzir os custos e o esforço da manutenção a longo prazo [Sommerville, Pressman]. Qualidade e facilidade de manutenção são resultantes de um projeto bem feito [Pressman, 24].

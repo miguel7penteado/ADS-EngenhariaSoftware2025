@@ -1,0 +1,37 @@
+# ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO
+
+(Making Off)
+
+## Desenvolvimento Baseado em Componentes e Impactos na Manutenção
+
+### Conceito de Desenvolvimento Baseado em Componentes (DBC):
+
+Apresentar o DBC como uma abordagem que enfatiza a construção de sistemas a partir de componentes de software reutilizáveis [Pressman, Sommerville]. O desenvolvimento baseado em componentes é um modelo de processo especializado [Pressman, 9, 52].
+
+### Impactos na Manutenção:
+
+Discutir como o DBC pode influenciar a manutenção, facilitando a substituição, atualização ou reutilização de componentes, mas também introduzindo desafios relacionados à compatibilidade e dependências [Pressman].
+
+## Desenvolvimento Orientado a Aspectos e Impactos na Manutenção
+
+### Conceito de Desenvolvimento Orientado a Aspectos (DOA):
+
+Introduzir o DOA como uma técnica para modularizar interesses transversais (aspectos) que podem estar espalhados por vários módulos em um sistema orientado a objetos tradicional [Pressman, Sommerville]. O desenvolvimento de software orientado a aspectos é um modelo de processo especializado [Pressman, 9, 54].
+
+### Impactos na Manutenção:
+
+Explicar como o DOA pode melhorar a manutenibilidade ao isolar e gerenciar esses interesses transversais, tornando o código mais limpo e facilitando modificações em funcionalidades como logging, segurança ou tratamento de erros [Pressman, Sommerville].
+
+## Atividades de Apoio a Manutenção
+
+### Gerenciamento de Configuração na Manutenção:
+
+Reforçar a importância do GC (que discutimos em uma aula anterior) para rastrear e controlar as mudanças realizadas durante a manutenção [Pressman, Sommerville].
+
+### Reengenharia:
+
+Introduzir o conceito de reengenharia como uma forma de melhorar a manutenibilidade de sistemas legados através da reestruturação ou reimplementação [Pressman, Sommerville]. O Capítulo 36 do livro "Engenharia-de-software-8-ed-roger-pressman.pdf" trata de "Manutenção e reengenharia".
+
+### Testes de Regressão:
+
+Destacar a necessidade de testes de regressão para garantir que as modificações realizadas durante a manutenção não introduzam novos defeitos [Pressman, Sommerville].

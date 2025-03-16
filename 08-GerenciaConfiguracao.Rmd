@@ -1,0 +1,95 @@
+# Gerência de Configuração
+
+(aula em processo de edição)
+
+![](images/clipboard-871701020.png)
+
+## Introdução à Gerência de Configuração
+
+### Definição de Gerência de Configuração (GC):
+
+GC é o nome do processo geral de gerenciamento de um sistema de software em mudança. O objetivo do gerenciamento de configuração é apoiar o processo de integração do sistema para que todos os desenvolvedores possam acessar o código do projeto e os documentos relacionados de forma controlada, descobrir quais mudanças foram feitas, bem como compilar e ligar componentes para criar um sistema.
+
+### A Natureza da Mudança em Software:
+
+A mudança é uma realidade para grandes sistemas. As necessidades e requisitos organizacionais se alteram durante a vida útil de um sistema, bugs precisam ser reparados e os sistemas necessitam se adaptar às mudanças em seu ambiente. De fato, a Primeira Lei da Engenharia de Sistemas afirma que não importa em qual estágio do ciclo de vida, o sistema mudará.
+
+### Importância da GC:
+
+Sem o gerenciamento de configuração, as mudanças aplicadas ao sistema podem ocorrer de forma descontrolada, levando a inconsistências, perda de trabalho e dificuldades na manutenção e evolução do software. A GC garante que as mudanças sejam aplicadas ao sistema de uma forma controlada.
+
+## Elementos da Gerência de Configuração
+
+### Itens de Configuração de Software (ICIs)
+
+Os itens que compõem todas as informações produzidas como parte do processo de software são chamados coletivamente de configuração de software. Isso inclui programas de computador (código fonte e executável), produtos que descrevem os programas (documentação para diversos stakeholders) e dados ou conteúdo. Um ICI é um elemento de informação com nome, que pode variar desde um simples diagrama UML até um documento de projeto completo. Diferentes versões de um ICI podem existir.
+
+### Identificação:
+
+Cada ICI deve ter um nome único para permitir seu rastreamento e gerenciamento.
+
+### Controle de Versão:
+
+Suporte para manter o controle das diferentes versões de ICIs ao longo do tempo. Isso permite rastrear o histórico de mudanças, reverter para versões anteriores e gerenciar múltiplas linhas de desenvolvimento.
+
+### Controle de Mudanças:
+
+O processo de garantia de que as mudanças em sistemas e componentes sejam registradas e mantidas para que as mudanças sejam gerenciadas e todas as versões de componentes sejam identificadas e armazenadas por todo o tempo de vida do sistema. Isso geralmente envolve solicitação de mudança, avaliação, aprovação e implementação controlada das alterações. Um formulário de solicitação de mudança pode ser utilizado.
+
+### Auditoria de Configuração:
+
+Avaliações para garantir que os ICIs e seus registros correspondam à configuração real do software em um determinado momento.
+
+### Relatório de Status:
+
+Documentação e comunicação sobre o status dos ICIs e das mudanças realizadas.
+
+## Processo de Gerência de Configuração
+
+### Planejamento da GC:
+
+Definição das políticas, procedimentos e ferramentas a serem utilizadas para a GC.
+
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Etapa**                                   | **Descrição**                                                                                        |
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **1-Identificação da Configuração**         | Seleção dos itens de trabalho que serão controlados pela GC.                                         |
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **2-Controle de Mudanças**                  | Implementação do processo para gerenciar solicitações de mudança, incluindo:                         |
+|                                             |                                                                                                      |
+|                                             | Solicitação formal de alteração.                                                                     |
+|                                             |                                                                                                      |
+|                                             | Avaliação da alteração (impacto, custo, etc.).                                                       |
+|                                             |                                                                                                      |
+|                                             | Aprovação da alteração (geralmente por um Grupo de Controle de Alterações).                          |
+|                                             |                                                                                                      |
+|                                             | Implementação da alteração.                                                                          |
+|                                             |                                                                                                      |
+|                                             | Verificação da alteração.                                                                            |
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **3-Liberação da Configuração**             | Preparação e disponibilização de versões específicas do software para teste, implantação ou entrega. |
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **4-Auditoria e Relatório da Configuração** | Verificação da conformidade com o plano de GC e comunicação do status da configuração.               |
++---------------------------------------------+------------------------------------------------------------------------------------------------------+
+
+## Ferramentas de Gerência de Configuração
+
+Muitas ferramentas de gerenciamento de configurações foram desenvolvidas para dar suporte aos processos de GC. Elas variam desde ferramentas simples que oferecem suporte a uma única tarefa (como rastreamento de bugs) até conjuntos complexos e caros de ferramentas integradas que oferecem suporte a todas as atividades de GC. Exemplos de funcionalidades comuns em ferramentas de GC incluem:
+
+```         
+    *   Armazenamento e gerenciamento de versões de arquivos.
+    *   Controle de acesso e permissões.
+    *   Rastreamento de mudanças e histórico.
+    *   Suporte a ramificações (branches) e merges.
+    *   Gerenciamento de solicitações de mudança.
+    *   Construção automatizada de sistemas.
+*   Ambientes de Desenvolvimento Colaborativo (CDEs) como GForge, OneDesk e Rational Team Concert contêm recursos de gerenciamento de projeto e código, incluindo funcionalidades de GC.
+```
+
+## GC em Contextos Ágeis e Tradicionais
+
+A necessidade de gerenciamento de configuração é fundamental para todos os grandes sistemas desenvolvidos por equipes. Métodos ágeis também desenvolveram suas próprias terminologias de GC, às vezes para distinguir a abordagem ágil dos métodos tradicionais. Mesmo em desenvolvimento ágil, onde a mudança é bem-vinda, a GC é essencial para manter a organização e o controle sobre o software em evolução.
+
+## Referências:
+
+Leitura dos Capítulos 25 de "Engenharia-de-software-9-ed-Ian-Sommerville.pdf" Leitura dos Capítulos 29 de "Engenharia-de-software-8-ed-roger-pressman.pdf". \* Explorar ferramentas de Gerência de Configuração como Git, SVN, etc.

@@ -38,7 +38,7 @@ Estas anotações são apenas lembretes das aulas expostas em sala, durante a di
 ![](images/livros/engenharia_software_pressman.jpg)
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Autor(es)** | [Roger S. Pressman](https://www.indicalivros.com/autores?q=Roger%20S.%20Pressman) |
 | **Editora** | Pearson |
 | **Idioma** | Português |
@@ -65,54 +65,130 @@ Calendário das aulas
 
 ##### FEVEREIRO 2025
 
-|                 |               |                |
-|-----------------|---------------|----------------|
-| Data            | Dia da semana | Aulas          |
-| 4 de fevereiro  | Terça-feira   |                |
-| 11 de fevereiro | Terça-feira   |                |
-| 18 de fevereiro | Terça-feira   | Aula Inaugural |
-| 25 de fevereiro | Terça-feira   |                |
+|                 |               |                         |
+|-----------------|---------------|-------------------------|
+| Data            | Dia da semana | Aulas                   |
+| 4 de fevereiro  | Terça-feira   |   Recesso               |
+| 11 de fevereiro | Terça-feira   |   Recesso               |
+| 18 de fevereiro | Terça-feira   | Aula Inaugural          |
+| 25 de fevereiro | Terça-feira   | Qualidade de Software I |
 
 ##### MARÇO 2025
 
-|             |               |       |
-|-------------|---------------|-------|
-| Data        | Dia da semana | Aulas |
-| 4 de março  | Terça-feira   |       |
-| 11 de março | Terça-feira   |       |
-| 18 de março | Terça-feira   |       |
-| 25 de março | Terça-feira   |       |
+|             |               |                                        |
+|-------------|---------------|----------------------------------------|
+| Data        | Dia da semana | Aulas                                  |
+| 4 de março  | Terça-feira   | Carnaval                               |
+| 11 de março | Terça-feira   | Verificação e Validação de Software I  |
+| 18 de março | Terça-feira   | Verificação e Validação de Software II |
+| 25 de março | Terça-feira   |                                        |
 
 ##### ABRIL DE 2025
 
-|             |               |       |
-|-------------|---------------|-------|
-| Data        | Dia da semana | Aulas |
-| 1 de abril  | Terça-feira   |       |
-| 8 de abril  | Terça-feira   |       |
-| 15 de abril | Terça-feira   |       |
-| 22 de abril | Terça-feira   |       |
-| 29 de abril | Terça-feira   |       |
+|             |               |                          |
+|-------------|---------------|--------------------------|
+| Data        | Dia da semana | Aulas                    |
+| 1 de abril  | Terça-feira   | Prova NP1                |
+| 8 de abril  | Terça-feira   |Manutenção de software I  |
+| 15 de abril | Terça-feira   |Manutenção de software II |
+| 22 de abril | Terça-feira   |Manutenção de software III|
+| 29 de abril | Terça-feira   |Manutenção de software IV |
 
 ##### MAIO DE 2025
 
-|            |               |       |
-|------------|---------------|-------|
-| Data       | Dia da semana | Aulas |
-| 6 de maio  | Terça-feira   |       |
-| 13 de maio | Terça-feira   |       |
-| 20 de maio | Terça-feira   |       |
-| 27 de maio | Terça-feira   |       |
+|            |               |                        |
+|------------|---------------|------------------------|
+| Data       | Dia da semana | Aulas                  |
+| 6 de maio  | Terça-feira   |Gerência de Configuração|
+| 13 de maio | Terça-feira   | Revisão                |
+| 20 de maio | Terça-feira   | Prova NP2              |
+| 27 de maio | Terça-feira   | Substitutiva           |
 
 ##### JUNHO DE 2025
 
-|             |               |       |
-|-------------|---------------|-------|
-| Data        | Dia da semana | Aulas |
-| 3 de junho  | Terça-feira   |       |
-| 10 de junho | Terça-feira   |       |
-| 17 de junho | Terça-feira   |       |
-| 24 de junho | Terça-feira   |       |
+|             |               |         |
+|-------------|---------------|---------|
+| Data        | Dia da semana | Aulas   |
+| 3 de junho  | Terça-feira   | Plantão |
+| 10 de junho | Terça-feira   | Plantão |
+| 17 de junho | Terça-feira   | Exame   |
+| 24 de junho | Terça-feira   |         |
+
+# Alunos 2025
+
+### Turma DS2P40
+
+| Matrícula | Nome do Aluno                |
+|-----------|------------------------------|
+| F35HFJ-1  | BEATRIZ ALMEIDA DA SILVA     |
+| R54885-6  | BRENO SOUZA MASCARENHAS      |
+| R19267-9  | CARLOS EDUARDO DA S GALDINO  |
+| R150FH-8  | DANILO LUCAS LOURENCO        |
+| G740IF-9  | GUSTAVO ALCANTARA NOBRE      |
+| G76IBD-7  | HELLEN REGINA B DOS SANTOS   |
+| F35EBD-4  | JOAO ALFREDO DA S BRENNER    |
+| R11835-5  | LUCAS ROSSE                  |
+| G839GC-6  | PABLO HENRIQUE C ARAUJO      |
+| G61ICI-3  | THIAGO VERNIER LOUREIRO MAIA |
+
+### Turma DS3P40
+
+| Matrícula | Nome do Aluno                  |
+|-----------|--------------------------------|
+| T736DG-3  | ANDRE LUIS RIGUEIRA ZANA       |
+| R06534-0  | BIANCA CAVALCANTE DOS SANTOS   |
+| G964AA-5  | CIBELE MARIA BARBOSA           |
+| R1007A-0  | DANIEL GOES CARVALHO SILVA     |
+| G98399-8  | DAVI PEREIRA DO VALE           |
+| F3567F-6  | EDUARDO MONTINO LACERDA        |
+| F35973-5  | FELIPE DE CAMPOS MOREIRA ALVES |
+| R0622A-5  | FERNANDA VICTORIA D LO VACCO   |
+| R091EC-3  | GABRIEL ALVES BATISTA          |
+| G989DC-6  | GABRIEL PINHEIRO SOUZA         |
+| R08565-1  | GIOVANNY GOMES BRANDAO         |
+| R055AF-2  | GUILHERME NASCIMENTO R BARBOSA |
+| N088EG-0  | GUILHERME R DE OLIVEIRA        |
+| R06229-5  | GUSTAVO SILVA DOS SANTOS       |
+| R07095-6  | HENRIQUE MOREIRA BOTELLA       |
+| R0823C-0  | HENRIQUE P DOS S FRANCISCO     |
+| G98BGB-2  | IGOR XAVIER DE MATTOS          |
+| G90JDE-2  | JOAO RICARDO DA SILVA JUNIOR   |
+| F3590G-2  | JOAO RICK GALDINO PEREIRA      |
+| R0567D-6  | JOAO VICTOR CARVALHO DE SOUZA  |
+| G9756E-6  | JOAO VICTOR DA SILVA MACHADO   |
+| G0249I-6  | JULIANA BORGES MOURA           |
+| F35937-9  | MATHEUS SERVULO CAJE           |
+| R10099-5  | MELISSA SCARPINATTI B DA SILVA |
+| G8832G-1  | RENAN PRAZERES CLEMENTINO      |
+| F35CDF-2  | SERGIO ALEXANDRE A DO AMARAL   |
+
+### Turma DS3Q40
+
+Com base nas informações da fonte **"DS3Q40.pdf"** e em nossa conversa anterior, apresento novamente a tabela com a coluna **Matrícula** (RA) e **Nome do Aluno** da turma **DS3Q40**:
+
+| Matrícula | Nome do Aluno                  |
+|-----------|--------------------------------|
+| G003II-9  | ALEX LIMA SILVA                |
+| G0327I-4  | AMANDA SIMONETTO DIAS          |
+| G02JDI-5  | ATILA WILLIAM F DE BARROS      |
+| R096DH-9  | BRENDA RUOTTI                  |
+| R0087I-2  | GUSTAVO SILVA DE ARAUJO        |
+| G99JAH-4  | JESSICA SANTOS ANJOS           |
+| G8811G-1  | KAIKY ALVES MONTEIRO           |
+| G99319-5  | KLEBER WENDEL DE ALMEIDA RIBAS |
+| G90EJA-1  | LEONARDO OLIVEIRA DOS SANTOS   |
+| G99ACJ-8  | LUCAS SILVA PINTO DE ASSIS     |
+| G99843-0  | MATHEUS ALVES LIMA             |
+| G996FJ-4  | MATHEUS DE OLIVEIRA MONTEIRO   |
+| G99JFJ-7  | MATHEUS RIBEIRO DE CAMPOS      |
+| G9931A-5  | PEDRO HENRIQUE CAMPOS LEAL     |
+| G012IF-3  | PEDRO PAULO VITALINO           |
+| R094GC-7  | RENAN DOS SANTOS FERREIRA      |
+| G96JFG-6  | RICHARD TRISTAN P GARCIA       |
+| G92GHH-8  | RODRIGO SANTOS ARAUJO          |
+| G977HG-0  | SIDNEI SERRAO DA SILVA         |
+| G003IC-0  | THIAGO DA SILVA SEIXEIRO       |
+| G99566-0  | YASMIN HELENA DE OLIVEIRA FERN |
 
 ```{r, eval=FALSE}
 bookdown::render_book()

@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 6 Introdução à Manutenção de Software | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 6 Introdução à Manutenção de Software | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 6 Introdução à Manutenção de Software | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="alunos-2025.html"/>
-<link rel="next" href="qualidade-de-software.html"/>
+<link rel="prev" href="estudo-da-entrega-01---erp-agrotec---módulo-cadastros.html"/>
+<link rel="next" href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,22 +341,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução-a-disciplina-de-engenharia-de-software" class="section level1 unnumbered hasAnchor">
-<h1>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#introdução-a-disciplina-de-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?</p>
-<div id="o-que-é-engenharia-de-software" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> O que é ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/pressman.jpg" width="92" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.</em> (<strong><em>Roger S. Pressman</em></strong>)</p>
-</blockquote>
-<p><img src="images/sommerville.jpg" width="102" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.</em> (<strong>Ian Sommerville</strong>)</p>
-</blockquote>
-<p>É atribuído a <strong>Margaret Hamilton,</strong> desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.</p>
-<p><img src="images/Margaret_Hamilton.jpg" style="width:50.0%" /></p>
+<div id="introdução-à-manutenção-de-software" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Aula 6</span> Introdução à Manutenção de Software<a href="introdução-à-manutenção-de-software.html#introdução-à-manutenção-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="manutenção-definição-e-características" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> 1- Manutenção: definição e características”<a href="introdução-à-manutenção-de-software.html#manutenção-definição-e-características" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="definição-de-manutenção-de-software" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Definição de Manutenção de Software:<a href="introdução-à-manutenção-de-software.html#definição-de-manutenção-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O processo de modificação de um produto de software após a entrega, para corrigir defeitos, melhorar o desempenho ou outros atributos [Sommerville]. A manutenção é uma parte importante da evolução do software [Sommerville].</p>
+</div>
+<div id="natureza-da-mudança" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Natureza da Mudança:<a href="introdução-à-manutenção-de-software.html#natureza-da-mudança" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Discutir por que o software precisa ser mantido, incluindo correções de bugs, adaptação a novos ambientes, implementação de novos requisitos e manutenção preventiva [Sommerville, Pressman]. A Primeira Lei da Engenharia de Sistemas afirma que não importa em qual estágio do ciclo de vida, o sistema mudará [Sommerville - referindo-se à inevitabilidade da mudança].</p>
+</div>
+<div id="tipos-de-manutenção" class="section level3 hasAnchor" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Tipos de Manutenção:<a href="introdução-à-manutenção-de-software.html#tipos-de-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Apresentar as categorias comuns de manutenção, como corretiva, adaptativa, perfectiva e preventiva [Pressman]. O livro “ENGENHARIA DE SOFTWARE II.pdf” lista “Tipos de manutenção” como um subtópico dentro de “Manutenção de software”.</p>
+</div>
+<div id="custos-da-manutenção" class="section level3 hasAnchor" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Custos da Manutenção:<a href="introdução-à-manutenção-de-software.html#custos-da-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Mencionar que os custos de manutenção podem frequentemente exceder os custos iniciais de desenvolvimento [Sommerville, Pressman].</p>
+</div>
+</div>
+<div id="introdução-à-manutenibilidade" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> 2- Introdução à Manutenibilidade<a href="introdução-à-manutenção-de-software.html#introdução-à-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="definição-preliminar" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Definição Preliminar:<a href="introdução-à-manutenção-de-software.html#definição-preliminar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Apresentar o conceito de manutenibilidade como a facilidade com que o software pode ser modificado [Sommerville, Pressman]. A manutenibilidade é um atributo essencial de um bom software [Sommerville] e um indicativo qualitativo da facilidade de corrigir, adaptar ou melhorar o software [Pressman, 74].</p>
+</div>
+<div id="importância-da-manutenibilidade" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Importância da Manutenibilidade:<a href="introdução-à-manutenção-de-software.html#importância-da-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Discutir por que a manutenibilidade é crucial para reduzir os custos e o esforço da manutenção a longo prazo [Sommerville, Pressman]. Qualidade e facilidade de manutenção são resultantes de um projeto bem feito [Pressman, 24].</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -364,8 +380,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="alunos-2025.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="qualidade-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="estudo-da-entrega-01---erp-agrotec---módulo-cadastros.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -396,7 +412,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/00-introducao.Rmd",
+"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/04-IntroducaoManutencaoSoftware.Rmd",
 "text": "Edit"
 },
 "history": {

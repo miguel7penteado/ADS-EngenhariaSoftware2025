@@ -27,61 +27,6 @@
 */
 
 
-
-/*
-
-| Matrícula    | Nome do Aluno                      |
-|----------------|--------------------------------------|
-| G003II-9       | ALEX LIMA SILVA                    |
-| G0327I-4       | AMANDA SIMONETTO DIAS              |
-| G02JDI-5       | ATILA WILLIAM F DE BARROS          |
-| R096DH-9       | BRENDA RUOTTI                      |
-| R0087I-2       | GUSTAVO SILVA DE ARAUJO            |
-| G99JAH-4       | JESSICA SANTOS ANJOS               |
-| G8811G-1       | KAIKY ALVES MONTEIRO               |
-| G99319-5       | KLEBER WENDEL DE ALMEIDA RIBAS     |
-| G90EJA-1       | LEONARDO OLIVEIRA DOS SANTOS       |
-| G99ACJ-8       | LUCAS SILVA PINTO DE ASSIS         |
-| G99843-0       | MATHEUS ALVES LIMA                 |
-| G996FJ-4       | MATHEUS DE OLIVEIRA MONTEIRO       |
-| G99JFJ-7       | MATHEUS RIBEIRO DE CAMPOS          |
-| G9931A-5       | PEDRO HENRIQUE CAMPOS LEAL         |
-| G012IF-3       | PEDRO PAULO VITALINO               |
-| R094GC-7       | RENAN DOS SANTOS FERREIRA          |
-| G96JFG-6       | RICHARD TRISTAN P GARCIA           |
-| G92GHH-8       | RODRIGO SANTOS ARAUJO              |
-| G977HG-0       | SIDNEI SERRAO DA SILVA             |
-| G003IC-0       | THIAGO DA SILVA SEIXEIRO           |
-| G99566-0       | YASMIN HELENA DE OLIVEIRA FERN     |
-
-*/
-
-
-CREATE OR REPLACE FUNCTION recriar_banco_dinamicamente(registro_academico_aluno text)
-RETURNS bool
-LANGUAGE plpgsql
-AS $function$
-declare    
-    sql_apagar_banco text;
-    sql_criar_banco text;
-begin
-    
-    sql_apagar_banco   = 'DROP   DATABASE IF EXISTS "banco-de-dados-%s'; 
-    sql_criar_banco    = 'CREATE DATABASE IF EXISTS "banco-de-dados-%s';
-    
-    for registro_academico_aluno in 1..10 
-    loop
-        EXECUTE format(sql_apagar_banco, registro_academico_aluno);
-        EXECUTE format(sql_criar_banco, registro_academico_aluno);
-    end loop;
-
-    return true; 
-
-END;
-$function$;
-
-
-
 DO
 $criacao_alunos_ads_engenharia_software_2_turma_DS3Q40$
 DECLARE
@@ -144,9 +89,7 @@ BEGIN
 
       raise notice 'Criando usuário RA %, nome %', registro_academico[contador], nome_aluno[contador] ;
 	  execute 'CREATE ROLE "'|| registro_academico[contador] ||'" LOGIN PASSWORD '''|| registro_academico[contador] ||'''  ' || permissoes ;
-      execute 'COMMENT ON ROLE "'|| registro_academico[contador] ||'" IS ''Usuario  '|| nome_aluno[contador] ||'  RA '|| registro_academico[contador] ||' turma '|| turma ||' ''';
-	  
-	  execute recriar_banco_dinamicamente(registro_academico);
+      execute 'COMMENT ON ROLE "'|| registro_academico[contador] ||'" IS ''Usuario  '|| nome_aluno[contador] ||'  RA '|| registro_academico[contador] ||' turma '|| turma ||' ''';	  
 	  
    END LOOP;   
 
@@ -155,3 +98,65 @@ END
 $criacao_alunos_ads_engenharia_software_2_turma_DS3Q40$
 ;
 
+
+drop table if exists bases;
+
+create table bases
+(
+	comando_criar text unique,
+	comando_apagar text unique
+);
+
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G003II-9";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G0327I-4";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G02JDI-5";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-R096DH-9";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-R0087I-2";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99JAH-4";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G8811G-1";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99319-5";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G90EJA-1";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99ACJ-8";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99843-0";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G996FJ-4";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99JFJ-7";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G9931A-5";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G012IF-3";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-R094GC-7";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G96JFG-6";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G92GHH-8";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G977HG-0";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G003IC-0";');
+insert into bases(comando_apagar) values ('DROP   DATABASE IF EXISTS "banco-de-dados-G99566-0";');
+
+
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G003II-9" WITH OWNER = "G003II-9" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G0327I-4" WITH OWNER = "G0327I-4" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G02JDI-5" WITH OWNER = "G02JDI-5" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-R096DH-9" WITH OWNER = "R096DH-9" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-R0087I-2" WITH OWNER = "R0087I-2" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99JAH-4" WITH OWNER = "G99JAH-4" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G8811G-1" WITH OWNER = "G8811G-1" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99319-5" WITH OWNER = "G99319-5" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G90EJA-1" WITH OWNER = "G90EJA-1" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99ACJ-8" WITH OWNER = "G99ACJ-8" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99843-0" WITH OWNER = "G99843-0" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G996FJ-4" WITH OWNER = "G996FJ-4" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99JFJ-7" WITH OWNER = "G99JFJ-7" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G9931A-5" WITH OWNER = "G9931A-5" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G012IF-3" WITH OWNER = "G012IF-3" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-R094GC-7" WITH OWNER = "R094GC-7" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G96JFG-6" WITH OWNER = "G96JFG-6" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G92GHH-8" WITH OWNER = "G92GHH-8" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G977HG-0" WITH OWNER = "G977HG-0" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G003IC-0" WITH OWNER = "G003IC-0" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+insert into bases(comando_criar) values ('CREATE DATABASE "banco-de-dados-G99566-0" WITH OWNER = "G99566-0" ENCODING = ''UTF8'' TABLESPACE = pg_default  CONNECTION LIMIT = -1;');
+
+
+CREATE DATABASE "banco-de-dados-G003II-9" WITH OWNER = "G003II-9" ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8' LOCALE_PROVIDER = 'libc' TABLESPACE = pg_default   CONNECTION LIMIT = -1  IS_TEMPLATE = False;
+
+    
+    
+    
+    
+banco-de-dados-G99566-0    Banco de dados de YASMIN HELENA DE OLIVEIRA FERN 

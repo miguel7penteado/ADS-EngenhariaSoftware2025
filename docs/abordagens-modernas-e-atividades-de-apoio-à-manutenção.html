@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 9 ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 9 ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 9 ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="alunos-2025.html"/>
-<link rel="next" href="qualidade-de-software.html"/>
+<link rel="prev" href="processos-e-padrões-na-manutenção-de-software.html"/>
+<link rel="next" href="gerência-de-configuração.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,22 +341,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução-a-disciplina-de-engenharia-de-software" class="section level1 unnumbered hasAnchor">
-<h1>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#introdução-a-disciplina-de-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?</p>
-<div id="o-que-é-engenharia-de-software" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> O que é ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/pressman.jpg" width="92" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.</em> (<strong><em>Roger S. Pressman</em></strong>)</p>
-</blockquote>
-<p><img src="images/sommerville.jpg" width="102" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.</em> (<strong>Ian Sommerville</strong>)</p>
-</blockquote>
-<p>É atribuído a <strong>Margaret Hamilton,</strong> desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.</p>
-<p><img src="images/Margaret_Hamilton.jpg" style="width:50.0%" /></p>
+<div id="abordagens-modernas-e-atividades-de-apoio-à-manutenção" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Aula 9</span> ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#abordagens-modernas-e-atividades-de-apoio-à-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>(Making Off)</p>
+<div id="desenvolvimento-baseado-em-componentes-e-impactos-na-manutenção" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Desenvolvimento Baseado em Componentes e Impactos na Manutenção<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#desenvolvimento-baseado-em-componentes-e-impactos-na-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="conceito-de-desenvolvimento-baseado-em-componentes-dbc" class="section level3 hasAnchor" number="9.1.1">
+<h3><span class="header-section-number">9.1.1</span> Conceito de Desenvolvimento Baseado em Componentes (DBC):<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#conceito-de-desenvolvimento-baseado-em-componentes-dbc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Apresentar o DBC como uma abordagem que enfatiza a construção de sistemas a partir de componentes de software reutilizáveis [Pressman, Sommerville]. O desenvolvimento baseado em componentes é um modelo de processo especializado [Pressman, 9, 52].</p>
+</div>
+<div id="impactos-na-manutenção" class="section level3 hasAnchor" number="9.1.2">
+<h3><span class="header-section-number">9.1.2</span> Impactos na Manutenção:<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#impactos-na-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Discutir como o DBC pode influenciar a manutenção, facilitando a substituição, atualização ou reutilização de componentes, mas também introduzindo desafios relacionados à compatibilidade e dependências [Pressman].</p>
+</div>
+</div>
+<div id="desenvolvimento-orientado-a-aspectos-e-impactos-na-manutenção" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Desenvolvimento Orientado a Aspectos e Impactos na Manutenção<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#desenvolvimento-orientado-a-aspectos-e-impactos-na-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="conceito-de-desenvolvimento-orientado-a-aspectos-doa" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Conceito de Desenvolvimento Orientado a Aspectos (DOA):<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#conceito-de-desenvolvimento-orientado-a-aspectos-doa" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Introduzir o DOA como uma técnica para modularizar interesses transversais (aspectos) que podem estar espalhados por vários módulos em um sistema orientado a objetos tradicional [Pressman, Sommerville]. O desenvolvimento de software orientado a aspectos é um modelo de processo especializado [Pressman, 9, 54].</p>
+</div>
+<div id="impactos-na-manutenção-1" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> Impactos na Manutenção:<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#impactos-na-manutenção-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Explicar como o DOA pode melhorar a manutenibilidade ao isolar e gerenciar esses interesses transversais, tornando o código mais limpo e facilitando modificações em funcionalidades como logging, segurança ou tratamento de erros [Pressman, Sommerville].</p>
+</div>
+</div>
+<div id="atividades-de-apoio-a-manutenção" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Atividades de Apoio a Manutenção<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#atividades-de-apoio-a-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gerenciamento-de-configuração-na-manutenção" class="section level3 hasAnchor" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Gerenciamento de Configuração na Manutenção:<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#gerenciamento-de-configuração-na-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Reforçar a importância do GC (que discutimos em uma aula anterior) para rastrear e controlar as mudanças realizadas durante a manutenção [Pressman, Sommerville].</p>
+</div>
+<div id="reengenharia" class="section level3 hasAnchor" number="9.3.2">
+<h3><span class="header-section-number">9.3.2</span> Reengenharia:<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#reengenharia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Introduzir o conceito de reengenharia como uma forma de melhorar a manutenibilidade de sistemas legados através da reestruturação ou reimplementação [Pressman, Sommerville]. O Capítulo 36 do livro “Engenharia-de-software-8-ed-roger-pressman.pdf” trata de “Manutenção e reengenharia”.</p>
+</div>
+<div id="testes-de-regressão" class="section level3 hasAnchor" number="9.3.3">
+<h3><span class="header-section-number">9.3.3</span> Testes de Regressão:<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#testes-de-regressão" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Destacar a necessidade de testes de regressão para garantir que as modificações realizadas durante a manutenção não introduzam novos defeitos [Pressman, Sommerville].</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -364,8 +388,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="alunos-2025.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="qualidade-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="processos-e-padrões-na-manutenção-de-software.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gerência-de-configuração.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -396,7 +420,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/00-introducao.Rmd",
+"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/07-AtividadesApoioManutencao.Rmd",
 "text": "Edit"
 },
 "history": {

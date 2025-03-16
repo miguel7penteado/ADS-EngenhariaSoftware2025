@@ -13,8 +13,8 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
-  geometry: "a4paper,margin=2cm"
+  #keep_tex: no
+  #geometry: "a4paper,margin=2cm"
 bookdown::epub_book:
   fig_width: 5
   fig_height: 4

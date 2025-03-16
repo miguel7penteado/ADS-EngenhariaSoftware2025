@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 7 APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 7 APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 7 APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="alunos-2025.html"/>
-<link rel="next" href="qualidade-de-software.html"/>
+<link rel="prev" href="introdução-à-manutenção-de-software.html"/>
+<link rel="next" href="processos-e-padrões-na-manutenção-de-software.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,22 +341,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução-a-disciplina-de-engenharia-de-software" class="section level1 unnumbered hasAnchor">
-<h1>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#introdução-a-disciplina-de-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Do que trata esta disciplina e o que quer dizer o termo que dá nome a ela ?</p>
-<div id="o-que-é-engenharia-de-software" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> O que é ENGENHARIA DE SOFTWARE<a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/pressman.jpg" width="92" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é o processo de desenvolvimento de programas de computador, estruturas de dados e documentos.</em> (<strong><em>Roger S. Pressman</em></strong>)</p>
-</blockquote>
-<p><img src="images/sommerville.jpg" width="102" /></p>
-<blockquote>
-<p><strong>Engenharia de Software</strong> <em>é uma disciplina de engenharia que se preocupa com todo o processo de produção de software. Isso inclui desde a especificação do sistema até a sua manutenção.</em> (<strong>Ian Sommerville</strong>)</p>
-</blockquote>
-<p>É atribuído a <strong>Margaret Hamilton,</strong> desenvolvedora do programa de navegação da APOLLO 11 a criação do termo ENGENHARIA DE SOFTWARE.</p>
-<p><img src="images/Margaret_Hamilton.jpg" style="width:50.0%" /></p>
+<div id="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Aula 7</span> APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="manutenibilidade" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Manutenibilidade<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="atributos-da-manutenibilidade" class="section level3 hasAnchor" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Atributos da Manutenibilidade:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#atributos-da-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Detalhar as características que influenciam a manutenibilidade, como modularidade, clareza do código, documentação adequada, complexidade, acoplamento e coesão [Pressman, Sommerville]. A boa prática de engenharia de software demanda modularidade efetiva, com alta coesão e baixo acoplamento [Pressman, 45].</p>
+</div>
+<div id="métricas-de-manutenibilidade" class="section level3 hasAnchor" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Métricas de Manutenibilidade:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#métricas-de-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Introduzir a ideia de que a manutenibilidade pode ser avaliada e até mesmo medida através de métricas de software [Pressman, Sommerville]. O livro “Engenharia-de-software-8-ed-roger-pressman.pdf” menciona “Métricas para manutenção” no Capítulo 30.</p>
+</div>
+</div>
+<div id="técnicas-de-desenvolvimento-para-a-manutenibilidade" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Técnicas de Desenvolvimento para a Manutenibilidade<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#técnicas-de-desenvolvimento-para-a-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="princípios-de-projeto" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Princípios de Projeto:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#princípios-de-projeto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Discutir como princípios de projeto como separação de interesses, abstração, encapsulamento e baixo acoplamento impactam positivamente a manutenibilidade [Pressman, Sommerville]. A separação de interesses é um princípio-chave de projeto e implementação de software [Sommerville, 127].</p>
+</div>
+<div id="qualidade-do-código" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Qualidade do Código:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#qualidade-do-código" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Enfatizar a importância de práticas de codificação limpa, convenções de estilo consistentes e evitar construções complexas para facilitar a compreensão e modificação do código.</p>
+</div>
+<div id="documentação" class="section level3 hasAnchor" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> Documentação:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#documentação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ressaltar a necessidade de documentação interna (comentários no código) e externa (manuais, diagramas de projeto) para auxiliar na manutenção [Sommerville, Pressman].</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -364,8 +376,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="alunos-2025.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="qualidade-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introdução-à-manutenção-de-software.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="processos-e-padrões-na-manutenção-de-software.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -396,7 +408,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/00-introducao.Rmd",
+"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/05-AprofundandoManutenibilidadeDesenvolvimento.Rmd",
 "text": "Edit"
 },
 "history": {
