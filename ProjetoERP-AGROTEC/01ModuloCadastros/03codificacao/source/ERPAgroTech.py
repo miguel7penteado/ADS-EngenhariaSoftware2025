@@ -15,6 +15,7 @@ _ = gettext.gettext
 
 
 from CadastroClientes import TipoCadastroClientes
+from CadastroFornecedores1 import TipoCadastroFornecedores
 
 ###########################################################################
 ## Class TipoJanelaPrincipal
@@ -95,7 +96,10 @@ class TipoJanelaPrincipal ( wx.Frame ):
         
 
     def EventoAbrePainelFornecedores( self, event ):
-        event.Skip()
+        janelaFornecedores = TipoCadastroFornecedores(None)
+        #janelaClientes.MakeModal()
+        janelaFornecedores.Show()
+        
 
     def EventoAbrePainelProdutos( self, event ):
         event.Skip()
