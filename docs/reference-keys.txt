@@ -31,6 +31,7 @@ família-nbr-iso-9126
 família-nbr-iso-12207
 família-nbr-iso-25000
 exercício-de-fixação
+testes
 repostas-dos-testes
 verificação-de-validação-de-software
 verificação-de-softare

@@ -19,26 +19,26 @@ github-repo: rstudio/bookdown-demo
 
 Estas anotações são apenas lembretes das aulas expostas em sala, durante a disciplina de ENGENHARIA DE SOFTWARE.
 
-## ACESSO AO GITBOOK CELULAR
+### ACESSO AO GITBOOK CELULAR
 
-## <https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025>
+### <https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025>
 
 ![](images/clipboard-3692082511.png)
 
-## APP EPUB ANDROID
+### APP EPUB ANDROID
 
-## **Moon+ Reader**
+### **Moon+ Reader**
 
 ![](images/qrcode/leitor_epub/MoonReaderPlus.jpg)
 
-# Livros Texto da Disciplina
+### Livros Texto da Disciplina
 
 #### "Engenharia de Software" do autor "Roger S Pressman"
 
 ![](images/livros/engenharia_software_pressman.jpg)
 
 |  |  |
-|------------------------------------|------------------------------------|
+|----|----|
 | **Autor(es)** | [Roger S. Pressman](https://www.indicalivros.com/autores?q=Roger%20S.%20Pressman) |
 | **Editora** | Pearson |
 | **Idioma** | Português |
@@ -68,8 +68,8 @@ Calendário das aulas
 |                 |               |                         |
 |-----------------|---------------|-------------------------|
 | Data            | Dia da semana | Aulas                   |
-| 4 de fevereiro  | Terça-feira   |   Recesso               |
-| 11 de fevereiro | Terça-feira   |   Recesso               |
+| 4 de fevereiro  | Terça-feira   | Recesso                 |
+| 11 de fevereiro | Terça-feira   | Recesso                 |
 | 18 de fevereiro | Terça-feira   | Aula Inaugural          |
 | 25 de fevereiro | Terça-feira   | Qualidade de Software I |
 
@@ -85,24 +85,24 @@ Calendário das aulas
 
 ##### ABRIL DE 2025
 
-|             |               |                          |
-|-------------|---------------|--------------------------|
-| Data        | Dia da semana | Aulas                    |
-| 1 de abril  | Terça-feira   | Prova NP1                |
-| 8 de abril  | Terça-feira   |Manutenção de software I  |
-| 15 de abril | Terça-feira   |Manutenção de software II |
-| 22 de abril | Terça-feira   |Manutenção de software III|
-| 29 de abril | Terça-feira   |Manutenção de software IV |
+|             |               |                            |
+|-------------|---------------|----------------------------|
+| Data        | Dia da semana | Aulas                      |
+| 1 de abril  | Terça-feira   | Prova NP1                  |
+| 8 de abril  | Terça-feira   | Manutenção de software I   |
+| 15 de abril | Terça-feira   | Manutenção de software II  |
+| 22 de abril | Terça-feira   | Manutenção de software III |
+| 29 de abril | Terça-feira   | Manutenção de software IV  |
 
 ##### MAIO DE 2025
 
-|            |               |                        |
-|------------|---------------|------------------------|
-| Data       | Dia da semana | Aulas                  |
-| 6 de maio  | Terça-feira   |Gerência de Configuração|
-| 13 de maio | Terça-feira   | Revisão                |
-| 20 de maio | Terça-feira   | Prova NP2              |
-| 27 de maio | Terça-feira   | Substitutiva           |
+|            |               |                          |
+|------------|---------------|--------------------------|
+| Data       | Dia da semana | Aulas                    |
+| 6 de maio  | Terça-feira   | Gerência de Configuração |
+| 13 de maio | Terça-feira   | Revisão                  |
+| 20 de maio | Terça-feira   | Prova NP2                |
+| 27 de maio | Terça-feira   | Substitutiva             |
 
 ##### JUNHO DE 2025
 
@@ -114,9 +114,9 @@ Calendário das aulas
 | 17 de junho | Terça-feira   | Exame   |
 | 24 de junho | Terça-feira   |         |
 
-# Alunos 2025
+### Alunos 2025
 
-### Turma DS2P40
+#### Turma DS2P40
 
 | Matrícula | Nome do Aluno                |
 |-----------|------------------------------|
@@ -131,7 +131,7 @@ Calendário das aulas
 | G839GC-6  | PABLO HENRIQUE C ARAUJO      |
 | G61ICI-3  | THIAGO VERNIER LOUREIRO MAIA |
 
-### Turma DS3P40
+#### Turma DS3P40
 
 | Matrícula | Nome do Aluno                  |
 |-----------|--------------------------------|
@@ -162,7 +162,7 @@ Calendário das aulas
 | G8832G-1  | RENAN PRAZERES CLEMENTINO      |
 | F35CDF-2  | SERGIO ALEXANDRE A DO AMARAL   |
 
-### Turma DS3Q40
+#### Turma DS3Q40
 
 Com base nas informações da fonte **"DS3Q40.pdf"** e em nossa conversa anterior, apresento novamente a tabela com a coluna **Matrícula** (RA) e **Nome do Aluno** da turma **DS3Q40**:
 
@@ -189,14 +189,3 @@ Com base nas informações da fonte **"DS3Q40.pdf"** e em nossa conversa anterio
 | G977HG-0  | SIDNEI SERRAO DA SILVA         |
 | G003IC-0  | THIAGO DA SILVA SEIXEIRO       |
 | G99566-0  | YASMIN HELENA DE OLIVEIRA FERN |
-
-```{r, eval=FALSE}
-bookdown::render_book()
-```
-
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
