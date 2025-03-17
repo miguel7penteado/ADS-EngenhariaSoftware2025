@@ -1,8 +1,8 @@
 # Verificação de Validação de Software
 
-Conforme sabemos existem quatro **atividades** fundamentais no **processo de engenharia de software**. Estas atividades podem ser organizadas de diferentes maneiras dependendo do processo de desenvolvimento utilizado. A seguinte tabela resume as atividades do processo de software de acordo com Sommerville:
-
 ![](images/clipboard-2445384906.png)
+
+Conforme sabemos existem quatro **atividades** fundamentais no **processo de engenharia de software**. Estas atividades podem ser organizadas de diferentes maneiras dependendo do processo de desenvolvimento utilizado. A seguinte tabela resume as atividades do processo de software de acordo com Sommerville:
 
 +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 | Atividade do Processo de Software     | Descrição                                                                                                                        |
@@ -18,33 +18,7 @@ Conforme sabemos existem quatro **atividades** fundamentais no **processo de eng
 
 Hoje vamos explorar a terceira etapa, mas especificamente a *Verificação e Validação de Software*.
 
-A *Verificação e Validação de Software* é uma grande revisão de finalização que é aplicada em todas as fases do desenvolvimento do software.
-
-E o que esta "grande revisão" abrange ?
-
-+---------------------------------------------+------------------------------------------------+-------------+
-| Técnicas Estáticas de "revisão"             | Técnicas Dinâmicas de "revisão"                |             |
-+---------------------------------------------+------------------------------------------------+-------------+
-| -   revisões técnicas;                      | -   **teste de desenvolvimento;** \| \|        |             |
-|                                             | -   **teste de usabilidade;** \| \|            |             |
-| -   auditorias de qualidade e configuração; | -   **teste de qualificação;** \| \|           |             |
-|                                             | -   **teste de aceitação; e** \| \|            |             |
-| -   monitoramento de desempenho;            | -   **teste de instalação**. \| \| \| \| \| \| |             |
-|                                             |                                                |             |
-| -   simulação;                              |                                                |             |
-|                                             |                                                |             |
-| -   estudo de viabilidade;                  |                                                |             |
-|                                             |                                                |             |
-| -   revisão de documentação;                |                                                |             |
-|                                             |                                                |             |
-| -   revisão de base de dados;               |                                                |             |
-|                                             |                                                |             |
-| -   análise de algoritmo;                   |                                                |             |
-+---------------------------------------------+------------------------------------------------+-------------+
-
-: Técnicas de Verificação e Validação de Software
-
-O modelo V descreve a relação entre as ações de garantia da qualidade e as ações associadas à comunicação, modelagem e atividades de construção iniciais.
+![](images/clipboard-2708362672.png)
 
 ## Verificação de Software:
 
@@ -74,17 +48,17 @@ As técnicas de Avaliação de Software podem ser **estáticas** ou **dinâmicas
 
 ## Técnicas Estáticas
 
-As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo. O objetivo dessas técnicas é identificar erros, inconsistências, ambiguidades e desvios de padrões e requisitos em um estágio inicial do ciclo de vida do desenvolvimento de software.
+As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo. O objetivo dessas técnicas é identificar erros, inconsistências, ambiguidades e desvios de padrões e requisitos em um estágio inicial do ciclo de vida do desenvolvimento de software. Os 4 tipos de técnicas estáticas mais comuns são:
 
-+-----------------------------------------+-------------------------------------------------------------------------------------------------+
-| a) Revisões Técnicas                    |                                                                                                 |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------+
-| b) Inspeções                            | Tipo específico de revisão formal onde uma pequena equipe fica o tempo todo revisando o código. |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------+
-| c) Análise Estática                     |                                                                                                 |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------+
-| d) Verificação Formal e Métodos Formais |                                                                                                 |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------+
++-----------------------------------------+
+| a) Revisões Técnicas                    |
++-----------------------------------------+
+| b) Inspeções                            |
++-----------------------------------------+
+| c) Análise Estática                     |
++-----------------------------------------+
+| d) Verificação Formal e Métodos Formais |
++-----------------------------------------+
 
 : Os tipos de TÉCNICAS ESTÁTICAS
 

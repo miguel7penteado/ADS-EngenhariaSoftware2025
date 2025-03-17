@@ -54,17 +54,17 @@ utilizados para criar o produto, visando garantir a consistência e a eficácia 
 
 ![](images/qualidade-geral/Qualidade_do_Processo.png)
 
-+-----------------------------------------------------------------------+
-| Resultados do CONTROLE DE QUALIDADE aplicado ao PROCESSO              |
-+=======================================================================+
-| -   **identificar** as ATIVIDADES do processo.                        |
-+-----------------------------------------------------------------------+
-| -   **Garantir a Consistência** as ATIVIDADES do processo.            |
-+-----------------------------------------------------------------------+
-| -   **Melhorar** a APLICAÇÃO DE RECURSOS do processo.                 |
-+-----------------------------------------------------------------------+
-| -   Alcançar a **EFICÁCIA.**                                          |
-+-----------------------------------------------------------------------+
++------------------------------------------------------------+
+| Resultados do CONTROLE DE QUALIDADE aplicado ao PROCESSO   |
++============================================================+
+| -   **identificar** as ATIVIDADES do processo.             |
++------------------------------------------------------------+
+| -   **Garantir a Consistência** as ATIVIDADES do processo. |
++------------------------------------------------------------+
+| -   **Melhorar** a APLICAÇÃO DE RECURSOS do processo.      |
++------------------------------------------------------------+
+| -   Alcançar a **EFICÁCIA.**                               |
++------------------------------------------------------------+
 
 ### CASO MACDONALDS - Qualidade de Produto e Processo
 
@@ -92,9 +92,9 @@ Reconhecimento da **Qualidade do Processo** de fabricação do Produto
 
 O sistema SGQ (um si que pode ou não ser um pacote de software) deve mapear
 
-+:---------------------------------:+:---------:+:---------:+:-------------:+:-----------------:+
+|  |  |  |  |  |
+|:--:|:--:|:--:|:--:|:--:|
 | Áreas mapeadas por um sistema SGQ | PROCESSOS | POLÍTICAS | PROCEDIMENTOS | RESPONSABILIDADES |
-+-----------------------------------+-----------+-----------+---------------+-------------------+
 
 ![](images/qualidade-geral/ISO-9000-SGQ.png){width="549"}
 
@@ -288,44 +288,40 @@ A norma ISO 12207 define um conjunto de processos para o ciclo de vida do softwa
 | e)  Definir padrões para a gestão de projetos de software, focando na otimização de custos e prazos.                                                                                       |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+-----------------------------------------------------------------------------------+
-| TESTE 10                                                                          |
-+===================================================================================+
-| **Qual é o principal objetivo da família de normas NBR ISO 25000 (SQuaRE)?**      |
-+-----------------------------------------------------------------------------------+
-| a) Definir padrões para a gestão de projetos de software.                         |
-+-----------------------------------------------------------------------------------+
-| b) Estabelecer diretrizes para a segurança da informação em sistemas de software. |
-+-----------------------------------------------------------------------------------+
-| c) Padronizar a avaliação da qualidade de produtos de software.                   |
-+-----------------------------------------------------------------------------------+
-| d) Promover a interoperabilidade entre diferentes sistemas de software.           |
-+-----------------------------------------------------------------------------------+
-| e) Definir processos para o ciclo de vida do software.                            |
-+-----------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+| TESTE 10                                                                           |
++====================================================================================+
+| **Qual é o principal objetivo da família de normas NBR ISO 25000 (SQuaRE)?**       |
++------------------------------------------------------------------------------------+
+| a)  Definir padrões para a gestão de projetos de software.                         |
++------------------------------------------------------------------------------------+
+| b)  Estabelecer diretrizes para a segurança da informação em sistemas de software. |
++------------------------------------------------------------------------------------+
+| c)  Padronizar a avaliação da qualidade de produtos de software.                   |
++------------------------------------------------------------------------------------+
+| d)  Promover a interoperabilidade entre diferentes sistemas de software.           |
++------------------------------------------------------------------------------------+
+| e)  Definir processos para o ciclo de vida do software.                            |
++------------------------------------------------------------------------------------+
 
-
-| TESTE 11                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------|
+| TESTE 11 |
+|----|
 | Qual subnorma da NBR ISO 25000 (SQuaRE) é responsável por definir modelos de qualidade para produtos de software? |
-| Alternativas:                                                                                                     |
-| a) ISO/IEC 25020                                                                                                  |
-| b) ISO/IEC 25030                                                                                                  |
-| c) ISO/IEC 25040                                                                                                  |
-| d) ISO/IEC 25010                                                                                                  |
-| e) ISO/IEC 25000                                                                                                  |
+| Alternativas: |
+| a) ISO/IEC 25020 |
+| b) ISO/IEC 25030 |
+| c) ISO/IEC 25040 |
+| d) ISO/IEC 25010 |
+| e) ISO/IEC 25000 |
 
-
-| TESTE 12                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------|
+| TESTE 12 |
+|----|
 | Qual subnorma da NBR ISO 25000 (SQuaRE) fornece diretrizes para a avaliação da qualidade de produtos de software? |
-| a) ISO/IEC 25040                                                                                                  |
-| b) ISO/IEC 25020                                                                                                  |
-| c) ISO/IEC 25030                                                                                                  |
-| d) ISO/IEC 25010                                                                                                  |
-| e) ISO/IEC 25000                                                                                                  |
-
-
+| a) ISO/IEC 25040 |
+| b) ISO/IEC 25020 |
+| c) ISO/IEC 25030 |
+| d) ISO/IEC 25010 |
+| e) ISO/IEC 25000 |
 
 ### Repostas dos testes
 
@@ -343,4 +339,3 @@ A norma ISO 12207 define um conjunto de processos para o ciclo de vida do softwa
 | 10    |          c          |
 | 11    |          d          |
 | 12    |          a          |
-

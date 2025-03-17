@@ -99,6 +99,12 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -134,19 +140,19 @@
 
 Estas anotações são apenas lembretes das aulas expostas em sala, durante a disciplina de ENGENHARIA DE SOFTWARE.
 
-\section{ACESSO AO GITBOOK CELULAR}\label{acesso-ao-gitbook-celular}
+\subsection{ACESSO AO GITBOOK CELULAR}\label{acesso-ao-gitbook-celular}
 
-\section{\texorpdfstring{\url{https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025}}{https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025}}\label{httpsmiguel7penteado.github.ioads-engenhariasoftware2025}
+\subsection{\texorpdfstring{\url{https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025}}{https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025}}\label{httpsmiguel7penteado.github.ioads-engenhariasoftware2025}
 
 \includegraphics{images/clipboard-3692082511.png}
 
-\section{APP EPUB ANDROID}\label{app-epub-android}
+\subsection{APP EPUB ANDROID}\label{app-epub-android}
 
-\section{\texorpdfstring{\textbf{Moon+ Reader}}{Moon+ Reader}}\label{moon-reader}
+\subsection{\texorpdfstring{\textbf{Moon+ Reader}}{Moon+ Reader}}\label{moon-reader}
 
 \includegraphics{images/qrcode/leitor_epub/MoonReaderPlus.jpg}
 
-\chapter{Livros Texto da Disciplina}\label{livros-texto-da-disciplina}
+\subsection{Livros Texto da Disciplina}\label{livros-texto-da-disciplina}
 
 \subsubsection{``Engenharia de Software'' do autor ``Roger S Pressman''}\label{engenharia-de-software-do-autor-roger-s-pressman}
 
@@ -259,9 +265,9 @@ Data & Dia da semana & Aulas \\
 24 de junho & Terça-feira & \\
 \end{longtable}
 
-\chapter{Alunos 2025}\label{alunos-2025}
+\subsection{Alunos 2025}\label{alunos-2025}
 
-\subsection{Turma DS2P40}\label{turma-ds2p40}
+\subsubsection{Turma DS2P40}\label{turma-ds2p40}
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule\noalign{}
@@ -282,7 +288,7 @@ G839GC-6 & PABLO HENRIQUE C ARAUJO \\
 G61ICI-3 & THIAGO VERNIER LOUREIRO MAIA \\
 \end{longtable}
 
-\subsection{Turma DS3P40}\label{turma-ds3p40}
+\subsubsection{Turma DS3P40}\label{turma-ds3p40}
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule\noalign{}
@@ -319,7 +325,7 @@ G8832G-1 & RENAN PRAZERES CLEMENTINO \\
 F35CDF-2 & SERGIO ALEXANDRE A DO AMARAL \\
 \end{longtable}
 
-\subsection{Turma DS3Q40}\label{turma-ds3q40}
+\subsubsection{Turma DS3Q40}\label{turma-ds3q40}
 
 Com base nas informações da fonte \textbf{``DS3Q40.pdf''} e em nossa conversa anterior, apresento novamente a tabela com a coluna \textbf{Matrícula} (RA) e \textbf{Nome do Aluno} da turma \textbf{DS3Q40}:
 
@@ -352,12 +358,6 @@ G977HG-0 & SIDNEI SERRAO DA SILVA \\
 G003IC-0 & THIAGO DA SILVA SEIXEIRO \\
 G99566-0 & YASMIN HELENA DE OLIVEIRA FERN \\
 \end{longtable}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
 
 \chapter*{INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE}\label{introduuxe7uxe3o-a-disciplina-de-engenharia-de-software}
 \addcontentsline{toc}{chapter}{INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE}
@@ -422,6 +422,46 @@ visando atender às necessidades e expectativas dos clientes.
 
 \includegraphics{images/qualidade-geral/Qualidade_do_Produto.png}
 
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\caption{Resultado esperado do CONTROLE DE QUALIDADE aplicado ao PRODUTO}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultados do CONTROLE DE QUALIDADE aplicado ao PRODUTO
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultados do CONTROLE DE QUALIDADE aplicado ao PRODUTO
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Aumento no GRAU das características e funcionalidades do produto.
+\end{itemize}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Aumento no GRAU de desempenho do produto.
+\end{itemize}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Aumento no GRAU de nível de satisfação do cliente.
+\end{itemize}
+\end{minipage} \\
+\end{longtable}
+
 \subsection{QUALIDADE APLICADA A PROCESSO}\label{qualidade-aplicada-a-processo}
 
 O CONTROLE DE QUALIDADE DE PROCESSO concentra-se em aperfeiçoar
@@ -436,6 +476,46 @@ O CONTROLE DE QUALIDADE DE PROCESSO concentra-se em aperfeiçoar
 utilizados para criar o produto, visando garantir a consistência e a eficácia da produção.
 
 \includegraphics{images/qualidade-geral/Qualidade_do_Processo.png}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultados do CONTROLE DE QUALIDADE aplicado ao PROCESSO
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{identificar} as ATIVIDADES do processo.
+\end{itemize}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Garantir a Consistência} as ATIVIDADES do processo.
+\end{itemize}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Melhorar} a APLICAÇÃO DE RECURSOS do processo.
+\end{itemize}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Alcançar a \textbf{EFICÁCIA.}
+\end{itemize}
+\end{minipage} \\
+\end{longtable}
 
 \subsection{CASO MACDONALDS - Qualidade de Produto e Processo}\label{caso-macdonalds---qualidade-de-produto-e-processo}
 
@@ -472,11 +552,11 @@ Reconhecimento da \textbf{Qualidade do Processo} de fabricação do Produto
 O sistema SGQ (um si que pode ou não ser um pacote de software) deve mapear
 
 \begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3636}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1212}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1212}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1616}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2020}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -528,53 +608,919 @@ A norma ISO 12207 define um conjunto de processos para o ciclo de vida do softwa
 
 \includegraphics{images/qualidade-geral/ISO-25000-SQuaRE.png}
 
+\section{Exercício de Fixação:}\label{exercuxedcio-de-fixauxe7uxe3o}
+
+\subsection{Testes:}\label{testes}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0085}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 01
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual das seguintes alternativas melhor descreve o conceito de qualidade, de acordo com a definição apresentada?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Qualidade é a ausência de defeitos em um produto ou serviço.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Qualidade é o grau em que um produto ou serviço excede as expectativas do cliente.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Qualidade é o grau em que um conjunto de características inerentes de um objeto satisfaz requisitos.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Qualidade é a conformidade com as normas e regulamentos estabelecidos.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Qualidade é a capacidade de um produto ou serviço ser produzido em grande quantidade.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0067}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 02
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual das seguintes alternativas melhor descreve o conceito de Compliance?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Compliance é um conjunto de estratégias de marketing para aumentar a visibilidade da empresa.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Compliance é um sistema de gestão financeira para otimizar os lucros da empresa.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Compliance é o conjunto de normas, procedimentos e práticas para cumprir legislação e padrões éticos, visando segurança e minimização de riscos.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Compliance é um programa de treinamento para melhorar o desempenho dos funcionários.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Compliance é uma ferramenta de análise de mercado para identificar oportunidades de negócio.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0068}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 03
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual das seguintes alternativas melhor descreve o conceito de qualidade aplicada ao produto?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Qualidade do produto é a capacidade de um produto ser vendido a um preço baixo.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Qualidade do produto é o grau em que um produto atende às expectativas do cliente em relação às suas características inerentes e o desempenho.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Qualidade do produto é a quantidade de produtos produzidos em um determinado período de tempo.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Qualidade do produto é a aparência estética de um produto, independentemente de sua funcionalidade.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Qualidade do produto é a capacidade de um produto ser facilmente descartado após o uso.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0069}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 04
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual das seguintes alternativas melhor descreve o conceito de qualidade aplicada ao processo?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Qualidade no processo se refere à inspeção final do produto para garantir que ele esteja livre de defeitos.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Qualidade no processo é a capacidade de um processo produzir resultados consistentes e previsíveis, atendendo aos requisitos estabelecidos.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Qualidade no processo é a utilização de materiais de alta qualidade na fabricação do produto.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Qualidade no processo é a implementação de um sistema de gestão da qualidade certificado, como a ISO 9001.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Qualidade no processo é a satisfação do cliente com o produto final, independentemente de como ele foi produzido.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0061}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 05
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Quais das alternativas melhor reflete principais resultados do controle de qualidade aplicado ao produto?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Aumento no grau das características e funcionalidades do produto, aumento no grau de desempenho do produto e aumento no grau de nível de satisfação do cliente.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Redução de custos de produção, aumento da eficiência dos processos e diminuição do tempo de entrega.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Melhoria na imagem da empresa, aumento da participação de mercado e expansão para novos mercados.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Padronização dos produtos, simplificação dos processos de fabricação e redução do desperdício de materiais.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Maior flexibilidade na produção, personalização dos produtos e aumento da variedade de produtos oferecidos.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0061}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 06
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual era o principal objetivo da família de normas ISO/NBR 9126?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Definir padrões para a gestão de projetos de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Estabelecer diretrizes para a segurança da informação em sistemas de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Padronizar a documentação de software e os processos de desenvolvimento.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Promover a interoperabilidade entre diferentes sistemas de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Padronizar a avaliação da qualidade de produtos de software, definindo parâmetros para essa avaliação dentro do modelo de qualidade das normas da família 9000.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0109}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{TESTE 07} \\
+Qual tipo de Sistema de Informação (SI) a família de normas ISO 9000 propunha implementar? \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Sistema de Gestão Financeira (SGF)
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Sistema de Gestão de Recursos Humanos (SGRH)
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Sistema de Gestão da Qualidade (SGQ)
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Sistema de Gestão de Produção (SGP)
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Sistema de Gestão de Marketing (SGM)
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0085}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 08
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual área a família de normas ISO 14000 trata e qual tipo de Sistema de Informação (SI) ela propõe implementar?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Trata da gestão da qualidade e propõe implementar um Sistema de Gestão da Qualidade (SGQ).
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Trata da segurança da informação e propõe implementar um Sistema de Gestão de Segurança da Informação (SGSI).
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Trata da gestão de projetos e propõe implementar um Sistema de Gestão de Projetos (SGP).
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Trata da gestão de recursos humanos e propõe implementar um Sistema de Gestão de Recursos Humanos (SGRH).
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Trata da gestão ambiental e propõe implementar um Sistema de Gestão Ambiental (SGA).
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0053}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 09
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual é o principal objetivo da norma ISO 12207?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Definir um conjunto de processos para o ciclo de vida do software, estabelecendo um framework padronizado para desenvolvimento, manutenção e descarte, visando qualidade e eficiência.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Estabelecer diretrizes para a segurança da informação em sistemas de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Padronizar a documentação de software e os processos de desenvolvimento ágil.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Promover a interoperabilidade entre diferentes sistemas de software e hardware.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Definir padrões para a gestão de projetos de software, focando na otimização de custos e prazos.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0120}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 10
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Qual é o principal objetivo da família de normas NBR ISO 25000 (SQuaRE)?} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Definir padrões para a gestão de projetos de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Estabelecer diretrizes para a segurança da informação em sistemas de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Padronizar a avaliação da qualidade de produtos de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Promover a interoperabilidade entre diferentes sistemas de software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Definir processos para o ciclo de vida do software.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 11
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Qual subnorma da NBR ISO 25000 (SQuaRE) é responsável por definir modelos de qualidade para produtos de software? \\
+Alternativas: \\
+a) ISO/IEC 25020 \\
+b) ISO/IEC 25030 \\
+c) ISO/IEC 25040 \\
+d) ISO/IEC 25010 \\
+e) ISO/IEC 25000 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+TESTE 12
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Qual subnorma da NBR ISO 25000 (SQuaRE) fornece diretrizes para a avaliação da qualidade de produtos de software? \\
+a) ISO/IEC 25040 \\
+b) ISO/IEC 25020 \\
+c) ISO/IEC 25030 \\
+d) ISO/IEC 25010 \\
+e) ISO/IEC 25000 \\
+\end{longtable}
+
+\subsection{Repostas dos testes}\label{repostas-dos-testes}
+
+\begin{longtable}[]{@{}lc@{}}
+\toprule\noalign{}
+Teste & Alternativa Correta \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+01 & c \\
+02 & c \\
+03 & b \\
+04 & b \\
+05 & a \\
+06 & e \\
+07 & c \\
+08 & e \\
+09 & a \\
+10 & c \\
+11 & d \\
+12 & a \\
+\end{longtable}
+
 \chapter{Verificação de Validação de Software}\label{verificauxe7uxe3o-de-validauxe7uxe3o-de-software}
+
+Conforme sabemos existem quatro \textbf{atividades} fundamentais no \textbf{processo de engenharia de software}. Estas atividades podem ser organizadas de diferentes maneiras dependendo do processo de desenvolvimento utilizado. A seguinte tabela resume as atividades do processo de software de acordo com Sommerville:
 
 \includegraphics{images/clipboard-2445384906.png}
 
-\section{Verificação de Softare:}\label{verificauxe7uxe3o-de-softare}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2339}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7661}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Atividade do Processo de Software
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descrição
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{Especificação de Software} & \emph{A funcionalidade do software e as restrições ao seu funcionamento devem ser definidas.} \\
+\emph{Projeto e Implementação de Software} & \emph{O software deve ser produzido para atender às especificações.} \\
+\textbf{Validação de Software} & \textbf{O software deve ser validado para garantir que atenda às demandas do cliente.} \\
+\emph{Evolução de Software} & \emph{O software deve evoluir para atender às necessidades de mudança dos clientes. Alterações no software são uma parte inevitável.} \\
+\end{longtable}
+
+Hoje vamos explorar a terceira etapa, mas especificamente a \emph{Verificação e Validação de Software}.
+
+A \emph{Verificação e Validação de Software} é uma grande revisão de finalização que é aplicada em todas as fases do desenvolvimento do software.
+
+E o que esta ``grande revisão'' abrange ?
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4182}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4455}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1273}}@{}}
+\caption{Técnicas de Verificação e Validação de Software}\tabularnewline
+\toprule\noalign{}
+\endfirsthead
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Técnicas Estáticas de ``revisão'' & Técnicas Dinâmicas de ``revisão'' & \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  revisões técnicas;
+\item
+  auditorias de qualidade e configuração;
+\item
+  monitoramento de desempenho;
+\item
+  simulação;
+\item
+  estudo de viabilidade;
+\item
+  revisão de documentação;
+\item
+  revisão de base de dados;
+\item
+  análise de algoritmo;
+\end{itemize}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{teste de desenvolvimento;} \textbar{} \textbar{}
+\item
+  \textbf{teste de usabilidade;} \textbar{} \textbar{}
+\item
+  \textbf{teste de qualificação;} \textbar{} \textbar{}
+\item
+  \textbf{teste de aceitação; e} \textbar{} \textbar{}
+\item
+  \textbf{teste de instalação}. \textbar{} \textbar{} \textbar{} \textbar{} \textbar{} \textbar{}
+\end{itemize}
+\end{minipage} & \\
+\end{longtable}
+
+O modelo V descreve a relação entre as ações de garantia da qualidade e as ações associadas à comunicação, modelagem e atividades de construção iniciais.
+
+\section{Verificação de Software:}\label{verificauxe7uxe3o-de-software}
 
 \begin{quote}
 \textbf{Definição de Verificação de Software}: \emph{Assegurar que o software implementa corretamente uma função específica. ``Estamos criando o produto corretamente?}''.
 \end{quote}
 
-\section{Validação de Softare:}\label{validauxe7uxe3o-de-softare}
+\section{Validação de Software:}\label{validauxe7uxe3o-de-software}
 
 \begin{quote}
 \textbf{Definição de Validação de Software}: \emph{Assegurar que o software foi criado e pode ser rastreado segundo os requisitos do cliente. ``Estamos criando o produto certo?''. Validação tem sucesso quando o software funciona de uma maneira que pode ser razoavelmente esperada pelo cliente.}
 \end{quote}
 
-\section{Classificação das Técnicas:}\label{classificauxe7uxe3o-das-tuxe9cnicas}
+Quais os objetivos globais da etapa de Verificação e Validação de Software ?
 
-\subsection{Técnicas Estáticas}\label{tuxe9cnicas-estuxe1ticas}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0116}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Objetivos Globais - Etapa de Verificação e Validação do Processo de Software
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Conscientizar sobre a importância da V\&V para a qualidade do software produzido.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Identificar erros precocemente.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Reduzir os custos de desenvolvimento do software.
+\end{enumerate}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Assegurar que o software atenda aos requisitos do cliente.
+\end{enumerate}
+\end{minipage} \\
+\end{longtable}
 
-As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo.
+\section{Classificação das Técnicas de Avaliação do Software:}\label{classificauxe7uxe3o-das-tuxe9cnicas-de-avaliauxe7uxe3o-do-software}
 
-\subsection{Técnicas Dinâmicas}\label{tuxe9cnicas-dinuxe2micas}
+As técnicas de Avaliação de Software podem ser \textbf{estáticas} ou \textbf{dinâmicas}. Ambas sem complementam e o ideal é que ambas abordagens sejam aplicadas na avaliação do produto.
 
-As Técnicas Dinâmicas são testes de software, nos quais o sistema é executado com dados de testes simulados.
+\section{Técnicas Estáticas}\label{tuxe9cnicas-estuxe1ticas}
 
-\subsection{Abordagens Formais}\label{abordagens-formais}
+As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo. O objetivo dessas técnicas é identificar erros, inconsistências, ambiguidades e desvios de padrões e requisitos em um estágio inicial do ciclo de vida do desenvolvimento de software.
 
-Já as abordagens formais são técnicas usadas para softwares críticos (usinas nucleares, navegação aérea, cirurgia robótica). Os processo de Prova de correção, o processo sala limpa (clean room).
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7000}}@{}}
+\caption{Os tipos de TÉCNICAS ESTÁTICAS}\tabularnewline
+\toprule\noalign{}
+\endfirsthead
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Revisões Técnicas
+\end{enumerate}
+\end{minipage} & \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Inspeções
+\end{enumerate}
+\end{minipage} & Tipo específico de revisão formal onde uma pequena equipe fica o tempo todo revisando o código. \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Análise Estática
+\end{enumerate}
+\end{minipage} & \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Verificação Formal e Métodos Formais
+\end{enumerate}
+\end{minipage} & \\
+\end{longtable}
 
-\section{Revisões Técnicas: PASSEIO e INSPEÇÃO}\label{revisuxf5es-tuxe9cnicas-passeio-e-inspeuxe7uxe3o}
+\subsubsection{A) Revisões Técnicas}\label{a-revisuxf5es-tuxe9cnicas}
 
-As \textbf{Revisões Técnicas (RT)} são Reuniões conduzidas por membros da equipe de software para avaliar a qualidade do software.
+São atividades de controle de qualidade realizadas por engenheiros de software para descobrir erros na função, lógica ou implementação do software.
 
-\subsubsection{As revisões técnicas podem ser ``Informais'' ou ``Formais''}\label{as-revisuxf5es-tuxe9cnicas-podem-ser-informais-ou-formais}
+Podem ser \textbf{Informais} (sem a necessidade de agendamento ou declaração oficial ) ou \textbf{formais} ( com planilhas, documentação e acordos de compromisso).
 
-As \textbf{Revisões Informais} incluem testes de mesa e reuniões informais com colegas.
+\subsubsection{Passeio (Walkthrough) ( caso especial de revisão técnica formal)}\label{passeio-walkthrough-caso-especial-de-revisuxe3o-tuxe9cnica-formal}
 
-As \textbf{Revisões Técnicas Formais} são feitas com Reuniões estilizadas com papéis definidos, planejamento antecipado e manutenção de registros.
+\begin{figure}
+\centering
+\includegraphics[width=2.92708in,height=\textheight]{images/clipboard-4226843625.png}
+\caption{Produtor repassando software com os revisores}
+\end{figure}
 
-\subsection{Passeio (Walkthrough)}\label{passeio-walkthrough}
+Existe uma revisão técnica formal chamada ``Passeio'' onde o \textbf{produtor} ``repassa'' o artefato de software, explicando o material, enquanto os \textbf{revisores} levantam questões com base em sua preparação prévia.
 
-O produtor ``repassa'' o artefato, explicando o material, enquanto os revisores levantam questões com base em sua preparação prévia.
+\subsubsection{B) Inspeção do produto}\label{b-inspeuxe7uxe3o-do-produto}
 
-\subsection{Inspeção do produto}\label{inspeuxe7uxe3o-do-produto}
+\begin{figure}
+\centering
+\includegraphics[width=3.44792in,height=\textheight]{images/clipboard-406807059.png}
+\caption{Equipe fazendo inspeção constantemente no software}
+\end{figure}
 
-Uma pequena equipe verifica o código sistematicamente, procurando por possíveis erros e omissões.
+Na Inspeção do Produto de software, uma \textbf{pequena equipe} verifica o código sistematicamente, procurando por possíveis erros e omissões. Tudo é executado e controlado minuciosamente com \textbf{planilhas} e \textbf{documentos de formalização} assinados pelos gestores das áreas.
+
+\subsubsection{C) Análise Estática}\label{c-anuxe1lise-estuxe1tica}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.875in,height=\textheight]{images/clipboard-2365986153.png}
+\caption{Código python revisado ``a olho''.}
+\end{figure}
+
+Inspeciona-se o código fonte do programa \textbf{sem executa-lo}, procurando erros de programação ``na raça''.
+
+\subsubsection{D) Verificação Formal do Produto e Métodos Formais}\label{d-verificauxe7uxe3o-formal-do-produto-e-muxe9todos-formais}
+
+\begin{figure}
+\centering
+\includegraphics[width=2.73958in,height=\textheight]{images/clipboard-2859021921.png}
+\caption{Um teste de hipótese para validar software}
+\end{figure}
+
+Utiliza-se \textbf{métodos matemáticos e estatísticos} para avaliar o programa. Usado em software de missão crítica como software supervisório de usinas nucleares, cirurgia robótica e software de navegação de aviação.
+
+\section{Técnicas Dinâmicas}\label{tuxe9cnicas-dinuxe2micas}
+
+As Técnicas Dinâmicas são \textbf{testes de software}, nos quais o sistema é executado com dados de testes simulados.
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1062}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8938}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+Tipo de Teste
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descrição
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\ul{Teste de Unidade} & Concentra-se em \textbf{testar componentes individuais do software}, como módulos, classes ou funções, de forma isolada. O objetivo é verificar se cada unidade funciona corretamente em relação à sua especificação. Em um contexto orientado a objetos, isso inclui o teste de métodos dentro de uma classe. \\
+\ul{Teste de Integração} & Após o teste de unidade, os \textbf{componentes são combinados e testados} em conjunto para \textbf{verificar as interações entre eles}. O teste de integração visa descobrir erros nas interfaces e na colaboração entre os módulos. \\
+\ul{Teste de Validação} & Tem como objetivo \textbf{garantir que o software construído atende às expectativas e aos requisitos do cliente}. Os critérios de teste de validação são estabelecidos durante a análise de requisitos. \\
+\ul{Teste de Sistema} & Testa o \textbf{software como um sistema completo}, após a integração de todos os componentes. \\
+\end{longtable}
+
+O teste de sistema pode ser separado em 6 subtestes:
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2365}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7635}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\ul{Teste de Recuperação} & Verifica a capacidade do sistema de se \textbf{recuperar de falhas} (software ou hardware) e continuar operando corretamente. \\
+\ul{Teste de Segurança} & Avalia se o sistema \textbf{protege dados e funcionalidades contra acessos não autorizados} e se cumpre os requisitos de privacidade e segurança. \\
+\ul{Teste por Esforço} & Examina o comportamento do sistema sob \textbf{condições de carga anormal} (volume de dados, número de usuários, etc.) para identificar seus limites e possíveis pontos de falha. \\
+\ul{Teste de Desempenho} & Avalia os \textbf{aspectos de desempenho do sistema}, como tempo de resposta, vazão e utilização de recursos, sob condições normais e de carga. \\
+\ul{Teste de Disponibilização (Implantação/Configuração)} & Verifica se o software \textbf{opera corretamente em todos os ambientes} (plataformas, sistemas operacionais) para os quais foi projetado. Inclui também a avaliação dos procedimentos de instalação e da documentação associada. \\
+\ul{Teste de Regressão} & É realizado após \textbf{alterações no software} (correção de erros, adição de novas funcionalidades) para garantir que as modificações não introduziram novos defeitos ou afetaram adversamente as partes existentes do sistema. \\
+\end{longtable}
+
+A escolha das técnicas dinâmicas e dos tipos de testes a serem utilizados depende do \textbf{tipo de software a ser desenvolvido}, dos \textbf{requisitos do projeto}, dos \textbf{recursos disponíveis} e dos \textbf{riscos envolvidos}. O objetivo final é \textbf{encontrar o maior número possível de erros} com o mínimo de esforço e garantir a entrega de software de alta qualidade que atenda às necessidades dos usuários.
 
 \chapter{Estudo da Entrega \#01 - ERP Agrotec - Módulo Cadastros}\label{estudo-da-entrega-01---erp-agrotec---muxf3dulo-cadastros}
 
