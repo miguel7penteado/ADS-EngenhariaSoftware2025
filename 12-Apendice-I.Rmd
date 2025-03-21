@@ -1,10 +1,10 @@
-# Apêndice I - Estudo da  - ERP Agrotec 
+# Apêndice I - Estudo da - ERP Agrotec
 
 ## Entrega #01 - Módulo Cadastros
 
 ## Interface JanelaPrincipal
 
-Os aquivos estão na pasta "ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\source" do repositório da disciplina
+Os aquivos estão na pasta `ProjetoERP-AGROTE\01ModuloCadastros\03codificacao\source` do repositório da disciplina
 
 Arquivo *ERPAgroTech.py*
 
@@ -163,7 +163,7 @@ pip install --upgrade wxphython
 git clone git@github.com:miguel7penteado/ADS-EngenhariaSoftware2025.git
 ```
 
-4.  Pelo MS-DOS entrar na pasta ProjetoERP-AGROTEC\\01ModuloCadastros\\03codificacao\source :
+4.  Pelo MS-DOS entrar na pasta `ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source` :
 
 ``` cmd
 cd ADS-EngenhariaSoftware2025\ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source

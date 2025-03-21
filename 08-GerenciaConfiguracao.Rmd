@@ -1,8 +1,8 @@
 # Gerência de Configuração
 
-(aula em processo de edição)
+![](images/processos/manutencao/github-icone.jpg)
 
-![](images/clipboard-871701020.png)
+(aula em processo de edição)
 
 ## Introdução à Gerência de Configuração
 

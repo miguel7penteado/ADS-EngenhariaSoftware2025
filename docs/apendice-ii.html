@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Aula 2 Verificação de Validação de Software | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <title>Aula 13 Apendice II | ADS - Engenharia de Software 2025 - Anotações de aula</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.42.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Aula 2 Verificação de Validação de Software | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:title" content="Aula 13 Apendice II | ADS - Engenharia de Software 2025 - Anotações de aula" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Aula 2 Verificação de Validação de Software | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta name="twitter:title" content="Aula 13 Apendice II | ADS - Engenharia de Software 2025 - Anotações de aula" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="qualidade-de-software.html"/>
-<link rel="next" href="verificação-de-validação-de-software-ii---continuação.html"/>
+<link rel="prev" href="apêndice-i---estudo-da---erp-agrotec.html"/>
+<link rel="next" href="apendice-iii.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -343,237 +343,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="verificação-de-validação-de-software" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Aula 2</span> Verificação de Validação de Software<a href="verificação-de-validação-de-software.html#verificação-de-validação-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="images/agrotech.jpg" /></p>
-<p>Conforme sabemos existem quatro <strong>atividades</strong> fundamentais no <strong>processo de engenharia de software</strong>. Estas atividades podem ser organizadas de diferentes maneiras dependendo do processo de desenvolvimento utilizado. A seguinte tabela resume as atividades do processo de software de acordo com Sommerville:</p>
-<table>
-<colgroup>
-<col width="23%" />
-<col width="76%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atividade do Processo de Software</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Especificação de Software</em></td>
-<td><em>A funcionalidade do software e as restrições ao seu funcionamento devem ser definidas.</em></td>
-</tr>
-<tr class="even">
-<td><em>Projeto e Implementação de Software</em></td>
-<td><em>O software deve ser produzido para atender às especificações.</em></td>
-</tr>
-<tr class="odd">
-<td><strong>Validação de Software</strong></td>
-<td><strong>O software deve ser validado para garantir que atenda às demandas do cliente.</strong></td>
-</tr>
-<tr class="even">
-<td><em>Evolução de Software</em></td>
-<td><em>O software deve evoluir para atender às necessidades de mudança dos clientes. Alterações no software são uma parte inevitável.</em></td>
-</tr>
-</tbody>
-</table>
-<p>Hoje vamos explorar a terceira etapa, mas especificamente a <em>Verificação e Validação de Software</em>.</p>
-<p><img src="images/verificacao-validacao.jpg" /></p>
-<div id="verificação-de-software" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Verificação de Software:<a href="verificação-de-validação-de-software.html#verificação-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<blockquote>
-<p><strong>Definição de Verificação de Software</strong>: <em>Assegurar que o software implementa corretamente uma função específica. “Estamos criando o produto corretamente?</em>”.</p>
-</blockquote>
-</div>
-<div id="validação-de-software" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Validação de Software:<a href="verificação-de-validação-de-software.html#validação-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<blockquote>
-<p><strong>Definição de Validação de Software</strong>: <em>Assegurar que o software foi criado e pode ser rastreado segundo os requisitos do cliente. “Estamos criando o produto certo?”. Validação tem sucesso quando o software funciona de uma maneira que pode ser razoavelmente esperada pelo cliente.</em></p>
-</blockquote>
-<p>Quais os objetivos globais da etapa de Verificação e Validação de Software ?</p>
-<table>
-<colgroup>
-<col width="101%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Objetivos Globais - Etapa de Verificação e Validação do Processo de Software</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ol style="list-style-type: decimal">
-<li>Conscientizar sobre a importância da V&amp;V para a qualidade do software produzido.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><ol start="2" style="list-style-type: decimal">
-<li>Identificar erros precocemente.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><ol start="3" style="list-style-type: decimal">
-<li>Reduzir os custos de desenvolvimento do software.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><ol start="4" style="list-style-type: decimal">
-<li>Assegurar que o software atenda aos requisitos do cliente.</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="classificação-das-técnicas-de-avaliação-do-software" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Classificação das Técnicas de Avaliação do Software:<a href="verificação-de-validação-de-software.html#classificação-das-técnicas-de-avaliação-do-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As técnicas de Avaliação de Software podem ser <strong>estáticas</strong> ou <strong>dinâmicas</strong>. Ambas sem complementam e o ideal é que ambas abordagens sejam aplicadas na avaliação do produto.</p>
-</div>
-<div id="técnicas-estáticas" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Técnicas Estáticas<a href="verificação-de-validação-de-software.html#técnicas-estáticas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo. O objetivo dessas técnicas é identificar erros, inconsistências, ambiguidades e desvios de padrões e requisitos em um estágio inicial do ciclo de vida do desenvolvimento de software. Os 4 tipos de técnicas estáticas mais comuns são:</p>
-<table style="width:60%;">
-<caption>Os tipos de TÉCNICAS ESTÁTICAS</caption>
-<colgroup>
-<col width="59%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><ol style="list-style-type: lower-alpha">
-<li>Revisões Técnicas</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><ol start="2" style="list-style-type: lower-alpha">
-<li>Inspeções</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><ol start="3" style="list-style-type: lower-alpha">
-<li>Análise Estática</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><ol start="4" style="list-style-type: lower-alpha">
-<li>Verificação Formal e Métodos Formais</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-<div id="a-revisões-técnicas" class="section level4 hasAnchor" number="2.4.0.1">
-<h4><span class="header-section-number">2.4.0.1</span> A) Revisões Técnicas<a href="verificação-de-validação-de-software.html#a-revisões-técnicas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>São atividades de controle de qualidade realizadas por engenheiros de software para descobrir erros na função, lógica ou implementação do software.</p>
-<p>Podem ser <strong>Informais</strong> (sem a necessidade de agendamento ou declaração oficial ) ou <strong>formais</strong> ( com planilhas, documentação e acordos de compromisso).</p>
-</div>
-<div id="passeio-walkthrough-caso-especial-de-revisão-técnica-formal" class="section level4 hasAnchor" number="2.4.0.2">
-<h4><span class="header-section-number">2.4.0.2</span> Passeio (Walkthrough) ( caso especial de revisão técnica formal)<a href="verificação-de-validação-de-software.html#passeio-walkthrough-caso-especial-de-revisão-técnica-formal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="float">
-<img src="images/passeio.jpg" alt="Produtor repassando software com os revisores" />
-<div class="figcaption">Produtor repassando software com os revisores</div>
-</div>
-<p>Existe uma revisão técnica formal chamada “Passeio” onde o <strong>produtor</strong> “repassa” o artefato de software, explicando o material, enquanto os <strong>revisores</strong> levantam questões com base em sua preparação prévia.</p>
-</div>
-<div id="b-inspeção-do-produto" class="section level4 hasAnchor" number="2.4.0.3">
-<h4><span class="header-section-number">2.4.0.3</span> B) Inspeção do produto<a href="verificação-de-validação-de-software.html#b-inspeção-do-produto" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="float">
-<img src="images/inspecao.jpg" alt="Equipe fazendo inspeção constantemente no software" />
-<div class="figcaption">Equipe fazendo inspeção constantemente no software</div>
-</div>
-<p>Na Inspeção do Produto de software, uma <strong>pequena equipe</strong> verifica o código sistematicamente, procurando por possíveis erros e omissões. Tudo é executado e controlado minuciosamente com <strong>planilhas</strong> e <strong>documentos de formalização</strong> assinados pelos gestores das áreas.</p>
-</div>
-<div id="c-análise-estática" class="section level4 hasAnchor" number="2.4.0.4">
-<h4><span class="header-section-number">2.4.0.4</span> C) Análise Estática<a href="verificação-de-validação-de-software.html#c-análise-estática" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="float">
-<img src="images/analise-estatica-python.jpg" width="372" alt="Código python revisado “a olho”." />
-<div class="figcaption">Código python revisado “a olho”.</div>
-</div>
-<p>Inspeciona-se o código fonte do programa <strong>sem executa-lo</strong>, procurando erros de programação “na raça”.</p>
-</div>
-<div id="d-verificação-formal-do-produto-e-métodos-formais" class="section level4 hasAnchor" number="2.4.0.5">
-<h4><span class="header-section-number">2.4.0.5</span> D) Verificação Formal do Produto e Métodos Formais<a href="verificação-de-validação-de-software.html#d-verificação-formal-do-produto-e-métodos-formais" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="float">
-<img src="images/estatistica.jpg" alt="Um teste de hipótese para validar software" />
-<div class="figcaption">Um teste de hipótese para validar software</div>
-</div>
-<p>Utiliza-se <strong>métodos matemáticos e estatísticos</strong> para avaliar o programa. Usado em software de missão crítica como software supervisório de usinas nucleares, cirurgia robótica e software de navegação de aviação.</p>
-</div>
-</div>
-<div id="técnicas-dinâmicas" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> Técnicas Dinâmicas<a href="verificação-de-validação-de-software.html#técnicas-dinâmicas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As Técnicas Dinâmicas são <strong>testes de software</strong>, nos quais o sistema é executado com dados de testes simulados.</p>
-<table>
-<colgroup>
-<col width="10%" />
-<col width="89%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Tipo de Teste</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><u>Teste de Unidade</u></td>
-<td>Concentra-se em <strong>testar componentes individuais do software</strong>, como módulos, classes ou funções, de forma isolada. O objetivo é verificar se cada unidade funciona corretamente em relação à sua especificação. Em um contexto orientado a objetos, isso inclui o teste de métodos dentro de uma classe.</td>
-</tr>
-<tr class="even">
-<td align="center"><u>Teste de Integração</u></td>
-<td>Após o teste de unidade, os <strong>componentes são combinados e testados</strong> em conjunto para <strong>verificar as interações entre eles</strong>. O teste de integração visa descobrir erros nas interfaces e na colaboração entre os módulos.</td>
-</tr>
-<tr class="odd">
-<td align="center"><u>Teste de Validação</u></td>
-<td>Tem como objetivo <strong>garantir que o software construído atende às expectativas e aos requisitos do cliente</strong>. Os critérios de teste de validação são estabelecidos durante a análise de requisitos.</td>
-</tr>
-<tr class="even">
-<td align="center"><u>Teste de Sistema</u></td>
-<td>Testa o <strong>software como um sistema completo</strong>, após a integração de todos os componentes.</td>
-</tr>
-</tbody>
-</table>
-<p>O teste de sistema pode ser separado em 6 subtestes:</p>
-<table>
-<colgroup>
-<col width="23%" />
-<col width="76%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><u>Teste de Recuperação</u></td>
-<td>Verifica a capacidade do sistema de se <strong>recuperar de falhas</strong> (software ou hardware) e continuar operando corretamente.</td>
-</tr>
-<tr class="even">
-<td align="center"><u>Teste de Segurança</u></td>
-<td>Avalia se o sistema <strong>protege dados e funcionalidades contra acessos não autorizados</strong> e se cumpre os requisitos de privacidade e segurança.</td>
-</tr>
-<tr class="odd">
-<td align="center"><u>Teste por Esforço</u></td>
-<td>Examina o comportamento do sistema sob <strong>condições de carga anormal</strong> (volume de dados, número de usuários, etc.) para identificar seus limites e possíveis pontos de falha.</td>
-</tr>
-<tr class="even">
-<td align="center"><u>Teste de Desempenho</u></td>
-<td>Avalia os <strong>aspectos de desempenho do sistema</strong>, como tempo de resposta, vazão e utilização de recursos, sob condições normais e de carga.</td>
-</tr>
-<tr class="odd">
-<td align="center"><u>Teste de Disponibilização (Implantação/Configuração)</u></td>
-<td>Verifica se o software <strong>opera corretamente em todos os ambientes</strong> (plataformas, sistemas operacionais) para os quais foi projetado. Inclui também a avaliação dos procedimentos de instalação e da documentação associada.</td>
-</tr>
-<tr class="even">
-<td align="center"><u>Teste de Regressão</u></td>
-<td>É realizado após <strong>alterações no software</strong> (correção de erros, adição de novas funcionalidades) para garantir que as modificações não introduziram novos defeitos ou afetaram adversamente as partes existentes do sistema.</td>
-</tr>
-</tbody>
-</table>
-<p>A escolha das técnicas dinâmicas e dos tipos de testes a serem utilizados depende do <strong>tipo de software a ser desenvolvido</strong>, dos <strong>requisitos do projeto</strong>, dos <strong>recursos disponíveis</strong> e dos <strong>riscos envolvidos</strong>. O objetivo final é <strong>encontrar o maior número possível de erros</strong> com o mínimo de esforço e garantir a entrega de software de alta qualidade que atenda às necessidades dos usuários.</p>
+<div id="apendice-ii" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">Aula 13</span> Apendice II<a href="apendice-ii.html#apendice-ii" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="qualidade-de-software.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="verificação-de-validação-de-software-ii---continuação.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="apêndice-i---estudo-da---erp-agrotec.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="apendice-iii.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -604,7 +384,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/02-Verificacao-Validacao-software-01.Rmd",
+    "link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/13-Apendice-II.Rmd",
     "text": "Edit"
   },
   "history": {
