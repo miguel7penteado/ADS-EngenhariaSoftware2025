@@ -14,7 +14,7 @@
 
 ## Modelo V
 
-![](/home/sp-miguel/Documents/unip/ADS-EngenhariaSoftware2025/docs/images/VerificacaoValidacao/Modelo-V.jpg)
+![](images/VerificacaoValidacao/Modelo-V.jpg)
 
 ## Testes Unitários
 
