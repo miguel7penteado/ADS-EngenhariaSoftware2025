@@ -1,0 +1,67 @@
+# Verificação de Validação de Software II - Continuação
+
+## Fundamentos de Teste de Software
+
+## Os testes e o Ciclo de Vida do Software
+
+### Teste de Unidade
+
+### Teste de Integração
+
+### Teste de Validação
+
+### Testes de Sistema
+
+## Modelo V
+
+![](/home/sp-miguel/Documents/unip/ADS-EngenhariaSoftware2025/docs/images/VerificacaoValidacao/Modelo-V.jpg)
+
+## Testes Unitários
+
+### Testes Estruturais (Caixa-Branca)
+
+#### Técnicas de testes Estruturais
+
+### Testes Funcionais (Caixa-Preta)
+
+#### Técnicas de testes funcionais
+
+=======================================================
+
+## Cadastro de Clientes
+
+Acesso ao Banco de Dados na núvem POSTGRES para você testar o seu:
+
+| host:    | pg-ads-engs2-miguel7penteado-ads-engs2.c.aivencloud.com |
+|----------|---------------------------------------------------------|
+| porta:   | 17135                                                   |
+| usuario: | SEU RA                                                  |
+| senha:   | SEU RA                                                  |
+| banco:   | banco-dados-ra                                          |
+| SSL:     | require                                                 |
+
+OBS: substitua "ra" pelo seu ra, obviamente.
+
+Cliente para testar via celular:
+
+Android Postgresql Client
+
+<https://play.google.com/store/apps/details?id=rafrobsystems.postgresclient&pcampaignid=web_share>
+
+![](images/clipboard-78059825.png)
+
+### Tabela Clientes
+
+``` sql
+CREATE TABLE clientes
+(
+id         varchar(15) unique not null,
+nome       varchar(500) not null ,
+endereco   varchar(500) not null ,
+nascimento date
+);
+```
+
+## Cadastro de Fornecedores
+
+## Cadastro de Produtos
