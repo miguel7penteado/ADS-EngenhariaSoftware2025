@@ -1,0 +1,20 @@
+
+# Salvando estado
+git commit -a -m "Backup ramificação 2025-03-22"
+git branch 2025-03-22
+
+# Voltando para a principal
+git checkout main
+
+# Busque o repositório principal remoto mais recente
+git fetch origin
+
+# Sincronize o repositório remoto com o local
+git reset --hard origin/main
+
+# Limpe as alterações não rastreadas
+git clean -xdf
+
+-x flag remove arquivos ignorados.
+-d flag remove pastas não rastreadas.
+-f flag remove arquivos não rastreados.
