@@ -46,6 +46,8 @@ d-análise-estática-automatizada
 e-verificação-formal-do-produto-e-métodos-formais
 verificação-e-validação-de-software-por-técnicas-dinâmicas
 exercícios
+testes-sobre-verificação-e-validação-i
+respostas-para-os-testes
 verificação-de-validação-de-software-ii---continuação
 fundamentos-de-teste-de-software
 os-testes-e-o-ciclo-de-vida-do-software
