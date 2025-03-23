@@ -352,36 +352,131 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Aula 3</span> Verificação de Validação de Software II - Continuação<a href="verificação-de-validação-de-software-ii---continuação.html#verificação-de-validação-de-software-ii---continuação" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="fundamentos-de-teste-de-software" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Fundamentos de Teste de Software<a href="verificação-de-validação-de-software-ii---continuação.html#fundamentos-de-teste-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>O objetivo primordial do teste de software é descobrir erros</strong>. Um bom teste é aquele que tem alta probabilidade de encontrar um erro. Como benefício secundário, os testes demonstram que as funções do software estão funcionando de acordo com as especificações e que os requisitos relativos ao desempenho e ao comportamento parecem estar sendo atingidos. Os dados coletados durante os testes fornecem um bom indício da confiabilidade e da qualidade geral do software. No entanto, é fundamental lembrar que <strong>os testes não podem mostrar a ausência de erros e defeitos, apenas que erros e defeitos de software estão presentes</strong>. Por isso, não se deve considerar o teste como uma “rede de segurança” que detectará todos os erros decorrentes de práticas deficientes de engenharia de software.</p>
 </div>
 <div id="os-testes-e-o-ciclo-de-vida-do-software" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Os testes e o Ciclo de Vida do Software<a href="verificação-de-validação-de-software-ii---continuação.html#os-testes-e-o-ciclo-de-vida-do-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="teste-de-unidade" class="section level3 hasAnchor" number="3.2.1">
 <h3><span class="header-section-number">3.2.1</span> Teste de Unidade<a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-unidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.</p>
 </div>
 <div id="teste-de-integração" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Teste de Integração<a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-integração" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.</p>
 </div>
 <div id="teste-de-validação" class="section level3 hasAnchor" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> Teste de Validação<a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-validação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.</p>
 </div>
 <div id="testes-de-sistema" class="section level3 hasAnchor" number="3.2.4">
 <h3><span class="header-section-number">3.2.4</span> Testes de Sistema<a href="verificação-de-validação-de-software-ii---continuação.html#testes-de-sistema" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.</p>
 </div>
 </div>
 <div id="modelo-v" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Modelo V<a href="verificação-de-validação-de-software-ii---continuação.html#modelo-v" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Em Testes de Software, o <strong>Diagrama V (ou Modelo V)</strong> é uma variação na representação do modelo cascata (ciclo de vida clássico) que descreve a relação entre <strong>ações de garantia da qualidade (testes)</strong> e as <strong>ações associadas a comunicação, modelagem e atividades de construção iniciais</strong>. Ele oferece uma maneira de <strong>visualizar como as ações de verificação e validação são aplicadas a um trabalho de engenharia anterior</strong>.</p>
+<p>Em outras palavras, o modelo V correlaciona os <strong>testes de Verificação e Validação de Software</strong> ao <strong>ciclo de Vida</strong> do processo de desenvolvimento de Software <strong>fornecendo a noção que o software é testado em todo seu ciclo de vida</strong>:</p>
+<table>
+<colgroup>
+<col width="53%" />
+<col width="46%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>Etapa do Ciclo de Vida do Processo de Desenvolvimento de Software</strong></td>
+<td align="center"><strong>Qualidade Testes de Verificação e Validação do Software</strong></td>
+</tr>
+<tr class="even">
+<td align="center"><ul>
+<li>Elicitação de Requisitos</li>
+</ul></td>
+<td align="center"><ul>
+<li>Teste de aceitação</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="center"><ul>
+<li>Planejameno: Arquitetura do sistema</li>
+</ul></td>
+<td align="center"><ul>
+<li>Teste de Sistema</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="center"><ul>
+<li>Planejameno: Arquitetura dos Módulos</li>
+</ul></td>
+<td align="center"><ul>
+<li>Teste de Integração</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="center"><ul>
+<li>Codificação</li>
+</ul></td>
+<td align="center"><ul>
+<li>Teste Unitário</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>SOFTWARE PRONTO</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Esse correlacionamento pode ser visualizado na figura abaixo, em formato “V”:</p>
 <p><img src="images/VerificacaoValidacao/Modelo-V.jpg" /></p>
 </div>
 <div id="testes-unitários" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Testes Unitários<a href="verificação-de-validação-de-software-ii---continuação.html#testes-unitários" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O objetivo primordial do teste unitário é <strong>focar o esforço de verificação na menor unidade de projeto do software para descobrir erros dentro dos limites dessa unidade</strong>. Ele busca garantir que cada parte individual do sistema funcione corretamente.</p>
+<p>O teste unitário se concentra na <strong>lógica interna de processamento e nas estruturas de dados dentro dos limites de um componente</strong>. Ele examina os caminhos de controle importantes para descobrir erros na lógica do módulo.</p>
 <div id="testes-estruturais-caixa-branca" class="section level3 hasAnchor" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Testes Estruturais (Caixa-Branca)<a href="verificação-de-validação-de-software-ii---continuação.html#testes-estruturais-caixa-branca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="técnicas-de-testes-estruturais" class="section level4 hasAnchor" number="3.4.1.1">
-<h4><span class="header-section-number">3.4.1.1</span> Técnicas de testes Estruturais<a href="verificação-de-validação-de-software-ii---continuação.html#técnicas-de-testes-estruturais" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg" width="304" /></p>
+<p>Os t<strong>estes caixa-branca</strong>, também chamados de teste da caixa-de-vidro ou <strong>teste estrutural</strong>, são uma filosofia de projeto de casos de teste que utiliza a estrutura de controle descrita como parte do projeto no nível de componentes para derivar casos de teste.</p>
+<p>O <strong>teste de caixa-branca se alinha com o teste unitário</strong>. O teste caixa-branca é frequentemente aplicado a <strong>pequenos componentes de programas (por exemplo, módulos ou pequenos grupos de módulos)</strong>, sendo considerado um “teste no pequeno”.</p>
+<div id="exemplo-de-teste-unitário-no-python" class="section level4 hasAnchor" number="3.4.1.1">
+<h4><span class="header-section-number">3.4.1.1</span> Exemplo de Teste Unitário no Python<a href="verificação-de-validação-de-software-ii---continuação.html#exemplo-de-teste-unitário-no-python" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Vamos testar uma função chamada <code>soma</code> que faça adição de dois números <code>a</code> e <code>b</code>.</p>
+<p>Crie um arquivo <strong>soma.py</strong> que contém função chamada <code>soma</code> que faça adição de dois números <code>a</code> e <code>b</code> :</p>
+<p>Código do arquivo soma segue abaixo:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-2" tabindex="-1"></a><span class="co"># arquivo soma.py</span></span>
+<span id="cb1-3"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-5" tabindex="-1"></a><span class="kw">def</span> soma(a, b):</span>
+<span id="cb1-6"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-6" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb1-7"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-7" tabindex="-1"></a></span></code></pre></div>
+<p>Agora crie, no mesmo diretório, um arquivo cahamdo <strong>test_soma.py</strong> .</p>
+<p>Esse arquivo cria a função de este testa <code>test_soma_positivos()</code> que testa a função soma <code>soma</code> passando dois números <code>2</code> e <code>3</code> para ela.</p>
+<p>O resultado esperado é 5 :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="verificação-de-validação-de-software-ii---continuação.html#cb2-1" tabindex="-1"></a><span class="im">from</span> soma <span class="im">import</span> soma</span>
+<span id="cb2-2"><a href="verificação-de-validação-de-software-ii---continuação.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="verificação-de-validação-de-software-ii---continuação.html#cb2-3" tabindex="-1"></a><span class="kw">def</span> test_soma_positivos():</span>
+<span id="cb2-4"><a href="verificação-de-validação-de-software-ii---continuação.html#cb2-4" tabindex="-1"></a>    <span class="cf">assert</span> soma(<span class="dv">2</span>, <span class="dv">3</span>) <span class="op">==</span> <span class="dv">5</span></span>
+<span id="cb2-5"><a href="verificação-de-validação-de-software-ii---continuação.html#cb2-5" tabindex="-1"></a>    </span></code></pre></div>
+<p>Então, estando os arquivos <strong>soma.py</strong> e <strong>test_soma.py</strong> no mesmo arquivo, basta executar a ferramenta <strong>pytest</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb3-1"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-1" tabindex="-1"></a>============================= test session starts ==============================</span>
+<span id="cb3-2"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-2" tabindex="-1"></a>platform linux -- Python 3.x.x, pytest<span class="at">-x</span>.x.x, py<span class="at">-x</span>.x.x, pluggy<span class="at">-x</span>.x.x</span>
+<span id="cb3-3"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-3" tabindex="-1"></a>rootdir: <span class="at">/path/to/your/directory</span></span>
+<span id="cb3-4"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-5" tabindex="-1"></a>collected 5 items</span>
+<span id="cb3-6"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-7" tabindex="-1"></a>test_soma.py .....                                                    [100%]</span>
+<span id="cb3-8"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="verificação-de-validação-de-software-ii---continuação.html#cb3-9" tabindex="-1"></a>============================== 5 passed in 0.01s ==============================</span></code></pre></div>
+<p>A função <strong>soma()</strong> passou no teste unitário.</p>
 </div>
 </div>
 <div id="testes-funcionais-caixa-preta" class="section level3 hasAnchor" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Testes Funcionais (Caixa-Preta)<a href="verificação-de-validação-de-software-ii---continuação.html#testes-funcionais-caixa-preta" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/VerificacaoValidacao/TestesSoftware/caixa_preta.jpeg" width="396" /></p>
+<p>Os <strong>testes caixa-preta</strong>, também chamados de <strong>teste comportamental</strong> ou <strong>teste funcional</strong>, são uma abordagem de teste que <strong>focaliza os requisitos funcionais do software</strong>. Diferentemente dos testes caixa-branca, que examinam a estrutura lógica interna do software, o teste caixa-preta <strong>faz referência a testes realizados na interface do software</strong>, com <strong>pouca preocupação em relação à estrutura lógica interna do software</strong>. Em vez de olhar o código-fonte, os testadores caixa-preta trabalham com a <strong>visão externa do software</strong>.</p>
 <div id="técnicas-de-testes-funcionais" class="section level4 hasAnchor" number="3.4.2.1">
 <h4><span class="header-section-number">3.4.2.1</span> Técnicas de testes funcionais<a href="verificação-de-validação-de-software-ii---continuação.html#técnicas-de-testes-funcionais" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>=======================================================</p>
@@ -428,13 +523,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/clipboard-78059825.png" /></p>
 <div id="tabela-clientes" class="section level3 hasAnchor" number="3.5.1">
 <h3><span class="header-section-number">3.5.1</span> Tabela Clientes<a href="verificação-de-validação-de-software-ii---continuação.html#tabela-clientes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-1" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> clientes</span>
-<span id="cb1-2"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-2" tabindex="-1"></a>(</span>
-<span id="cb1-3"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-3" tabindex="-1"></a><span class="kw">id</span>         <span class="dt">varchar</span>(<span class="dv">15</span>) <span class="kw">unique</span> <span class="kw">not</span> <span class="kw">null</span>,</span>
-<span id="cb1-4"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-4" tabindex="-1"></a>nome       <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
-<span id="cb1-5"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-5" tabindex="-1"></a>endereco   <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
-<span id="cb1-6"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-6" tabindex="-1"></a>nascimento <span class="dt">date</span></span>
-<span id="cb1-7"><a href="verificação-de-validação-de-software-ii---continuação.html#cb1-7" tabindex="-1"></a>);</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb4-1"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-1" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> clientes</span>
+<span id="cb4-2"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-2" tabindex="-1"></a>(</span>
+<span id="cb4-3"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-3" tabindex="-1"></a><span class="kw">id</span>         <span class="dt">varchar</span>(<span class="dv">15</span>) <span class="kw">unique</span> <span class="kw">not</span> <span class="kw">null</span>,</span>
+<span id="cb4-4"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-4" tabindex="-1"></a>nome       <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
+<span id="cb4-5"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-5" tabindex="-1"></a>endereco   <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
+<span id="cb4-6"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-6" tabindex="-1"></a>nascimento <span class="dt">date</span></span>
+<span id="cb4-7"><a href="verificação-de-validação-de-software-ii---continuação.html#cb4-7" tabindex="-1"></a>);</span></code></pre></div>
 </div>
 </div>
 <div id="cadastro-de-fornecedores" class="section level2 hasAnchor" number="3.6">

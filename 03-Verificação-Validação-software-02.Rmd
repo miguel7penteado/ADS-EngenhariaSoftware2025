@@ -2,27 +2,123 @@
 
 ## Fundamentos de Teste de Software
 
+**O objetivo primordial do teste de software é descobrir erros**. Um bom teste é aquele que tem alta probabilidade de encontrar um erro. Como benefício secundário, os testes demonstram que as funções do software estão funcionando de acordo com as especificações e que os requisitos relativos ao desempenho e ao comportamento parecem estar sendo atingidos. Os dados coletados durante os testes fornecem um bom indício da confiabilidade e da qualidade geral do software. No entanto, é fundamental lembrar que **os testes não podem mostrar a ausência de erros e defeitos, apenas que erros e defeitos de software estão presentes**. Por isso, não se deve considerar o teste como uma "rede de segurança" que detectará todos os erros decorrentes de práticas deficientes de engenharia de software.
+
 ## Os testes e o Ciclo de Vida do Software
 
 ### Teste de Unidade
 
+Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
+
 ### Teste de Integração
+
+Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
 
 ### Teste de Validação
 
+Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
+
 ### Testes de Sistema
 
+Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
+
 ## Modelo V
+
+Em Testes de Software, o **Diagrama V (ou Modelo V)** é uma variação na representação do modelo cascata (ciclo de vida clássico) que descreve a relação entre **ações de garantia da qualidade (testes)** e as **ações associadas a comunicação, modelagem e atividades de construção iniciais**. Ele oferece uma maneira de **visualizar como as ações de verificação e validação são aplicadas a um trabalho de engenharia anterior**.
+
+Em outras palavras, o modelo V correlaciona os **testes de Verificação e Validação de Software** ao **ciclo de Vida** do processo de desenvolvimento de Software **fornecendo a noção que o software é testado em todo seu ciclo de vida**:
+
++:---------------------------------------------------------------------:+:-----------------------------------------------------------:+
+| **Etapa do Ciclo de Vida do Processo de Desenvolvimento de Software** | **Qualidade Testes de Verificação e Validação do Software** |
++-----------------------------------------------------------------------+-------------------------------------------------------------+
+| -   Elicitação de Requisitos                                          | -   Teste de aceitação                                      |
++-----------------------------------------------------------------------+-------------------------------------------------------------+
+| -   Planejameno: Arquitetura do sistema                               | -   Teste de Sistema                                        |
++-----------------------------------------------------------------------+-------------------------------------------------------------+
+| -   Planejameno: Arquitetura dos Módulos                              | -   Teste de Integração                                     |
++-----------------------------------------------------------------------+-------------------------------------------------------------+
+| -   Codificação                                                       | -   Teste Unitário                                          |
++-----------------------------------------------------------------------+-------------------------------------------------------------+
+
+|                     |
+|:-------------------:|
+| **SOFTWARE PRONTO** |
+
+Esse correlacionamento pode ser visualizado na figura abaixo, em formato "V":
 
 ![](images/VerificacaoValidacao/Modelo-V.jpg)
 
 ## Testes Unitários
 
+O objetivo primordial do teste unitário é **focar o esforço de verificação na menor unidade de projeto do software para descobrir erros dentro dos limites dessa unidade**. Ele busca garantir que cada parte individual do sistema funcione corretamente.
+
+O teste unitário se concentra na **lógica interna de processamento e nas estruturas de dados dentro dos limites de um componente**. Ele examina os caminhos de controle importantes para descobrir erros na lógica do módulo.
+
 ### Testes Estruturais (Caixa-Branca)
 
-#### Técnicas de testes Estruturais
+![](images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg){width="304"}
+
+Os t**estes caixa-branca**, também chamados de teste da caixa-de-vidro ou **teste estrutural**, são uma filosofia de projeto de casos de teste que utiliza a estrutura de controle descrita como parte do projeto no nível de componentes para derivar casos de teste.
+
+O **teste de caixa-branca se alinha com o teste unitário**. O teste caixa-branca é frequentemente aplicado a **pequenos componentes de programas (por exemplo, módulos ou pequenos grupos de módulos)**, sendo considerado um "teste no pequeno".
+
+#### Exemplo de Teste Unitário no Python
+
+Vamos testar uma função chamada `soma` que faça adição de dois números `a` e `b`.
+
+Crie um arquivo **soma.py** que contém função chamada `soma` que faça adição de dois números `a` e `b` :
+
+Código do arquivo soma segue abaixo:
+
+```python
+
+# arquivo soma.py
+
+
+def soma(a, b):
+    return a + b
+
+
+```
+
+Agora crie, no mesmo diretório, um arquivo cahamdo **test_soma.py** .
+
+Esse arquivo cria a função de este  testa `test_soma_positivos()` que testa a função soma `soma` passando dois números `2` e `3` para ela.
+
+O resultado esperado é 5 :
+
+```python
+from soma import soma
+
+def test_soma_positivos():
+    assert soma(2, 3) == 5
+    
+
+```
+
+Então, estando os arquivos **soma.py** e **test_soma.py**  no mesmo arquivo, basta executar a ferramenta **pytest**
+
+
+```cmd
+============================= test session starts ==============================
+platform linux -- Python 3.x.x, pytest-x.x.x, py-x.x.x, pluggy-x.x.x
+rootdir: /path/to/your/directory
+
+collected 5 items
+
+test_soma.py .....                                                    [100%]
+
+============================== 5 passed in 0.01s ==============================
+```
+
+A função **soma()** passou no teste unitário.
+
 
 ### Testes Funcionais (Caixa-Preta)
+
+![](images/VerificacaoValidacao/TestesSoftware/caixa_preta.jpeg){width="396"}
+
+Os **testes caixa-preta**, também chamados de **teste comportamental** ou **teste funcional**, são uma abordagem de teste que **focaliza os requisitos funcionais do software**. Diferentemente dos testes caixa-branca, que examinam a estrutura lógica interna do software, o teste caixa-preta **faz referência a testes realizados na interface do software**, com **pouca preocupação em relação à estrutura lógica interna do software**. Em vez de olhar o código-fonte, os testadores caixa-preta trabalham com a **visão externa do software**.
 
 #### Técnicas de testes funcionais
 

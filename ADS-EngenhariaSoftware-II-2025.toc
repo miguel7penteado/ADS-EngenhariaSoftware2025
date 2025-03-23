@@ -51,86 +51,86 @@
 \contentsline {subsection}{\numberline {2.6.1}Testes Sobre Verificação e Validação I}{43}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Respostas para os Testes}{49}{subsection.2.6.2}%
 \contentsline {chapter}{\numberline {3}Verificação de Validação de Software II - Continuação}{51}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Fundamentos de Teste de Software}{52}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Os testes e o Ciclo de Vida do Software}{52}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Teste de Unidade}{52}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.1}Fundamentos de Teste de Software}{51}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Os testes e o Ciclo de Vida do Software}{51}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Teste de Unidade}{51}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Teste de Integração}{52}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Teste de Validação}{52}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Testes de Sistema}{52}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Modelo V}{52}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Testes Unitários}{53}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Testes Estruturais (Caixa-Branca)}{53}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}Técnicas de testes Estruturais}{53}{subsubsection.3.4.1.1}%
-\contentsline {subsection}{\numberline {3.4.2}Testes Funcionais (Caixa-Preta)}{53}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}Técnicas de testes funcionais}{53}{subsubsection.3.4.2.1}%
-\contentsline {section}{\numberline {3.5}Cadastro de Clientes}{53}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Tabela Clientes}{54}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Cadastro de Fornecedores}{54}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Cadastro de Produtos}{54}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Introdução à Manutenção de Software}{55}{chapter.4}%
-\contentsline {section}{\numberline {4.1}1- Manutenção: definição e características''}{55}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Definição de Manutenção de Software:}{55}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Natureza da Mudança:}{55}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Tipos de Manutenção:}{55}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Custos da Manutenção:}{56}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}2- Introdução à Manutenibilidade}{56}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Definição Preliminar:}{56}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Importância da Manutenibilidade:}{56}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Manutenibilidade}{57}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Atributos da Manutenibilidade:}{57}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Métricas de Manutenibilidade:}{57}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Técnicas de Desenvolvimento para a Manutenibilidade}{58}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Princípios de Projeto:}{58}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Qualidade do Código:}{58}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Documentação:}{58}{subsection.5.2.3}%
-\contentsline {chapter}{\numberline {6}PROCESSOS E PADRÕES NA MANUTENÇÃO DE SOFTWARE}{59}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Processos de Manutenção}{59}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Fluxo do Processo de Manutenção}{59}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Gerenciamento de Mudanças}{59}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Padrões de Desenvolvimento}{60}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Impacto na Manutenção}{60}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Exemplos de Padrões Relevantes}{60}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Padrões de Manutenção}{60}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Conceito e Exemplos}{60}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO}{61}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Desenvolvimento Baseado em Componentes e Impactos na Manutenção}{61}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Conceito de Desenvolvimento Baseado em Componentes (DBC):}{61}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Impactos na Manutenção:}{61}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Desenvolvimento Orientado a Aspectos e Impactos na Manutenção}{62}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Conceito de Desenvolvimento Orientado a Aspectos (DOA):}{62}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Impactos na Manutenção:}{62}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Atividades de Apoio a Manutenção}{62}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Gerenciamento de Configuração na Manutenção:}{62}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Reengenharia:}{62}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Testes de Regressão:}{62}{subsection.7.3.3}%
-\contentsline {chapter}{\numberline {8}Gerência de Configuração}{63}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introdução à Gerência de Configuração}{63}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Definição de Gerência de Configuração (GC):}{63}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}A Natureza da Mudança em Software:}{64}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Importância da GC:}{64}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Elementos da Gerência de Configuração}{64}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Itens de Configuração de Software (ICIs)}{64}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Identificação:}{64}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Controle de Versão:}{64}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Controle de Mudanças:}{65}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Auditoria de Configuração:}{65}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6}Relatório de Status:}{65}{subsection.8.2.6}%
-\contentsline {section}{\numberline {8.3}Processo de Gerência de Configuração}{65}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Planejamento da GC:}{65}{subsection.8.3.1}%
-\contentsline {section}{\numberline {8.4}Ferramentas de Gerência de Configuração}{66}{section.8.4}%
-\contentsline {section}{\numberline {8.5}GC em Contextos Ágeis e Tradicionais}{66}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Referências:}{66}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Revisão para NP2}{67}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Revisão para a Substitutiva}{69}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Referencias}{71}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Apêndice I - Estudo da - ERP Agrotec}{73}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Entrega \#01 - Módulo Cadastros}{73}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Interface JanelaPrincipal}{73}{section.12.2}%
-\contentsline {subsection}{\numberline {12.2.1}Como executar a janela principal}{76}{subsection.12.2.1}%
-\contentsline {section}{\numberline {12.3}Cadastro de Clientes}{77}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Tabela Clientes}{78}{subsection.12.3.1}%
-\contentsline {section}{\numberline {12.4}Cadastro de Fornecedores}{78}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Cadastro de Produtos}{78}{section.12.5}%
-\contentsline {chapter}{\numberline {13}Apendice II}{79}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Apendice III}{81}{chapter.14}%
+\contentsline {subsection}{\numberline {3.4.1}Testes Estruturais (Caixa-Branca)}{54}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Exemplo de Teste Unitário no Python}{54}{subsubsection.3.4.1.1}%
+\contentsline {subsection}{\numberline {3.4.2}Testes Funcionais (Caixa-Preta)}{56}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Técnicas de testes funcionais}{56}{subsubsection.3.4.2.1}%
+\contentsline {section}{\numberline {3.5}Cadastro de Clientes}{56}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Tabela Clientes}{58}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Cadastro de Fornecedores}{58}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Cadastro de Produtos}{58}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Introdução à Manutenção de Software}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}1- Manutenção: definição e características''}{59}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Definição de Manutenção de Software:}{59}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Natureza da Mudança:}{59}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Tipos de Manutenção:}{59}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Custos da Manutenção:}{60}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}2- Introdução à Manutenibilidade}{60}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Definição Preliminar:}{60}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Importância da Manutenibilidade:}{60}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Manutenibilidade}{61}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Atributos da Manutenibilidade:}{61}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Métricas de Manutenibilidade:}{61}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Técnicas de Desenvolvimento para a Manutenibilidade}{62}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Princípios de Projeto:}{62}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Qualidade do Código:}{62}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Documentação:}{62}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}PROCESSOS E PADRÕES NA MANUTENÇÃO DE SOFTWARE}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Processos de Manutenção}{63}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Fluxo do Processo de Manutenção}{63}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Gerenciamento de Mudanças}{63}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Padrões de Desenvolvimento}{64}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Impacto na Manutenção}{64}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Exemplos de Padrões Relevantes}{64}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Padrões de Manutenção}{64}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Conceito e Exemplos}{64}{subsection.6.3.1}%
+\contentsline {chapter}{\numberline {7}ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO}{65}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Desenvolvimento Baseado em Componentes e Impactos na Manutenção}{65}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Conceito de Desenvolvimento Baseado em Componentes (DBC):}{65}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Impactos na Manutenção:}{65}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Desenvolvimento Orientado a Aspectos e Impactos na Manutenção}{66}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Conceito de Desenvolvimento Orientado a Aspectos (DOA):}{66}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Impactos na Manutenção:}{66}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Atividades de Apoio a Manutenção}{66}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Gerenciamento de Configuração na Manutenção:}{66}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Reengenharia:}{66}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Testes de Regressão:}{66}{subsection.7.3.3}%
+\contentsline {chapter}{\numberline {8}Gerência de Configuração}{67}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introdução à Gerência de Configuração}{67}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Definição de Gerência de Configuração (GC):}{67}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}A Natureza da Mudança em Software:}{68}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Importância da GC:}{68}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Elementos da Gerência de Configuração}{68}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Itens de Configuração de Software (ICIs)}{68}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Identificação:}{68}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Controle de Versão:}{68}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Controle de Mudanças:}{69}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Auditoria de Configuração:}{69}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Relatório de Status:}{69}{subsection.8.2.6}%
+\contentsline {section}{\numberline {8.3}Processo de Gerência de Configuração}{69}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Planejamento da GC:}{69}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}Ferramentas de Gerência de Configuração}{70}{section.8.4}%
+\contentsline {section}{\numberline {8.5}GC em Contextos Ágeis e Tradicionais}{70}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Referências:}{70}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Revisão para NP2}{71}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Revisão para a Substitutiva}{73}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Referencias}{75}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Apêndice I - Estudo da - ERP Agrotec}{77}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Entrega \#01 - Módulo Cadastros}{77}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Interface JanelaPrincipal}{77}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Como executar a janela principal}{80}{subsection.12.2.1}%
+\contentsline {section}{\numberline {12.3}Cadastro de Clientes}{81}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Tabela Clientes}{82}{subsection.12.3.1}%
+\contentsline {section}{\numberline {12.4}Cadastro de Fornecedores}{82}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Cadastro de Produtos}{82}{section.12.5}%
+\contentsline {chapter}{\numberline {13}Apendice II}{83}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Apendice III}{85}{chapter.14}%

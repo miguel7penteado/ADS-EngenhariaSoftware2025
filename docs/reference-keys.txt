@@ -58,7 +58,7 @@ testes-de-sistema
 modelo-v
 testes-unitários
 testes-estruturais-caixa-branca
-técnicas-de-testes-estruturais
+exemplo-de-teste-unitário-no-python
 testes-funcionais-caixa-preta
 técnicas-de-testes-funcionais
 cadastro-de-clientes
