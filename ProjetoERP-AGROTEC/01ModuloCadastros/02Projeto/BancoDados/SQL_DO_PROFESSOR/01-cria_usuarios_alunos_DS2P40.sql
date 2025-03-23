@@ -60,3 +60,26 @@ END
 $criacao_alunos_ads_engenharia_software_2_turma_DS2P40$
 ;
 
+
+
+
+
+
+
+
+
+
+
+
+banco-de-dados-G61ICI-3
+
+
+
+
+
+
+
+
+
+
+| G61ICI-3    | THIAGO VERNIER LOUREIRO MAIA  |

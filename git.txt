@@ -1,4 +1,6 @@
 
+git push git@github.com:miguel7penteado/ADS-EngenhariaSoftware2025.git main
+
 # Salvando estado
 git commit -a -m "Backup ramificação 2025-03-22"
 git branch 2025-03-22

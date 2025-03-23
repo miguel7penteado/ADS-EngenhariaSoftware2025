@@ -42,11 +42,17 @@ Quais os objetivos globais da etapa de Verificação e Validação de Software ?
 | 4)  Assegurar que o software atenda aos requisitos do cliente.                       |
 +--------------------------------------------------------------------------------------+
 
-## Classificação das Técnicas de Avaliação do Software:
+## Classificação das Técnicas de Verificação e Validação:
 
-As técnicas de Avaliação de Software podem ser **estáticas** ou **dinâmicas**. Ambas sem complementam e o ideal é que ambas abordagens sejam aplicadas na avaliação do produto.
+Para garantir a Qualidade do Software, a abordagem das técnicas de Verificação e Validação de software podem ser organizadas em dois grandes grupos principais:
 
-## Técnicas Estáticas
+-   **Técnicas Estáticas de Verificação e Validação de software**;
+
+-   **Técnicas** **Dinâmicas de Verificação e Validação de software**;
+
+Ambas sem complementam e o ideal é que ambas abordagens sejam aplicadas na avaliação do produto.
+
+## Verificação e Validação de software por Técnicas Estáticas
 
 As Técnicas Estáticas são Inspeções e revisões que analisam os requisitos do sistema, modelos de projeto e o código-fonte do programa sem executá-lo. O objetivo dessas técnicas é identificar erros, inconsistências, ambiguidades e desvios de padrões e requisitos em um estágio inicial do ciclo de vida do desenvolvimento de software. Os 4 tipos de técnicas estáticas mais comuns são:
 
@@ -86,13 +92,19 @@ Na Inspeção do Produto de software, uma **pequena equipe** verifica o código 
 
 Inspeciona-se o código fonte do programa **sem executa-lo**, procurando erros de programação "na raça".
 
-#### D) Verificação Formal do Produto e Métodos Formais
+#### D) Análise Estática Automatizada
+
+Inspeciona-se o código fonte do programa **com auxílio de um programa**, como por exemplo o [RATS (Rough Auditing Tool for Security)](https://www.security-database.com/toolswatch/RATS-v2-3-Rough-Auditing-Tool-for.html) que significa "Ferramenta de auditoria bruta para segurança".
+
+![](images/VerificacaoValidacao/TecnicasEstaticas/rats-2.3.jpg)
+
+#### E) Verificação Formal do Produto e Métodos Formais
 
 ![Um teste de hipótese para validar software](images/estatistica.jpg)
 
 Utiliza-se **métodos matemáticos e estatísticos** para avaliar o programa. Usado em software de missão crítica como software supervisório de usinas nucleares, cirurgia robótica e software de navegação de aviação.
 
-## Técnicas Dinâmicas
+## Verificação e Validação de software por Técnicas Dinâmicas
 
 As Técnicas Dinâmicas são **testes de software**, nos quais o sistema é executado com dados de testes simulados.
 
@@ -125,3 +137,69 @@ O teste de sistema pode ser separado em 6 subtestes:
 +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 A escolha das técnicas dinâmicas e dos tipos de testes a serem utilizados depende do **tipo de software a ser desenvolvido**, dos **requisitos do projeto**, dos **recursos disponíveis** e dos **riscos envolvidos**. O objetivo final é **encontrar o maior número possível de erros** com o mínimo de esforço e garantir a entrega de software de alta qualidade que atenda às necessidades dos usuários.
+
+## Exercícios
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+| **TESTE 1**                                                                                                                         |
++=====================================================================================================================================+
+| Qual das seguintes afirmações melhor descreve o conceito de **verificação de software**?                                            |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| A) É o processo de testar o software no ambiente do usuário final para garantir que ele atenda às suas necessidades e expectativas. |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| B) Refere-se ao conjunto de atividades que visam descobrir erros e defeitos no software antes que ele seja entregue.                |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| C) Consiste em garantir que o software construído implementa corretamente as funcionalidades e requisitos especificados.            |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| D) Envolve a avaliação do desempenho do software em diferentes condições de carga e estresse para identificar gargalos.             |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| E) É a prática de gerenciar e controlar as mudanças feitas no software ao longo do seu ciclo de vida.                               |
++-------------------------------------------------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **TESTE 2**                                                                                                                                                    |
++================================================================================================================================================================+
+| Qual das seguintes afirmações melhor descreve o conceito de **validação de software**?                                                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| A) É o processo de confirmar se o software está livre de defeitos através da execução de diversos casos de teste que cobrem o código em sua totalidade.        |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| B) Refere-se ao conjunto de atividades que garantem que o software foi construído corretamente, ou seja, em conformidade com as especificações de requisitos.  |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| C) Envolve a análise estática do código-fonte para identificar potenciais vulnerabilidades de segurança e garantir a conformidade com padrões de codificação.  |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| D) É a prática de documentar o design do software e garantir que a implementação esteja alinhada com a arquitetura definida.                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| E) Consiste em avaliar se o software atende às necessidades e expectativas do cliente e dos usuários finais, assegurando que o "produto certo" foi construído. |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **TESTE 3**                                                                                                                                                                                                                                                                                                                                                   |
++===============================================================================================================================================================================================================================================================================================================================================================+
+| Qual das seguintes afirmações descreve melhor a técnica de "**Walkthrough**" (passeio) no contexto de Verificação e Validação de software?                                                                                                                                                                                                                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| A) É uma técnica **dinâmica** que envolve a execução do software com dados de teste para observar seu comportamento e identificar defeitos em tempo de execução.                                                                                                                                                                                              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| B) Refere-se à aplicação de **métodos formais** que utilizam notação matemática para especificar e verificar as propriedades do software.                                                                                                                                                                                                                     |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| C) Consiste na utilização de **testes automatizados** e ferramentas específicas para executar um grande número de casos de teste e verificar os resultados em relação às expectativas.                                                                                                                                                                        |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| D) Trata-se de uma **revisão técnica informal** ou **passeio informal** realizado com colegas, onde um produto de software (como um documento de requisitos, um projeto ou um trecho de código) é examinado passo a passo por um grupo para identificar possíveis erros, inconsistências, ou áreas que precisam de melhorias, **sem a execução do software**. |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| E) Envolve a condução de **testes de aceitação pelo usuário** em um ambiente operacional para determinar se o software atende às necessidades do cliente e está pronto para ser implantado.                                                                                                                                                                   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+| **TESTE 4**                                                                                                                       |
++===================================================================================================================================+
+| Qual das seguintes opções lista os tipos mais comuns de **técnicas estáticas** utilizadas em Verificação e Validação de software? |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| A) Revisões técnicas (incluindo inspeções e walkthroughs) e análise estática automatizada.                                        |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| B) Testes de unidade, testes de integração e testes de sistema.                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| C) Testes alfa, testes beta e testes de aceitação pelo usuário.                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| D) Testes de desempenho, testes de segurança e testes de carga.                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| E) Depuração, teste de regressão e teste de fumaça.                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------+
