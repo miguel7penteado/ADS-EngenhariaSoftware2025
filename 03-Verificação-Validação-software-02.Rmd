@@ -6,11 +6,72 @@
 
 ## Os testes e o Ciclo de Vida do Software
 
-### Teste de Unidade
+### Teste de Unidade ou Unitários
 
 Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
 
+##### Ferramentas (bibliotecas) de teste unitário das linguagens de programação mais populares e robustas
+
++---------------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| Nome do framework de teste de unidade | Linguagem  | Logotipo                                                                                             |
++=======================================+============+======================================================================================================+
+| Pytest                                | Python     | ![Logotipo do Pytest](images/VerificacaoValidacao/TestesSoftware/pytest.jpg){width="102"}            |
++---------------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| JUnit                                 | Java       | ![Logotipo do JUnit](images/VerificacaoValidacao/TestesSoftware/junit.jpg){width="NaN" height="NaN"} |
++---------------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| CTest                                 | C++        | ![Logotipo do CTest](images/VerificacaoValidacao/TestesSoftware/ctest.jpg){width="92"}               |
++---------------------------------------+------------+------------------------------------------------------------------------------------------------------+
+
+#### Exemplo de Teste Unitário no Python
+
+Vamos testar uma função chamada `soma` que faça adição de dois números `a` e `b`.
+
+Crie um arquivo **soma.py** que contém função chamada `soma` que faça adição de dois números `a` e `b` :
+
+Código do arquivo soma segue abaixo:
+
+``` python
+
+# arquivo soma.py
+
+
+def soma(a, b):
+    return a + b
+```
+
+Agora crie, no mesmo diretório, um arquivo cahamdo **test_soma.py** .
+
+Esse arquivo cria a função de este testa `test_soma_positivos()` que testa a função soma `soma` passando dois números `2` e `3` para ela.
+
+O resultado esperado é 5 :
+
+``` python
+from soma import soma
+
+def test_soma_positivos():
+    assert soma(2, 3) == 5
+    
+```
+
+Então, estando os arquivos **soma.py** e **test_soma.py** no mesmo arquivo, basta executar a ferramenta **pytest**
+
+``` cmd
+============================= test session starts ==============================
+platform linux -- Python 3.x.x, pytest-x.x.x, py-x.x.x, pluggy-x.x.x
+rootdir: /path/to/your/directory
+
+collected 5 items
+
+test_soma.py .....                                                    [100%]
+
+============================== 5 passed in 0.01s ==============================
+```
+
+A função **soma()** passou no teste unitário.
+
 ### Teste de Integração
+
+![](images/VerificacaoValidacao/TestesSoftware/teste_integracao.jpeg){width="346"}
 
 Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
 
@@ -20,9 +81,13 @@ Focado em testar cada componente individualmente para garantir que funcione adeq
 
 ### Testes de Sistema
 
+![](images/VerificacaoValidacao/TestesSoftware/teste_de_sistema.jpeg){width="254"}
+
 Focado em testar cada componente individualmente para garantir que funcione adequadamente como uma unidade.
 
 ## Modelo V
+
+![](images/VerificacaoValidacao/TestesSoftware/modelo_v.jpeg){width="194"}
 
 Em Testes de Software, o **Diagrama V (ou Modelo V)** é uma variação na representação do modelo cascata (ciclo de vida clássico) que descreve a relação entre **ações de garantia da qualidade (testes)** e as **ações associadas a comunicação, modelagem e atividades de construção iniciais**. Ele oferece uma maneira de **visualizar como as ações de verificação e validação são aplicadas a um trabalho de engenharia anterior**.
 
@@ -62,58 +127,6 @@ Os t**estes caixa-branca**, também chamados de teste da caixa-de-vidro ou **tes
 
 O **teste de caixa-branca se alinha com o teste unitário**. O teste caixa-branca é frequentemente aplicado a **pequenos componentes de programas (por exemplo, módulos ou pequenos grupos de módulos)**, sendo considerado um "teste no pequeno".
 
-#### Exemplo de Teste Unitário no Python
-
-Vamos testar uma função chamada `soma` que faça adição de dois números `a` e `b`.
-
-Crie um arquivo **soma.py** que contém função chamada `soma` que faça adição de dois números `a` e `b` :
-
-Código do arquivo soma segue abaixo:
-
-```python
-
-# arquivo soma.py
-
-
-def soma(a, b):
-    return a + b
-
-
-```
-
-Agora crie, no mesmo diretório, um arquivo cahamdo **test_soma.py** .
-
-Esse arquivo cria a função de este  testa `test_soma_positivos()` que testa a função soma `soma` passando dois números `2` e `3` para ela.
-
-O resultado esperado é 5 :
-
-```python
-from soma import soma
-
-def test_soma_positivos():
-    assert soma(2, 3) == 5
-    
-
-```
-
-Então, estando os arquivos **soma.py** e **test_soma.py**  no mesmo arquivo, basta executar a ferramenta **pytest**
-
-
-```cmd
-============================= test session starts ==============================
-platform linux -- Python 3.x.x, pytest-x.x.x, py-x.x.x, pluggy-x.x.x
-rootdir: /path/to/your/directory
-
-collected 5 items
-
-test_soma.py .....                                                    [100%]
-
-============================== 5 passed in 0.01s ==============================
-```
-
-A função **soma()** passou no teste unitário.
-
-
 ### Testes Funcionais (Caixa-Preta)
 
 ![](images/VerificacaoValidacao/TestesSoftware/caixa_preta.jpeg){width="396"}
@@ -121,6 +134,84 @@ A função **soma()** passou no teste unitário.
 Os **testes caixa-preta**, também chamados de **teste comportamental** ou **teste funcional**, são uma abordagem de teste que **focaliza os requisitos funcionais do software**. Diferentemente dos testes caixa-branca, que examinam a estrutura lógica interna do software, o teste caixa-preta **faz referência a testes realizados na interface do software**, com **pouca preocupação em relação à estrutura lógica interna do software**. Em vez de olhar o código-fonte, os testadores caixa-preta trabalham com a **visão externa do software**.
 
 #### Técnicas de testes funcionais
+
+## Exercícios
+
+### Testes
+
++-----------------------------------------------------------------------------------------------------------+
+| TESTE 01                                                                                                  |
++===========================================================================================================+
+| Qual é o objetivo fundamental do Teste de Software ?                                                      |
++-----------------------------------------------------------------------------------------------------------+
+| a) Otimizar o desempenho do software para garantir uma melhor experiência do usuário.                     |
++-----------------------------------------------------------------------------------------------------------+
+| b) Descobrir o maior número possível de erros e defeitos no software antes de sua entrega ou implantação. |
++-----------------------------------------------------------------------------------------------------------+
+| c) Validar se o software está sendo desenvolvido dentro do prazo e do orçamento estipulados.              |
++-----------------------------------------------------------------------------------------------------------+
+| d) Garantir que o software seja compatível com todas as plataformas e dispositivos existentes.            |
++-----------------------------------------------------------------------------------------------------------+
+| e) Documentar detalhadamente todas as funcionalidades do software para referência futura.                 |
++-----------------------------------------------------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| TESTE 02                                                                                                                                  |
++===========================================================================================================================================+
+| No contexto de Testes de Software, qual a distinção essencial entre **verificação e validação**?                                          |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| a) Verificação foca em testar o software em diferentes ambientes, enquanto validação se concentra na sua funcionalidade.                  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| b) Verificação é realizada pelos desenvolvedores, e validação é feita pelos usuários finais.                                              |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| c) Verificação pergunta "Estamos construindo o produto corretamente?", enquanto validação pergunta "Estamos construindo o produto certo?" |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| d) Validação ocorre antes da verificação no ciclo de vida de desenvolvimento de software.                                                 |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| e) Ambas se referem ao mesmo conjunto de atividades de garantia da qualidade.                                                             |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| TESTE 03                                                                                                                                          |
++===================================================================================================================================================+
+| Qual tipo de teste de software se baseia no **exame da estrutura interna** do software, incluindo seu código-fonte, para projetar casos de teste? |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| a) Teste de caixa-preta                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| b) Teste de desempenho.                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| c) Teste de usabilidade.                                                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| d) Teste de caixa-branca (ou estrutural)                                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| e) Teste de integração.                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+### Respostas dos Testes
+
++--------------+----------+
+| Teste        | Resposta |
++==============+==========+
+| **Teste_01** | B        |
++--------------+----------+
+| **Teste_02** | C        |
++--------------+----------+
+| **Teste_03** | D        |
++--------------+----------+
+| **Teste_04** |          |
++--------------+----------+
+| **Teste_05** |          |
++--------------+----------+
+| **Teste_06** |          |
++--------------+----------+
+| **Teste_07** |          |
++--------------+----------+
+| **Teste_08** |          |
++--------------+----------+
+| **Teste_09** |          |
++--------------+----------+
+| **Teste_10** |          |
++--------------+----------+
 
 =======================================================
 
