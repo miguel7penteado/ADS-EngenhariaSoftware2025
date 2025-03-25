@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  25 MAR 2025 02:48
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  25 MAR 2025 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,21 +1180,17 @@ Overfull \hbox (45.33234pt too wide) has occurred while \output is active
 [39]
 File: images/estatistica.jpg Graphic file (type bmp)
 <images/estatistica.jpg>
-
-Overfull \hbox (0.73523pt too wide) in paragraph at lines 1463--1463
- [][]\TU/lmr/m/n/10 Unidade| 
- []
-
 [40]
-Overfull \hbox (10.79291pt too wide) in paragraph at lines 1482--1482
- []\TU/lmr/m/n/10 tação/Configuração)| 
- []
-
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 2.5 on input line 1484.
 
 
+Overfull \hbox (48.10233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  VERIFICAÇÃO E VALIDAÇÃO DE SOFTWARE POR TÉCNICAS DINÂMICAS \TU/lmr/m/n/10 41
+ []
+
+[41]
 Overfull \hbox (2.59003pt too wide) in alignment at lines 1493--1499
  [] 
  []
@@ -1210,10 +1206,6 @@ Overfull \hbox (2.59003pt too wide) in alignment at lines 1501--1547
  []
 
 
-
-[41]
-
-[42]
 Overfull \hbox (2.1373pt too wide) in alignment at lines 1550--1556
  [] 
  []
@@ -1228,7 +1220,7 @@ Overfull \hbox (2.1373pt too wide) in alignment at lines 1558--1604
  [] 
  []
 
-
+[42]
 Overfull \hbox (0.96863pt too wide) in alignment at lines 1607--1613
  [] 
  []
@@ -1243,7 +1235,7 @@ Overfull \hbox (0.96863pt too wide) in alignment at lines 1615--1661
  [] 
  []
 
-[43]
+
 Overfull \hbox (2.62161pt too wide) in alignment at lines 1664--1670
  [] 
  []
@@ -1259,6 +1251,10 @@ Overfull \hbox (2.62161pt too wide) in alignment at lines 1672--1718
  []
 
 
+
+[43]
+
+[44]
 Overfull \hbox (3.27965pt too wide) in alignment at lines 1721--1727
  [] 
  []
@@ -1273,7 +1269,7 @@ Overfull \hbox (3.27965pt too wide) in alignment at lines 1729--1775
  [] 
  []
 
-[44]
+
 Overfull \hbox (2.7269pt too wide) in alignment at lines 1778--1784
  [] 
  []
@@ -1304,6 +1300,8 @@ Overfull \hbox (3.06908pt too wide) in alignment at lines 1843--1889
  []
 
 
+
+[45]
 Overfull \hbox (2.79533pt too wide) in alignment at lines 1892--1898
  [] 
  []
@@ -1319,8 +1317,6 @@ Overfull \hbox (2.79533pt too wide) in alignment at lines 1900--1946
  []
 
 
-
-[45]
 Overfull \hbox (2.62161pt too wide) in alignment at lines 1949--1955
  [] 
  []
@@ -1335,7 +1331,7 @@ Overfull \hbox (2.62161pt too wide) in alignment at lines 1957--2003
  [] 
  []
 
-
+[46]
 Overfull \hbox (2.17415pt too wide) in alignment at lines 2006--2012
  [] 
  []
@@ -1350,9 +1346,6 @@ Overfull \hbox (2.17415pt too wide) in alignment at lines 2014--2060
  [] 
  []
 
-
-
-[46]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 2.16 on input line 2081.
@@ -1662,10 +1655,9 @@ Overfull \hbox (0.5159pt too wide) in alignment at lines 2949--2956
 
 
 
-[61]
-! This can't happen (flushing).
-<to be read again> ...out_execute_cont: \endgroup 
-                                                  \set@typeset@protect 
+! This can't happen (copying).
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.2956 \end{longtable}
                       
 I'm broken. Please show this to someone who can fix can fix
@@ -1674,9 +1666,9 @@ I'm broken. Please show this to someone who can fix can fix
 Here is how much of TeX's memory you used:
  18064 strings out of 475847
  337869 string characters out of 5773348
- 867939 words of memory out of 5000000
+ 865939 words of memory out of 5000000
  40728 multiletter control sequences out of 15000+600000
  562796 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,8n,114p,3220b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on ADS-EngenhariaSoftware-II-2025.pdf (61 pages).
+Output written on ADS-EngenhariaSoftware-II-2025.pdf (60 pages).
