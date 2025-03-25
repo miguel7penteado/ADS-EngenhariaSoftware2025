@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  24 MAR 2025 02:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  25 MAR 2025 02:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,17 +1180,21 @@ Overfull \hbox (45.33234pt too wide) has occurred while \output is active
 [39]
 File: images/estatistica.jpg Graphic file (type bmp)
 <images/estatistica.jpg>
+
+Overfull \hbox (0.73523pt too wide) in paragraph at lines 1463--1463
+ [][]\TU/lmr/m/n/10 Unidade| 
+ []
+
 [40]
+Overfull \hbox (10.79291pt too wide) in paragraph at lines 1482--1482
+ []\TU/lmr/m/n/10 tação/Configuração)| 
+ []
+
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 2.5 on input line 1484.
 
 
-Overfull \hbox (48.10233pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 2.5.  VERIFICAÇÃO E VALIDAÇÃO DE SOFTWARE POR TÉCNICAS DINÂMICAS \TU/lmr/m/n/10 41
- []
-
-[41]
 Overfull \hbox (2.59003pt too wide) in alignment at lines 1493--1499
  [] 
  []
@@ -1206,6 +1210,10 @@ Overfull \hbox (2.59003pt too wide) in alignment at lines 1501--1547
  []
 
 
+
+[41]
+
+[42]
 Overfull \hbox (2.1373pt too wide) in alignment at lines 1550--1556
  [] 
  []
@@ -1220,7 +1228,7 @@ Overfull \hbox (2.1373pt too wide) in alignment at lines 1558--1604
  [] 
  []
 
-[42]
+
 Overfull \hbox (0.96863pt too wide) in alignment at lines 1607--1613
  [] 
  []
@@ -1235,7 +1243,7 @@ Overfull \hbox (0.96863pt too wide) in alignment at lines 1615--1661
  [] 
  []
 
-
+[43]
 Overfull \hbox (2.62161pt too wide) in alignment at lines 1664--1670
  [] 
  []
@@ -1251,10 +1259,6 @@ Overfull \hbox (2.62161pt too wide) in alignment at lines 1672--1718
  []
 
 
-
-[43]
-
-[44]
 Overfull \hbox (3.27965pt too wide) in alignment at lines 1721--1727
  [] 
  []
@@ -1269,7 +1273,7 @@ Overfull \hbox (3.27965pt too wide) in alignment at lines 1729--1775
  [] 
  []
 
-
+[44]
 Overfull \hbox (2.7269pt too wide) in alignment at lines 1778--1784
  [] 
  []
@@ -1300,8 +1304,6 @@ Overfull \hbox (3.06908pt too wide) in alignment at lines 1843--1889
  []
 
 
-
-[45]
 Overfull \hbox (2.79533pt too wide) in alignment at lines 1892--1898
  [] 
  []
@@ -1317,6 +1319,8 @@ Overfull \hbox (2.79533pt too wide) in alignment at lines 1900--1946
  []
 
 
+
+[45]
 Overfull \hbox (2.62161pt too wide) in alignment at lines 1949--1955
  [] 
  []
@@ -1331,7 +1335,7 @@ Overfull \hbox (2.62161pt too wide) in alignment at lines 1957--2003
  [] 
  []
 
-[46]
+
 Overfull \hbox (2.17415pt too wide) in alignment at lines 2006--2012
  [] 
  []
@@ -1347,6 +1351,9 @@ Overfull \hbox (2.17415pt too wide) in alignment at lines 2014--2060
  []
 
 
+
+[46]
+
 Package longtable Warning: Column widths have changed
 (longtable)                in table 2.16 on input line 2081.
 
@@ -1358,16 +1365,6 @@ Package longtable Warning: Column widths have changed
 
 ]
 Chapter 3.
-
-Overfull \hbox (21.34306pt too wide) in paragraph at lines 2105--2106
-[]\TU/lmr/m/n/10 Linguagem  
- []
-
-
-Overfull \hbox (5.52307pt too wide) in paragraph at lines 2113--2113
-[]|\TU/lmr/m/n/10 Python|  
- []
-
 File: images/VerificacaoValidacao/TestesSoftware/pytest.jpg Graphic file (type bmp)
 <images/VerificacaoValidacao/TestesSoftware/pytest.jpg>
 File: images/VerificacaoValidacao/TestesSoftware/junit.jpg Graphic file (type bmp)
@@ -1378,7 +1375,7 @@ File: images/VerificacaoValidacao/TestesSoftware/ctest.jpg Graphic file (type bm
 
 [49]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2150.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2132.
 
 
 
@@ -1390,16 +1387,15 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
 File: images/VerificacaoValidacao/TestesSoftware/teste_integracao.jpeg Graphic file (type bmp)
 <images/VerificacaoValidacao/TestesSoftware/teste_integracao.jpeg>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1028) has occurred while \output is active []
 
 
 
 [51]
 File: images/VerificacaoValidacao/TestesSoftware/teste_de_sistema.jpeg Graphic file (type bmp)
 <images/VerificacaoValidacao/TestesSoftware/teste_de_sistema.jpeg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+File: images/VerificacaoValidacao/TestesSoftware/modelo_v.jpeg Graphic file (type bmp)
+<images/VerificacaoValidacao/TestesSoftware/modelo_v.jpeg>
 
 
 
@@ -1408,28 +1404,31 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
  []
 
 [52]
-File: images/VerificacaoValidacao/TestesSoftware/modelo_v.jpeg Graphic file (type bmp)
-<images/VerificacaoValidacao/TestesSoftware/modelo_v.jpeg>
-
-
-[53]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.2 on input line 2273.
+(longtable)                in table 3.2 on input line 2255.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.3 on input line 2281.
+(longtable)                in table 3.3 on input line 2263.
 
 File: images/VerificacaoValidacao/Modelo-V.jpg Graphic file (type bmp)
 <images/VerificacaoValidacao/Modelo-V.jpg>
 
-Overfull \hbox (257.2659pt too wide) in paragraph at lines 2285--2286
+Overfull \hbox (257.2659pt too wide) in paragraph at lines 2267--2268
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53]
+File: images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg Graphic file (type bmp)
+<images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg>
+
+Underfull \vbox (badness 7030) has occurred while \output is active []
 
 
 
@@ -1439,18 +1438,27 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
  []
 
 [54]
-File: images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg Graphic file (type bmp)
-<images/VerificacaoValidacao/TestesSoftware/caixa_branca.jpeg>
-
-Underfull \vbox (badness 7030) has occurred while \output is active []
-
-
-
-[55]
 File: images/VerificacaoValidacao/TestesSoftware/caixa_preta.jpeg Graphic file (type bmp)
 <images/VerificacaoValidacao/TestesSoftware/caixa_preta.jpeg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[55]
+Overfull \hbox (3.20595pt too wide) in alignment at lines 2296--2302
+ [] 
+ []
+
+
+Overfull \hbox (3.20595pt too wide) in alignment at lines 2302--2304
+ [] 
+ []
+
+
+Overfull \hbox (3.20595pt too wide) in alignment at lines 2304--2350
+ [] 
+ []
 
 
 
@@ -1460,49 +1468,77 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
  []
 
 [56]
-Overfull \hbox (3.20595pt too wide) in alignment at lines 2314--2320
+Overfull \hbox (2.44789pt too wide) in alignment at lines 2353--2359
  [] 
  []
 
 
-Overfull \hbox (3.20595pt too wide) in alignment at lines 2320--2322
+Overfull \hbox (2.44789pt too wide) in alignment at lines 2359--2361
  [] 
  []
 
 
-Overfull \hbox (3.20595pt too wide) in alignment at lines 2322--2368
+Overfull \hbox (2.44789pt too wide) in alignment at lines 2361--2407
  [] 
  []
 
 
+Overfull \hbox (2.34787pt too wide) in alignment at lines 2410--2416
+ [] 
+ []
+
+
+Overfull \hbox (2.34787pt too wide) in alignment at lines 2416--2418
+ [] 
+ []
+
+
+Overfull \hbox (2.34787pt too wide) in alignment at lines 2418--2464
+ [] 
+ []
 
 [57]
-Overfull \hbox (2.44789pt too wide) in alignment at lines 2371--2377
+Overfull \hbox (3.37967pt too wide) in alignment at lines 2467--2473
  [] 
  []
 
 
-Overfull \hbox (2.44789pt too wide) in alignment at lines 2377--2379
+Overfull \hbox (3.37967pt too wide) in alignment at lines 2473--2475
  [] 
  []
 
 
-Overfull \hbox (2.44789pt too wide) in alignment at lines 2379--2425
+Overfull \hbox (3.37967pt too wide) in alignment at lines 2475--2521
  [] 
  []
 
 
-Overfull \hbox (2.34787pt too wide) in alignment at lines 2428--2434
+Overfull \hbox (3.17436pt too wide) in alignment at lines 2524--2530
  [] 
  []
 
 
-Overfull \hbox (2.34787pt too wide) in alignment at lines 2434--2436
+Overfull \hbox (3.17436pt too wide) in alignment at lines 2530--2532
  [] 
  []
 
 
-Overfull \hbox (2.34787pt too wide) in alignment at lines 2436--2482
+Overfull \hbox (3.17436pt too wide) in alignment at lines 2532--2578
+ [] 
+ []
+
+
+Overfull \hbox (2.79533pt too wide) in alignment at lines 2581--2587
+ [] 
+ []
+
+
+Overfull \hbox (2.79533pt too wide) in alignment at lines 2587--2589
+ [] 
+ []
+
+
+Overfull \hbox (2.79533pt too wide) in alignment at lines 2589--2635
  [] 
  []
 
@@ -1512,94 +1548,79 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
  []
 
 [58]
-Overfull \hbox (3.37967pt too wide) in alignment at lines 2485--2491
+Overfull \hbox (2.62161pt too wide) in alignment at lines 2638--2644
  [] 
  []
 
 
-Overfull \hbox (3.37967pt too wide) in alignment at lines 2491--2493
+Overfull \hbox (2.62161pt too wide) in alignment at lines 2644--2646
  [] 
  []
 
 
-Overfull \hbox (3.37967pt too wide) in alignment at lines 2493--2539
+Overfull \hbox (2.62161pt too wide) in alignment at lines 2646--2692
  [] 
  []
 
 
-Overfull \hbox (3.17436pt too wide) in alignment at lines 2542--2548
+Overfull \hbox (3.4481pt too wide) in alignment at lines 2695--2701
  [] 
  []
 
 
-Overfull \hbox (3.17436pt too wide) in alignment at lines 2548--2550
+Overfull \hbox (3.4481pt too wide) in alignment at lines 2701--2703
  [] 
  []
 
 
-Overfull \hbox (3.17436pt too wide) in alignment at lines 2550--2596
+Overfull \hbox (3.4481pt too wide) in alignment at lines 2703--2749
  [] 
  []
 
 
-Overfull \hbox (2.79533pt too wide) in alignment at lines 2599--2605
+Overfull \hbox (3.27965pt too wide) in alignment at lines 2752--2758
  [] 
  []
 
 
-Overfull \hbox (2.79533pt too wide) in alignment at lines 2605--2607
+Overfull \hbox (3.27965pt too wide) in alignment at lines 2758--2760
  [] 
  []
 
 
-Overfull \hbox (2.79533pt too wide) in alignment at lines 2607--2653
+Overfull \hbox (3.27965pt too wide) in alignment at lines 2760--2806
  [] 
  []
 
 [59]
-Overfull \hbox (2.62161pt too wide) in alignment at lines 2656--2662
+Overfull \hbox (2.7269pt too wide) in alignment at lines 2809--2815
  [] 
  []
 
 
-Overfull \hbox (2.62161pt too wide) in alignment at lines 2662--2664
+Overfull \hbox (2.7269pt too wide) in alignment at lines 2815--2817
  [] 
  []
 
 
-Overfull \hbox (2.62161pt too wide) in alignment at lines 2664--2710
+Overfull \hbox (2.7269pt too wide) in alignment at lines 2817--2863
  [] 
  []
 
 
-Overfull \hbox (3.4481pt too wide) in alignment at lines 2713--2719
- [] 
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.14 on input line 2884.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.15 on input line 2896.
+
+
+Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2898--2899
+[]\TU/lmr/bx/n/10 Resposta: \TU/lmr/m/n/10 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
  []
 
 
-Overfull \hbox (3.4481pt too wide) in alignment at lines 2719--2721
- [] 
- []
-
-
-Overfull \hbox (3.4481pt too wide) in alignment at lines 2721--2767
- [] 
- []
-
-
-Overfull \hbox (3.27965pt too wide) in alignment at lines 2770--2776
- [] 
- []
-
-
-Overfull \hbox (3.27965pt too wide) in alignment at lines 2776--2778
- [] 
- []
-
-
-Overfull \hbox (3.27965pt too wide) in alignment at lines 2778--2824
- [] 
- []
 
 
 Overfull \hbox (55.30344pt too wide) has occurred while \output is active
@@ -1607,28 +1628,18 @@ Overfull \hbox (55.30344pt too wide) has occurred while \output is active
  []
 
 [60]
-Overfull \hbox (2.7269pt too wide) in alignment at lines 2827--2833
- [] 
- []
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.16 on input line 2908.
 
 
-Overfull \hbox (2.7269pt too wide) in alignment at lines 2833--2835
- [] 
- []
-
-
-Overfull \hbox (2.7269pt too wide) in alignment at lines 2835--2881
- [] 
- []
-
-
-Overfull \hbox (1.37924pt too wide) in alignment at lines 2917--2920
- [] 
+Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2910--2911
+[]\TU/lmr/bx/n/10 Resposta: \TU/lmr/m/n/10 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3.15 on input line 2920.
+(longtable)                in table 3.17 on input line 2920.
 
 
 Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2922--2923
@@ -1636,61 +1647,26 @@ Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2922--2923
  []
 
 
-Overfull \hbox (1.24237pt too wide) in alignment at lines 2929--2932
+Overfull \hbox (0.82649pt too wide) in alignment at lines 2931--2942
+ [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.18 on input line 2942.
+
+
+Overfull \hbox (0.5159pt too wide) in alignment at lines 2949--2956
  [] 
  []
 
 
 
 [61]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.16 on input line 2932.
-
-
-Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2934--2935
-[]\TU/lmr/bx/n/10 Resposta: \TU/lmr/m/n/10 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
- []
-
-
-Overfull \hbox (1.24237pt too wide) in alignment at lines 2941--2944
- [] 
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.17 on input line 2944.
-
-
-Overfull \hbox (11467.57501pt too wide) in paragraph at lines 2946--2947
-[]\TU/lmr/bx/n/10 Resposta: \TU/lmr/m/n/10 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ 
- []
-
-
-Overfull \hbox (0.82649pt too wide) in alignment at lines 2955--2966
- [] 
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.18 on input line 2966.
-
-
-Overfull \hbox (0.5159pt too wide) in alignment at lines 2973--2980
- [] 
- []
-
-
-
-
-Overfull \hbox (55.30344pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 62 \TU/lmr/m/sl/10 CHAPTER 3.  VERIFICAÇÃO DE VALIDAÇÃO DE SOFTWARE II - CONTINUAÇÃO
- []
-
-! This can't happen (copying).
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.2980 \end{longtable}
+! This can't happen (flushing).
+<to be read again> ...out_execute_cont: \endgroup 
+                                                  \set@typeset@protect 
+l.2956 \end{longtable}
                       
 I'm broken. Please show this to someone who can fix can fix
 
@@ -1698,7 +1674,7 @@ I'm broken. Please show this to someone who can fix can fix
 Here is how much of TeX's memory you used:
  18064 strings out of 475847
  337869 string characters out of 5773348
- 865939 words of memory out of 5000000
+ 867939 words of memory out of 5000000
  40728 multiletter control sequences out of 15000+600000
  562796 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
