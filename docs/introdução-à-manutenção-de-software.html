@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Professor Miguel Suez Xve Penteado" />
 
 
-<meta name="date" content="2025-03-25" />
+<meta name="date" content="2025-04-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -357,19 +357,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introdução-à-manutenção-de-software" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Aula 4</span> Introdução à Manutenção de Software<a href="introdução-à-manutenção-de-software.html#introdução-à-manutenção-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/manutencao-software/01-manutencao-introducao/01-manutencao-software.jpg" width="449" /></p>
 <div id="manutenção-definição-e-características" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> 1- Manutenção: definição e características”<a href="introdução-à-manutenção-de-software.html#manutenção-definição-e-características" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="definição-de-manutenção-de-software" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Definição de Manutenção de Software:<a href="introdução-à-manutenção-de-software.html#definição-de-manutenção-de-software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/manutencao-software/01-manutencao-introducao/03-manutencao.jpg" width="423" /></p>
+<blockquote>
+<p><strong><em>“Manutenção de software é um processo contínuo de mudança em um sistema após sua liberação para uso.” -</em></strong> <strong>Roger Pressman -</strong> <em>Engenharia de Software 8a edição</em></p>
+</blockquote>
+<p>Segundo Pressman, a Manutenção de Software envolve diversas ações:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Correção de erros:</strong> Identificação e reparo de defeitos encontrados no software;</p></li>
+<li><p><strong>Adaptação:</strong> Modificação do software para que ele continue funcionando em um ambiente operacional ou de negócios em mudança. Isso pode incluir adaptações a novas plataformas, sistemas operacionais ou requisitos de hardware;</p></li>
+<li><p><strong>Melhorias:</strong> Implementação de novas características e funcionalidades solicitadas pelos clientes ou outras partes interessadas;</p></li>
+<li><p><strong>Suporte ao usuário:</strong> Fornecimento de assistência aos usuários para resolver dúvidas sobre instalação, operação e uso da aplicação;</p></li>
+</ol>
 <p>O processo de modificação de um produto de software após a entrega, para corrigir defeitos, melhorar o desempenho ou outros atributos [Sommerville]. A manutenção é uma parte importante da evolução do software [Sommerville].</p>
 </div>
 <div id="natureza-da-mudança" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Natureza da Mudança:<a href="introdução-à-manutenção-de-software.html#natureza-da-mudança" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Discutir por que o software precisa ser mantido, incluindo correções de bugs, adaptação a novos ambientes, implementação de novos requisitos e manutenção preventiva [Sommerville, Pressman]. A Primeira Lei da Engenharia de Sistemas afirma que não importa em qual estágio do ciclo de vida, o sistema mudará [Sommerville - referindo-se à inevitabilidade da mudança].</p>
+<p>Discutir por que o software precisa ser mantido, incluindo correções de bugs, adaptação a novos ambientes, implementação de novos requisitos e manutenção preventiva [Sommerville, Pressman].</p>
+<p>A Primeira Lei da Engenharia de Sistemas afirma que <em>não importa em qual estágio do ciclo de vida, o sistema mudará</em> [Sommerville - referindo-se à inevitabilidade da mudança].</p>
 </div>
 <div id="tipos-de-manutenção" class="section level3 hasAnchor" number="4.1.3">
 <h3><span class="header-section-number">4.1.3</span> Tipos de Manutenção:<a href="introdução-à-manutenção-de-software.html#tipos-de-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Apresentar as categorias comuns de manutenção, como corretiva, adaptativa, perfectiva e preventiva [Pressman]. O livro “ENGENHARIA DE SOFTWARE II.pdf” lista “Tipos de manutenção” como um subtópico dentro de “Manutenção de software”.</p>
+<p>Padrão ISO/IEC <strong>14764</strong> - <strong>Engenharia de Software — Processos de Ciclo de Vida — Manutenção</strong></p>
+<div id="manutenções-voltadas-a-correção-do-software" class="section level4 hasAnchor" number="4.1.3.1">
+<h4><span class="header-section-number">4.1.3.1</span> MANUTENÇÕES VOLTADAS A CORREÇÃO DO SOFTWARE<a href="introdução-à-manutenção-de-software.html#manutenções-voltadas-a-correção-do-software" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="manutenção-corretiva" class="section level4 hasAnchor" number="4.1.3.2">
+<h4><span class="header-section-number">4.1.3.2</span> Manutenção Corretiva<a href="introdução-à-manutenção-de-software.html#manutenção-corretiva" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/01-manutencao-introducao/02-manutencao-corretiva.jpg" width="307" /></p>
+<p>É uma manutenção de REAÇÃO a um defeito encontrado para repara-lo.</p>
+</div>
+<div id="manutenção-preventiva" class="section level4 hasAnchor" number="4.1.3.3">
+<h4><span class="header-section-number">4.1.3.3</span> Manutenção Preventiva<a href="introdução-à-manutenção-de-software.html#manutenção-preventiva" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/01-manutencao-introducao/01-manutencao-preventiva.jpg" width="249" /></p>
+<p>É uma manutenção de Pró-Ação para melhorar a capacidade de manutenibilidade do sistema. Por exemplo, um software específico com arquivo de configuração construído em linguagem XML pode ser reescrito em formato JSON.</p>
+</div>
+<div id="voltadas-ao-aprimoramento-do-software-enhacement" class="section level4 hasAnchor" number="4.1.3.4">
+<h4><span class="header-section-number">4.1.3.4</span> VOLTADAS AO APRIMORAMENTO DO SOFTWARE (ENHACEMENT)<a href="introdução-à-manutenção-de-software.html#voltadas-ao-aprimoramento-do-software-enhacement" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="manutenção-adaptativa" class="section level4 hasAnchor" number="4.1.3.5">
+<h4><span class="header-section-number">4.1.3.5</span> Manutenção Adaptativa<a href="introdução-à-manutenção-de-software.html#manutenção-adaptativa" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/01-manutencao-introducao/03-manutencao-adaptativa.jpg" width="256" /></p>
+<p>É uma manutenção de REAÇÃO a uma mudança de ambiente. Exemplo, frente a um novo Navegador (javascript), o cliente web precisa ter seus métodos reescritos.</p>
+</div>
+<div id="manutenção-perfectiva-funcional-ou-evolutiva" class="section level4 hasAnchor" number="4.1.3.6">
+<h4><span class="header-section-number">4.1.3.6</span> Manutenção Perfectiva (FUNCIONAL ou EVOLUTIVA)<a href="introdução-à-manutenção-de-software.html#manutenção-perfectiva-funcional-ou-evolutiva" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/01-manutencao-introducao/04-manutencao-evolutiva.jpg" /></p>
+<p>É uma manutenção de Pró-Ação para adicionar FUNCIONALIDADE ou DESEMPENHO ao software ou Sistema de Informação.</p>
+</div>
+<div id="distribuição-de-tempo-por-tipo-de-manutenção-sommerville-2008" class="section level4 hasAnchor" number="4.1.3.7">
+<h4><span class="header-section-number">4.1.3.7</span> Distribuição de tempo por tipo de manutenção (Sommerville, 2008)<a href="introdução-à-manutenção-de-software.html#distribuição-de-tempo-por-tipo-de-manutenção-sommerville-2008" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Adaptativa: 18%</p>
+<p>Corretiva: 17%</p>
+<p>Perfectiva/Evolutiva: 65%</p>
+<p><img src="images/manutencao-software/01-manutencao-introducao/03-pequisa-manutencao-01.jpg" /></p>
+</div>
 </div>
 <div id="custos-da-manutenção" class="section level3 hasAnchor" number="4.1.4">
 <h3><span class="header-section-number">4.1.4</span> Custos da Manutenção:<a href="introdução-à-manutenção-de-software.html#custos-da-manutenção" class="anchor-section" aria-label="Anchor link to header"></a></h3>
