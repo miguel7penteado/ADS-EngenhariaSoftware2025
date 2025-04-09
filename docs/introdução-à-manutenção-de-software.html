@@ -444,7 +444,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Baixe o código SQL da tabela Clientes, do arquivo clientes1.sql da pasta exercicios/fatoracao. Acrescente chave primária a tabela clientes, definindo o atributo cpf como a chave primária. Faça a publicação do código refatorado.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb5-1"><a href="introdução-à-manutenção-de-software.html#cb5-1" tabindex="-1"></a></span>
 <span id="cb5-2"><a href="introdução-à-manutenção-de-software.html#cb5-2" tabindex="-1"></a>git clone https:/<span class="at">/github</span>.com<span class="at">/miguel7penteado/ADS-EngenhariaSoftware2025</span>.git</span></code></pre></div>
-<p>Teste o seu códio no seu servidor postgres da núvem.</p>
+<p>Teste o seu código no seu servidor postgres da núvem.</p>
+<p>Respota:</p>
+<p>Testei o código a seguir no servidor para adicionar CPF como chave primaria da tabela clientes:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb6-1"><a href="introdução-à-manutenção-de-software.html#cb6-1" tabindex="-1"></a><span class="kw">alter</span> <span class="kw">table</span> <span class="kw">public</span>.clientes <span class="kw">add</span> <span class="kw">constraint</span> <span class="ot">&quot;chave_primaria_clientes&quot;</span> <span class="kw">primary</span> <span class="kw">key</span>(cpf);</span></code></pre></div>
+<p>O código final do arquivo clientes1.sql ficaria assim, depois de refatorado:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb7-1"><a href="introdução-à-manutenção-de-software.html#cb7-1" tabindex="-1"></a><span class="kw">create</span> <span class="kw">table</span> <span class="kw">public</span>.clientes</span>
+<span id="cb7-2"><a href="introdução-à-manutenção-de-software.html#cb7-2" tabindex="-1"></a>(</span>
+<span id="cb7-3"><a href="introdução-à-manutenção-de-software.html#cb7-3" tabindex="-1"></a>    cpf <span class="dt">integer</span> <span class="kw">not</span> <span class="kw">null</span>,</span>
+<span id="cb7-4"><a href="introdução-à-manutenção-de-software.html#cb7-4" tabindex="-1"></a>    nome <span class="dt">varchar</span>(<span class="dv">200</span>),</span>
+<span id="cb7-5"><a href="introdução-à-manutenção-de-software.html#cb7-5" tabindex="-1"></a>    idade <span class="dt">integer</span>,</span>
+<span id="cb7-6"><a href="introdução-à-manutenção-de-software.html#cb7-6" tabindex="-1"></a>    endereco <span class="dt">varchar</span>(<span class="dv">500</span>),</span>
+<span id="cb7-7"><a href="introdução-à-manutenção-de-software.html#cb7-7" tabindex="-1"></a>    nascimento <span class="dt">varchar</span>(<span class="dv">100</span>)</span>
+<span id="cb7-8"><a href="introdução-à-manutenção-de-software.html#cb7-8" tabindex="-1"></a>);</span>
+<span id="cb7-9"><a href="introdução-à-manutenção-de-software.html#cb7-9" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="introdução-à-manutenção-de-software.html#cb7-10" tabindex="-1"></a><span class="kw">alter</span> <span class="kw">table</span> <span class="kw">public</span>.clientes <span class="kw">add</span> <span class="kw">constraint</span> <span class="ot">&quot;chave_primaria_clientes&quot;</span> <span class="kw">primary</span> <span class="kw">key</span>(cpf);</span></code></pre></div>
 
 </div>
 </div>

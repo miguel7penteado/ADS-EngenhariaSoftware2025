@@ -96,3 +96,26 @@ git clone https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025.git
 ```
 
 Teste o seu código no seu servidor postgres da núvem.
+
+Respota:
+
+Testei o código a seguir no servidor para adicionar CPF como chave primaria da tabela clientes:
+
+``` sql
+alter table public.clientes add constraint "chave_primaria_clientes" primary key(cpf);
+```
+
+O código final do arquivo clientes1.sql ficaria assim, depois de refatorado:
+
+``` sql
+create table public.clientes
+(
+	cpf integer not null,
+	nome varchar(200),
+	idade integer,
+	endereco varchar(500),
+	nascimento varchar(100)
+);
+
+alter table public.clientes add constraint "chave_primaria_clientes" primary key(cpf);
+```
