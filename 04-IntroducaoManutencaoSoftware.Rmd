@@ -95,4 +95,4 @@ Baixe o código SQL da tabela Clientes, do arquivo clientes1.sql da pasta exerci
 git clone https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025.git
 ```
 
-Teste o seu códio no seu servidor postgres da núvem.
+Teste o seu código no seu servidor postgres da núvem.
