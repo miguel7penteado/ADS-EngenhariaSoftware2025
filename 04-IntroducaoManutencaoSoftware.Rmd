@@ -97,7 +97,7 @@ git clone https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025.git
 
 Teste o seu código no seu servidor postgres da núvem.
 
-Respota:
+Resposta:
 
 Testei o código a seguir no servidor para adicionar CPF como chave primaria da tabela clientes:
 
