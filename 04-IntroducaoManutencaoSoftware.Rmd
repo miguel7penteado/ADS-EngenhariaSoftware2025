@@ -83,3 +83,16 @@ Apresentar o conceito de manutenibilidade como a facilidade com que o software p
 ### Importância da Manutenibilidade:
 
 Discutir por que a manutenibilidade é crucial para reduzir os custos e o esforço da manutenção a longo prazo [Sommerville, Pressman]. Qualidade e facilidade de manutenção são resultantes de um projeto bem feito [Pressman, 24].
+
+## Exercícios
+
+### Fatoração I
+
+Baixe o código SQL da tabela Clientes, do arquivo clientes1.sql da pasta exercicios/fatoracao. Acrescente chave primária a tabela clientes, definindo o atributo cpf como a chave primária. Faça a publicação do código refatorado.
+
+``` cmd
+
+git clone https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025.git
+```
+
+Teste o seu códio no seu servidor postgres da núvem.

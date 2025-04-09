@@ -89,6 +89,8 @@
 \contentsline {section}{\numberline {4.2}2- Introdução à Manutenibilidade}{75}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Definição Preliminar:}{75}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Importância da Manutenibilidade:}{75}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Exercícios}{75}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Fatoração I}{75}{subsection.4.3.1}%
 \contentsline {chapter}{\numberline {5}APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO}{77}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Manutenibilidade}{77}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Atributos da Manutenibilidade:}{77}{subsection.5.1.1}%

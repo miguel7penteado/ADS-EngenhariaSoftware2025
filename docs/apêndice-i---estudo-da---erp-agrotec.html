@@ -240,6 +240,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#definição-preliminar"><i class="fa fa-check"></i><b>4.2.1</b> Definição Preliminar:</a></li>
 <li class="chapter" data-level="4.2.2" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#importância-da-manutenibilidade"><i class="fa fa-check"></i><b>4.2.2</b> Importância da Manutenibilidade:</a></li>
 </ul></li>
+<li class="chapter" data-level="4.3" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#exercícios-2"><i class="fa fa-check"></i><b>4.3</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#fatoração-i"><i class="fa fa-check"></i><b>4.3.1</b> Fatoração I</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><i class="fa fa-check"></i><b>5</b> APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO</a>
 <ul>
@@ -364,157 +368,157 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">12.2</span> Interface JanelaPrincipal<a href="apêndice-i---estudo-da---erp-agrotec.html#interface-janelaprincipal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Os aquivos estão na pasta <code>ProjetoERP-AGROTE\01ModuloCadastros\03codificacao\source</code> do repositório da disciplina</p>
 <p>Arquivo <em>ERPAgroTech.py</em></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-1" tabindex="-1"></a></span>
-<span id="cb6-2"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-2" tabindex="-1"></a><span class="co"># -*- coding: utf-8 -*-</span></span>
-<span id="cb6-3"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-4" tabindex="-1"></a><span class="co">###########################################################################</span></span>
-<span id="cb6-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-5" tabindex="-1"></a><span class="co">## Python code generated with wxFormBuilder (version 4.2.1-0-g80c4cb6)</span></span>
-<span id="cb6-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-6" tabindex="-1"></a><span class="co">## http://www.wxformbuilder.org/</span></span>
-<span id="cb6-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-7" tabindex="-1"></a><span class="co">##</span></span>
-<span id="cb6-8"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-8" tabindex="-1"></a><span class="co">## PLEASE DO *NOT* EDIT THIS FILE!</span></span>
-<span id="cb6-9"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-9" tabindex="-1"></a><span class="co">###########################################################################</span></span>
-<span id="cb6-10"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-10" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-11" tabindex="-1"></a><span class="im">import</span> wx</span>
-<span id="cb6-12"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-12" tabindex="-1"></a><span class="im">import</span> wx.xrc</span>
-<span id="cb6-13"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-13" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-14" tabindex="-1"></a><span class="im">import</span> gettext</span>
-<span id="cb6-15"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-15" tabindex="-1"></a>_ <span class="op">=</span> gettext.gettext</span>
-<span id="cb6-16"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-16" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-17" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-18" tabindex="-1"></a><span class="im">from</span> CadastroClientes <span class="im">import</span> TipoCadastroClientes</span>
-<span id="cb6-19"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-19" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-20" tabindex="-1"></a><span class="co">###########################################################################</span></span>
-<span id="cb6-21"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-21" tabindex="-1"></a><span class="co">## Class TipoJanelaPrincipal</span></span>
-<span id="cb6-22"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-22" tabindex="-1"></a><span class="co">###########################################################################</span></span>
-<span id="cb6-23"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-23" tabindex="-1"></a></span>
-<span id="cb6-24"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-24" tabindex="-1"></a><span class="kw">class</span> TipoJanelaPrincipal ( wx.Frame ):</span>
-<span id="cb6-25"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-25" tabindex="-1"></a></span>
-<span id="cb6-26"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-26" tabindex="-1"></a>   <span class="kw">def</span> <span class="fu">__init__</span>( <span class="va">self</span>, parent ):</span>
-<span id="cb6-27"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-27" tabindex="-1"></a>       wx.Frame.<span class="fu">__init__</span> ( <span class="va">self</span>, parent, <span class="bu">id</span> <span class="op">=</span> wx.ID_ANY, title <span class="op">=</span> _(<span class="st">u&quot;ERP AGROTEC - Entrega 01&quot;</span>), pos <span class="op">=</span> wx.DefaultPosition, size <span class="op">=</span> wx.Size( <span class="dv">641</span>,<span class="dv">514</span> ), style <span class="op">=</span> wx.DEFAULT_FRAME_STYLE<span class="op">|</span>wx.TAB_TRAVERSAL )</span>
-<span id="cb6-28"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-28" tabindex="-1"></a></span>
-<span id="cb6-29"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-29" tabindex="-1"></a>       <span class="va">self</span>.SetSizeHints( wx.DefaultSize, wx.DefaultSize )</span>
-<span id="cb6-30"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-30" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-31" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal <span class="op">=</span> wx.MenuBar( <span class="dv">0</span> )</span>
-<span id="cb6-32"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-32" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuArquivo <span class="op">=</span> wx.Menu()</span>
-<span id="cb6-33"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-33" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemSair <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuArquivo, wx.ID_ANY, _(<span class="st">u&quot;Sair&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-34"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-34" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuArquivo.Append( <span class="va">self</span>.TipoMenuItemSair )</span>
-<span id="cb6-35"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-35" tabindex="-1"></a></span>
-<span id="cb6-36"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-36" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal.Append( <span class="va">self</span>.TipoMenuArquivo, _(<span class="st">u&quot;Arquivo&quot;</span>) )</span>
-<span id="cb6-37"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-37" tabindex="-1"></a></span>
-<span id="cb6-38"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-38" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro <span class="op">=</span> wx.Menu()</span>
-<span id="cb6-39"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-39" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemClientes <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Clientes&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-40"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-40" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemClientes )</span>
-<span id="cb6-41"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-41" tabindex="-1"></a></span>
-<span id="cb6-42"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-42" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemFornecedores <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Fornecedores&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-43"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-43" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemFornecedores )</span>
-<span id="cb6-44"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-44" tabindex="-1"></a></span>
-<span id="cb6-45"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-45" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemProdutos <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Produtos&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-46"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-46" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemProdutos )</span>
-<span id="cb6-47"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-47" tabindex="-1"></a></span>
-<span id="cb6-48"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-48" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios <span class="op">=</span> wx.Menu()</span>
-<span id="cb6-49"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-49" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioClientes <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Clientes&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-50"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-50" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioClientes )</span>
-<span id="cb6-51"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-51" tabindex="-1"></a></span>
-<span id="cb6-52"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-52" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioFornecedores <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Fornecedores&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-53"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-53" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioFornecedores )</span>
-<span id="cb6-54"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-54" tabindex="-1"></a></span>
-<span id="cb6-55"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-55" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioProdutos <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Produtos&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
-<span id="cb6-56"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-56" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioProdutos )</span>
-<span id="cb6-57"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-57" tabindex="-1"></a></span>
-<span id="cb6-58"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-58" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.AppendSubMenu( <span class="va">self</span>.TipoSubmenuRelatorios, _(<span class="st">u&quot;Relatórios&quot;</span>) )</span>
-<span id="cb6-59"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-59" tabindex="-1"></a></span>
-<span id="cb6-60"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-60" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal.Append( <span class="va">self</span>.TipoMenuCadastro, _(<span class="st">u&quot;Cadastro&quot;</span>) )</span>
-<span id="cb6-61"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-61" tabindex="-1"></a></span>
-<span id="cb6-62"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-62" tabindex="-1"></a>       <span class="va">self</span>.SetMenuBar( <span class="va">self</span>.TipoMenuPrincipal )</span>
-<span id="cb6-63"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-63" tabindex="-1"></a></span>
-<span id="cb6-64"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-64" tabindex="-1"></a>       <span class="va">self</span>.TipoBarraStatus <span class="op">=</span> <span class="va">self</span>.CreateStatusBar( <span class="dv">1</span>, wx.STB_SIZEGRIP, wx.ID_ANY )</span>
-<span id="cb6-65"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-65" tabindex="-1"></a>       <span class="va">self</span>.TipoBarraStatus.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INFOBK ) )</span>
-<span id="cb6-66"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-66" tabindex="-1"></a></span>
-<span id="cb6-67"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-67" tabindex="-1"></a></span>
-<span id="cb6-68"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-68" tabindex="-1"></a>       <span class="va">self</span>.Centre( wx.BOTH )</span>
-<span id="cb6-69"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-69" tabindex="-1"></a></span>
-<span id="cb6-70"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-70" tabindex="-1"></a>       <span class="co"># Connect Events</span></span>
-<span id="cb6-71"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-71" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoTerminarPrograma,                <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemSair.GetId()                  )</span>
-<span id="cb6-72"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-72" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelClientes,              <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemClientes.GetId()              )</span>
-<span id="cb6-73"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-73" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelFornecedores,          <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemFornecedores.GetId()          )</span>
-<span id="cb6-74"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-74" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelProdutos,              <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemProdutos.GetId()              )</span>
-<span id="cb6-75"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-75" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioClientes,     <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioClientes.GetId()     )</span>
-<span id="cb6-76"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-76" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioFornecedores, <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioFornecedores.GetId() )</span>
-<span id="cb6-77"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-77" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioProdutos,     <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioProdutos.GetId()     )</span>
-<span id="cb6-78"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-78" tabindex="-1"></a></span>
-<span id="cb6-79"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-79" tabindex="-1"></a>   <span class="kw">def</span> <span class="fu">__del__</span>( <span class="va">self</span> ):</span>
-<span id="cb6-80"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-80" tabindex="-1"></a>       <span class="cf">pass</span></span>
-<span id="cb6-81"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-81" tabindex="-1"></a></span>
-<span id="cb6-82"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-82" tabindex="-1"></a>   <span class="kw">def</span> MakeModal(<span class="va">self</span>, modal<span class="op">=</span><span class="va">True</span>):</span>
-<span id="cb6-83"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-83" tabindex="-1"></a>       <span class="cf">if</span> modal <span class="kw">and</span> <span class="kw">not</span> <span class="bu">hasattr</span>(<span class="va">self</span>, <span class="st">&#39;_disabler&#39;</span>):</span>
-<span id="cb6-84"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-84" tabindex="-1"></a>           <span class="va">self</span>._disabler <span class="op">=</span> wx.WindowDisabler(<span class="va">self</span>)</span>
-<span id="cb6-85"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-85" tabindex="-1"></a>       <span class="cf">if</span> <span class="kw">not</span> modal <span class="kw">and</span> <span class="bu">hasattr</span>(<span class="va">self</span>, <span class="st">&#39;_disabler&#39;</span>):</span>
-<span id="cb6-86"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-86" tabindex="-1"></a>           <span class="kw">del</span> <span class="va">self</span>._disabler</span>
-<span id="cb6-87"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-87" tabindex="-1"></a></span>
-<span id="cb6-88"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-88" tabindex="-1"></a>   <span class="co"># Virtual event handlers, override them in your derived class</span></span>
-<span id="cb6-89"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-89" tabindex="-1"></a>   <span class="kw">def</span> EventoTerminarPrograma( <span class="va">self</span>, event ):</span>
-<span id="cb6-90"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-90" tabindex="-1"></a>       event.Skip()</span>
-<span id="cb6-91"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-91" tabindex="-1"></a></span>
-<span id="cb6-92"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-92" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelClientes( <span class="va">self</span>, event ):</span>
-<span id="cb6-93"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-93" tabindex="-1"></a>       janelaClientes <span class="op">=</span> TipoCadastroClientes(<span class="va">None</span>)</span>
-<span id="cb6-94"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-94" tabindex="-1"></a>       janelaClientes.MakeModal()</span>
-<span id="cb6-95"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-95" tabindex="-1"></a>       janelaClientes.Show()</span>
-<span id="cb6-96"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-96" tabindex="-1"></a>       </span>
-<span id="cb6-97"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-97" tabindex="-1"></a></span>
-<span id="cb6-98"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-98" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelFornecedores( <span class="va">self</span>, event ):</span>
-<span id="cb6-99"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-99" tabindex="-1"></a>       event.Skip()</span>
-<span id="cb6-100"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-100" tabindex="-1"></a></span>
-<span id="cb6-101"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-101" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelProdutos( <span class="va">self</span>, event ):</span>
-<span id="cb6-102"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-102" tabindex="-1"></a>       event.Skip()</span>
-<span id="cb6-103"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-103" tabindex="-1"></a></span>
-<span id="cb6-104"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-104" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioClientes( <span class="va">self</span>, event ):</span>
-<span id="cb6-105"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-105" tabindex="-1"></a>       event.Skip()</span>
-<span id="cb6-106"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-106" tabindex="-1"></a></span>
-<span id="cb6-107"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-107" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioFornecedores( <span class="va">self</span>, event ):</span>
-<span id="cb6-108"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-108" tabindex="-1"></a>       event.Skip()</span>
-<span id="cb6-109"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-109" tabindex="-1"></a></span>
-<span id="cb6-110"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-110" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioProdutos( <span class="va">self</span>, event ):</span>
-<span id="cb6-111"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb6-111" tabindex="-1"></a>       event.Skip()</span></code></pre></div>
-<p>Arquivo main.py</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-1" tabindex="-1"></a></span>
 <span id="cb7-2"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-2" tabindex="-1"></a><span class="co"># -*- coding: utf-8 -*-</span></span>
 <span id="cb7-3"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-3" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-4" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-5" tabindex="-1"></a><span class="im">import</span> wx</span>
-<span id="cb7-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-6" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-7" tabindex="-1"></a><span class="im">from</span> ERPAgroTech <span class="im">import</span> TipoJanelaPrincipal</span>
-<span id="cb7-8"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-8" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-9" tabindex="-1"></a><span class="kw">class</span> Programa(TipoJanelaPrincipal):</span>
-<span id="cb7-10"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-10" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, parent):</span>
-<span id="cb7-11"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-11" tabindex="-1"></a>        TipoJanelaPrincipal.<span class="fu">__init__</span>(<span class="va">self</span>, parent)</span>
-<span id="cb7-12"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-12" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-4" tabindex="-1"></a><span class="co">###########################################################################</span></span>
+<span id="cb7-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-5" tabindex="-1"></a><span class="co">## Python code generated with wxFormBuilder (version 4.2.1-0-g80c4cb6)</span></span>
+<span id="cb7-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-6" tabindex="-1"></a><span class="co">## http://www.wxformbuilder.org/</span></span>
+<span id="cb7-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-7" tabindex="-1"></a><span class="co">##</span></span>
+<span id="cb7-8"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-8" tabindex="-1"></a><span class="co">## PLEASE DO *NOT* EDIT THIS FILE!</span></span>
+<span id="cb7-9"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-9" tabindex="-1"></a><span class="co">###########################################################################</span></span>
+<span id="cb7-10"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-10" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-11" tabindex="-1"></a><span class="im">import</span> wx</span>
+<span id="cb7-12"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-12" tabindex="-1"></a><span class="im">import</span> wx.xrc</span>
 <span id="cb7-13"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-13" tabindex="-1"></a></span>
-<span id="cb7-14"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-14" tabindex="-1"></a></span>
-<span id="cb7-15"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-15" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-16" tabindex="-1"></a>app <span class="op">=</span> wx.App(<span class="va">False</span>)    <span class="co"># cria uma nova aplicação e não redireciona stdout e stderr para janela principal</span></span>
-<span id="cb7-17"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-17" tabindex="-1"></a>frame <span class="op">=</span> Programa(<span class="va">None</span>) <span class="co"># frame é uma janela de nível de topo</span></span>
-<span id="cb7-18"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-18" tabindex="-1"></a>frame.MakeModal()</span>
-<span id="cb7-19"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-19" tabindex="-1"></a>frame.Show()           <span class="co"># Mostra a janela</span></span>
-<span id="cb7-20"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-20" tabindex="-1"></a>app.MainLoop()         <span class="co"># aplicação entra em loop até finalizar</span></span></code></pre></div>
+<span id="cb7-14"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-14" tabindex="-1"></a><span class="im">import</span> gettext</span>
+<span id="cb7-15"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-15" tabindex="-1"></a>_ <span class="op">=</span> gettext.gettext</span>
+<span id="cb7-16"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-16" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-17" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-18" tabindex="-1"></a><span class="im">from</span> CadastroClientes <span class="im">import</span> TipoCadastroClientes</span>
+<span id="cb7-19"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-19" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-20" tabindex="-1"></a><span class="co">###########################################################################</span></span>
+<span id="cb7-21"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-21" tabindex="-1"></a><span class="co">## Class TipoJanelaPrincipal</span></span>
+<span id="cb7-22"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-22" tabindex="-1"></a><span class="co">###########################################################################</span></span>
+<span id="cb7-23"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-23" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-24" tabindex="-1"></a><span class="kw">class</span> TipoJanelaPrincipal ( wx.Frame ):</span>
+<span id="cb7-25"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-25" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-26" tabindex="-1"></a>   <span class="kw">def</span> <span class="fu">__init__</span>( <span class="va">self</span>, parent ):</span>
+<span id="cb7-27"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-27" tabindex="-1"></a>       wx.Frame.<span class="fu">__init__</span> ( <span class="va">self</span>, parent, <span class="bu">id</span> <span class="op">=</span> wx.ID_ANY, title <span class="op">=</span> _(<span class="st">u&quot;ERP AGROTEC - Entrega 01&quot;</span>), pos <span class="op">=</span> wx.DefaultPosition, size <span class="op">=</span> wx.Size( <span class="dv">641</span>,<span class="dv">514</span> ), style <span class="op">=</span> wx.DEFAULT_FRAME_STYLE<span class="op">|</span>wx.TAB_TRAVERSAL )</span>
+<span id="cb7-28"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-28" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-29" tabindex="-1"></a>       <span class="va">self</span>.SetSizeHints( wx.DefaultSize, wx.DefaultSize )</span>
+<span id="cb7-30"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-30" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-31" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal <span class="op">=</span> wx.MenuBar( <span class="dv">0</span> )</span>
+<span id="cb7-32"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-32" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuArquivo <span class="op">=</span> wx.Menu()</span>
+<span id="cb7-33"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-33" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemSair <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuArquivo, wx.ID_ANY, _(<span class="st">u&quot;Sair&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-34"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-34" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuArquivo.Append( <span class="va">self</span>.TipoMenuItemSair )</span>
+<span id="cb7-35"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-35" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-36" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal.Append( <span class="va">self</span>.TipoMenuArquivo, _(<span class="st">u&quot;Arquivo&quot;</span>) )</span>
+<span id="cb7-37"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-37" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-38" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro <span class="op">=</span> wx.Menu()</span>
+<span id="cb7-39"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-39" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemClientes <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Clientes&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-40"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-40" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemClientes )</span>
+<span id="cb7-41"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-41" tabindex="-1"></a></span>
+<span id="cb7-42"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-42" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemFornecedores <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Fornecedores&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-43"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-43" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemFornecedores )</span>
+<span id="cb7-44"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-44" tabindex="-1"></a></span>
+<span id="cb7-45"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-45" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemProdutos <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoMenuCadastro, wx.ID_ANY, _(<span class="st">u&quot;Produtos&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-46"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-46" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.Append( <span class="va">self</span>.TipoMenuItemProdutos )</span>
+<span id="cb7-47"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-47" tabindex="-1"></a></span>
+<span id="cb7-48"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-48" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios <span class="op">=</span> wx.Menu()</span>
+<span id="cb7-49"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-49" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioClientes <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Clientes&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-50"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-50" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioClientes )</span>
+<span id="cb7-51"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-51" tabindex="-1"></a></span>
+<span id="cb7-52"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-52" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioFornecedores <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Fornecedores&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-53"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-53" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioFornecedores )</span>
+<span id="cb7-54"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-54" tabindex="-1"></a></span>
+<span id="cb7-55"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-55" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuItemRelatorioProdutos <span class="op">=</span> wx.MenuItem( <span class="va">self</span>.TipoSubmenuRelatorios, wx.ID_ANY, _(<span class="st">u&quot;Relatório de Produtos&quot;</span>), wx.EmptyString, wx.ITEM_NORMAL )</span>
+<span id="cb7-56"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-56" tabindex="-1"></a>       <span class="va">self</span>.TipoSubmenuRelatorios.Append( <span class="va">self</span>.TipoMenuItemRelatorioProdutos )</span>
+<span id="cb7-57"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-57" tabindex="-1"></a></span>
+<span id="cb7-58"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-58" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuCadastro.AppendSubMenu( <span class="va">self</span>.TipoSubmenuRelatorios, _(<span class="st">u&quot;Relatórios&quot;</span>) )</span>
+<span id="cb7-59"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-59" tabindex="-1"></a></span>
+<span id="cb7-60"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-60" tabindex="-1"></a>       <span class="va">self</span>.TipoMenuPrincipal.Append( <span class="va">self</span>.TipoMenuCadastro, _(<span class="st">u&quot;Cadastro&quot;</span>) )</span>
+<span id="cb7-61"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-61" tabindex="-1"></a></span>
+<span id="cb7-62"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-62" tabindex="-1"></a>       <span class="va">self</span>.SetMenuBar( <span class="va">self</span>.TipoMenuPrincipal )</span>
+<span id="cb7-63"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-63" tabindex="-1"></a></span>
+<span id="cb7-64"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-64" tabindex="-1"></a>       <span class="va">self</span>.TipoBarraStatus <span class="op">=</span> <span class="va">self</span>.CreateStatusBar( <span class="dv">1</span>, wx.STB_SIZEGRIP, wx.ID_ANY )</span>
+<span id="cb7-65"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-65" tabindex="-1"></a>       <span class="va">self</span>.TipoBarraStatus.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INFOBK ) )</span>
+<span id="cb7-66"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-66" tabindex="-1"></a></span>
+<span id="cb7-67"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-67" tabindex="-1"></a></span>
+<span id="cb7-68"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-68" tabindex="-1"></a>       <span class="va">self</span>.Centre( wx.BOTH )</span>
+<span id="cb7-69"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-69" tabindex="-1"></a></span>
+<span id="cb7-70"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-70" tabindex="-1"></a>       <span class="co"># Connect Events</span></span>
+<span id="cb7-71"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-71" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoTerminarPrograma,                <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemSair.GetId()                  )</span>
+<span id="cb7-72"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-72" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelClientes,              <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemClientes.GetId()              )</span>
+<span id="cb7-73"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-73" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelFornecedores,          <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemFornecedores.GetId()          )</span>
+<span id="cb7-74"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-74" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelProdutos,              <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemProdutos.GetId()              )</span>
+<span id="cb7-75"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-75" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioClientes,     <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioClientes.GetId()     )</span>
+<span id="cb7-76"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-76" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioFornecedores, <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioFornecedores.GetId() )</span>
+<span id="cb7-77"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-77" tabindex="-1"></a>       <span class="va">self</span>.Bind( wx.EVT_MENU, <span class="va">self</span>.EventoAbrePainelRelatorioProdutos,     <span class="bu">id</span> <span class="op">=</span> <span class="va">self</span>.TipoMenuItemRelatorioProdutos.GetId()     )</span>
+<span id="cb7-78"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-78" tabindex="-1"></a></span>
+<span id="cb7-79"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-79" tabindex="-1"></a>   <span class="kw">def</span> <span class="fu">__del__</span>( <span class="va">self</span> ):</span>
+<span id="cb7-80"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-80" tabindex="-1"></a>       <span class="cf">pass</span></span>
+<span id="cb7-81"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-81" tabindex="-1"></a></span>
+<span id="cb7-82"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-82" tabindex="-1"></a>   <span class="kw">def</span> MakeModal(<span class="va">self</span>, modal<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb7-83"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-83" tabindex="-1"></a>       <span class="cf">if</span> modal <span class="kw">and</span> <span class="kw">not</span> <span class="bu">hasattr</span>(<span class="va">self</span>, <span class="st">&#39;_disabler&#39;</span>):</span>
+<span id="cb7-84"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-84" tabindex="-1"></a>           <span class="va">self</span>._disabler <span class="op">=</span> wx.WindowDisabler(<span class="va">self</span>)</span>
+<span id="cb7-85"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-85" tabindex="-1"></a>       <span class="cf">if</span> <span class="kw">not</span> modal <span class="kw">and</span> <span class="bu">hasattr</span>(<span class="va">self</span>, <span class="st">&#39;_disabler&#39;</span>):</span>
+<span id="cb7-86"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-86" tabindex="-1"></a>           <span class="kw">del</span> <span class="va">self</span>._disabler</span>
+<span id="cb7-87"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-87" tabindex="-1"></a></span>
+<span id="cb7-88"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-88" tabindex="-1"></a>   <span class="co"># Virtual event handlers, override them in your derived class</span></span>
+<span id="cb7-89"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-89" tabindex="-1"></a>   <span class="kw">def</span> EventoTerminarPrograma( <span class="va">self</span>, event ):</span>
+<span id="cb7-90"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-90" tabindex="-1"></a>       event.Skip()</span>
+<span id="cb7-91"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-91" tabindex="-1"></a></span>
+<span id="cb7-92"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-92" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelClientes( <span class="va">self</span>, event ):</span>
+<span id="cb7-93"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-93" tabindex="-1"></a>       janelaClientes <span class="op">=</span> TipoCadastroClientes(<span class="va">None</span>)</span>
+<span id="cb7-94"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-94" tabindex="-1"></a>       janelaClientes.MakeModal()</span>
+<span id="cb7-95"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-95" tabindex="-1"></a>       janelaClientes.Show()</span>
+<span id="cb7-96"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-96" tabindex="-1"></a>       </span>
+<span id="cb7-97"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-97" tabindex="-1"></a></span>
+<span id="cb7-98"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-98" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelFornecedores( <span class="va">self</span>, event ):</span>
+<span id="cb7-99"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-99" tabindex="-1"></a>       event.Skip()</span>
+<span id="cb7-100"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-100" tabindex="-1"></a></span>
+<span id="cb7-101"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-101" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelProdutos( <span class="va">self</span>, event ):</span>
+<span id="cb7-102"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-102" tabindex="-1"></a>       event.Skip()</span>
+<span id="cb7-103"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-103" tabindex="-1"></a></span>
+<span id="cb7-104"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-104" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioClientes( <span class="va">self</span>, event ):</span>
+<span id="cb7-105"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-105" tabindex="-1"></a>       event.Skip()</span>
+<span id="cb7-106"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-106" tabindex="-1"></a></span>
+<span id="cb7-107"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-107" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioFornecedores( <span class="va">self</span>, event ):</span>
+<span id="cb7-108"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-108" tabindex="-1"></a>       event.Skip()</span>
+<span id="cb7-109"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-109" tabindex="-1"></a></span>
+<span id="cb7-110"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-110" tabindex="-1"></a>   <span class="kw">def</span> EventoAbrePainelRelatorioProdutos( <span class="va">self</span>, event ):</span>
+<span id="cb7-111"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb7-111" tabindex="-1"></a>       event.Skip()</span></code></pre></div>
+<p>Arquivo main.py</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-1" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-2" tabindex="-1"></a><span class="co"># -*- coding: utf-8 -*-</span></span>
+<span id="cb8-3"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-3" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-4" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-5" tabindex="-1"></a><span class="im">import</span> wx</span>
+<span id="cb8-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-6" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-7" tabindex="-1"></a><span class="im">from</span> ERPAgroTech <span class="im">import</span> TipoJanelaPrincipal</span>
+<span id="cb8-8"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-8" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-9" tabindex="-1"></a><span class="kw">class</span> Programa(TipoJanelaPrincipal):</span>
+<span id="cb8-10"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-10" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, parent):</span>
+<span id="cb8-11"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-11" tabindex="-1"></a>        TipoJanelaPrincipal.<span class="fu">__init__</span>(<span class="va">self</span>, parent)</span>
+<span id="cb8-12"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-12" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-13" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-14" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-15" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-16" tabindex="-1"></a>app <span class="op">=</span> wx.App(<span class="va">False</span>)    <span class="co"># cria uma nova aplicação e não redireciona stdout e stderr para janela principal</span></span>
+<span id="cb8-17"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-17" tabindex="-1"></a>frame <span class="op">=</span> Programa(<span class="va">None</span>) <span class="co"># frame é uma janela de nível de topo</span></span>
+<span id="cb8-18"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-18" tabindex="-1"></a>frame.MakeModal()</span>
+<span id="cb8-19"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-19" tabindex="-1"></a>frame.Show()           <span class="co"># Mostra a janela</span></span>
+<span id="cb8-20"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-20" tabindex="-1"></a>app.MainLoop()         <span class="co"># aplicação entra em loop até finalizar</span></span></code></pre></div>
 <div id="como-executar-a-janela-principal" class="section level3 hasAnchor" number="12.2.1">
 <h3><span class="header-section-number">12.2.1</span> Como executar a janela principal<a href="apêndice-i---estudo-da---erp-agrotec.html#como-executar-a-janela-principal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><p>Baixar o e instalar o Python (preferencialmente a <a href="https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe">versão 3.9 para Windows 10 ou 11</a>)</p></li>
 <li><p>Abrir uma janela do MS-DOS (prompt de comando) e mandar o utilitário <strong>PIP</strong> instalar o pacote <strong>wxpython:</strong></p></li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb8-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb8-1" tabindex="-1"></a>pip install -<span class="at">-upgrade</span> wxphython</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb9-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb9-1" tabindex="-1"></a>pip install -<span class="at">-upgrade</span> wxphython</span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>Abrir uma janela do MS-DOS (prompt de comando) e mandar o utilitário e baixar o repositório da disciplina com a ferramenta GIT:</li>
 </ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb9-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb9-1" tabindex="-1"></a>git clone git@github.com:miguel7penteado<span class="at">/ADS-EngenhariaSoftware2025</span>.git</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb10-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb10-1" tabindex="-1"></a>git clone git@github.com:miguel7penteado<span class="at">/ADS-EngenhariaSoftware2025</span>.git</span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>Pelo MS-DOS entrar na pasta <code>ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source</code> :</li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb10-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb10-1" tabindex="-1"></a><span class="bu">cd</span> ADS-EngenhariaSoftware2025\ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb11-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb11-1" tabindex="-1"></a><span class="bu">cd</span> ADS-EngenhariaSoftware2025\ProjetoERP-AGROTEC\01ModuloCadastros\03codificacao\source</span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>Pelo MS-DOS mandar o interpretador python executar o ERP AGROTEC</li>
 </ol>
-<div class="sourceCode" id="cb11"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb11-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb11-1" tabindex="-1"></a>python3 main.py</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb12-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-1" tabindex="-1"></a>python3 main.py</span></code></pre></div>
 </div>
 </div>
 <div id="cadastro-de-clientes-1" class="section level2 hasAnchor" number="12.3">
@@ -557,13 +561,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/clipboard-78059825.png" /></p>
 <div id="tabela-clientes-1" class="section level3 hasAnchor" number="12.3.1">
 <h3><span class="header-section-number">12.3.1</span> Tabela Clientes<a href="apêndice-i---estudo-da---erp-agrotec.html#tabela-clientes-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb12-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-1" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> clientes</span>
-<span id="cb12-2"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-2" tabindex="-1"></a>(</span>
-<span id="cb12-3"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-3" tabindex="-1"></a><span class="kw">id</span>         <span class="dt">varchar</span>(<span class="dv">15</span>) <span class="kw">unique</span> <span class="kw">not</span> <span class="kw">null</span>,</span>
-<span id="cb12-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-4" tabindex="-1"></a>nome       <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
-<span id="cb12-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-5" tabindex="-1"></a>endereco   <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
-<span id="cb12-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-6" tabindex="-1"></a>nascimento <span class="dt">date</span></span>
-<span id="cb12-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb12-7" tabindex="-1"></a>);</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb13-1"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-1" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> clientes</span>
+<span id="cb13-2"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-2" tabindex="-1"></a>(</span>
+<span id="cb13-3"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-3" tabindex="-1"></a><span class="kw">id</span>         <span class="dt">varchar</span>(<span class="dv">15</span>) <span class="kw">unique</span> <span class="kw">not</span> <span class="kw">null</span>,</span>
+<span id="cb13-4"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-4" tabindex="-1"></a>nome       <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
+<span id="cb13-5"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-5" tabindex="-1"></a>endereco   <span class="dt">varchar</span>(<span class="dv">500</span>) <span class="kw">not</span> <span class="kw">null</span> ,</span>
+<span id="cb13-6"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-6" tabindex="-1"></a>nascimento <span class="dt">date</span></span>
+<span id="cb13-7"><a href="apêndice-i---estudo-da---erp-agrotec.html#cb13-7" tabindex="-1"></a>);</span></code></pre></div>
 </div>
 </div>
 <div id="cadastro-de-fornecedores-1" class="section level2 hasAnchor" number="12.4">
@@ -594,42 +598,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/12-Apendice-I.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["ADS-EngenhariaSoftware II 2025.pdf", "ADS-EngenhariaSoftware II 2025.epub", "ADS-EngenhariaSoftware II 2025.word"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/12-Apendice-I.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["ADS-EngenhariaSoftware II 2025.pdf", "ADS-EngenhariaSoftware II 2025.epub", "ADS-EngenhariaSoftware II 2025.word"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

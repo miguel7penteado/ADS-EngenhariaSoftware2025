@@ -87,6 +87,8 @@ custos-da-manutenção
 introdução-à-manutenibilidade
 definição-preliminar
 importância-da-manutenibilidade
+exercícios-2
+fatoração-i
 aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento
 manutenibilidade
 atributos-da-manutenibilidade
