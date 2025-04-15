@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Professor Miguel Suez Xve Penteado" />
 
 
-<meta name="date" content="2025-04-09" />
+<meta name="date" content="2025-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -250,14 +250,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#manutenibilidade"><i class="fa fa-check"></i><b>5.1</b> Manutenibilidade</a>
 <ul>
 <li class="chapter" data-level="5.1.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#atributos-da-manutenibilidade"><i class="fa fa-check"></i><b>5.1.1</b> Atributos da Manutenibilidade:</a></li>
-<li class="chapter" data-level="5.1.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#métricas-de-manutenibilidade"><i class="fa fa-check"></i><b>5.1.2</b> Métricas de Manutenibilidade:</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#técnicas-de-desenvolvimento-para-a-manutenibilidade"><i class="fa fa-check"></i><b>5.2</b> Técnicas de Desenvolvimento para a Manutenibilidade</a>
-<ul>
-<li class="chapter" data-level="5.2.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#princípios-de-projeto"><i class="fa fa-check"></i><b>5.2.1</b> Princípios de Projeto:</a></li>
-<li class="chapter" data-level="5.2.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#qualidade-do-código"><i class="fa fa-check"></i><b>5.2.2</b> Qualidade do Código:</a></li>
-<li class="chapter" data-level="5.2.3" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#documentação"><i class="fa fa-check"></i><b>5.2.3</b> Documentação:</a></li>
-</ul></li>
+<li class="chapter" data-level="5.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#técnicas-de-desenvolvimento-para-a-manutenibilidade"><i class="fa fa-check"></i><b>5.2</b> Técnicas de Desenvolvimento para a Manutenibilidade</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="processos-e-padrões-na-manutenção-de-software.html"><a href="processos-e-padrões-na-manutenção-de-software.html"><i class="fa fa-check"></i><b>6</b> PROCESSOS E PADRÕES NA MANUTENÇÃO DE SOFTWARE</a>
 <ul>
@@ -361,30 +355,410 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">Aula 5</span> APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/manutencao-software/02-manutenibilidade/01-engenheiros-trabalhando.jpg" /></p>
 <div id="manutenibilidade" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Manutenibilidade<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p><strong>Manutenibilidade</strong> é um atributo de qualidade do software que representa a facilidade com a qual um produto de software pode ser modificado para corrigir defeitos, adaptar-se a mudanças no ambiente, ou ser aprimorado com novas funcionalidades. Em essência, é um indicador qualitativo da facilidade em corrigir, adaptar ou melhorar o software. Um software “manutenível” é aquele que pode ser facilmente compreendido, modificado e testado. O esforço necessário para localizar e corrigir um erro em um programa é uma forma limitada de definir manutenibilidade. Uma visão mais abrangente considera o esforço necessário para modificar um programa em operação, para adaptar-se a mudanças e para adicionar novas funcionalidades.</p>
+</blockquote>
 <div id="atributos-da-manutenibilidade" class="section level3 hasAnchor" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> Atributos da Manutenibilidade:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#atributos-da-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Detalhar as características que influenciam a manutenibilidade, como modularidade, clareza do código, documentação adequada, complexidade, acoplamento e coesão [Pressman, Sommerville]. A boa prática de engenharia de software demanda modularidade efetiva, com alta coesão e baixo acoplamento [Pressman, 45].</p>
+<p>A manutenibilidade é crucial por diversas razões. Vejamos abaixo.</p>
+<div id="redução-de-custos-a-longo-prazo" class="section level4 hasAnchor" number="5.1.1.1">
+<h4><span class="header-section-number">5.1.1.1</span> Redução de custos a longo prazo:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#redução-de-custos-a-longo-prazo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/02-reducao-de-custos.jpg" /></p>
+<p>Investir em manutenibilidade durante o desenvolvimento pode reduzir significativamente os custos de manutenção ao longo da vida útil do sistema. O esforço para adicionar novas funcionalidades após o lançamento é caro, pois exige tempo para entender o sistema e analisar o impacto das alterações.</p>
 </div>
-<div id="métricas-de-manutenibilidade" class="section level3 hasAnchor" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Métricas de Manutenibilidade:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#métricas-de-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Introduzir a ideia de que a manutenibilidade pode ser avaliada e até mesmo medida através de métricas de software [Pressman, Sommerville]. O livro “Engenharia-de-software-8-ed-roger-pressman.pdf” menciona “Métricas para manutenção” no Capítulo 30.</p>
+<div id="adaptação-a-mudanças" class="section level4 hasAnchor" number="5.1.1.2">
+<h4><span class="header-section-number">5.1.1.2</span> Adaptação a mudanças:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#adaptação-a-mudanças" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/03-adaptacao.jpg" /></p>
+<p>O software precisa evoluir para acompanhar as mudanças nos requisitos do usuário, no ambiente operacional e nas necessidades do negócio. Um sistema manutenível facilita essa adaptação.</p>
+</div>
+<div id="correção-eficiente-de-defeitos" class="section level4 hasAnchor" number="5.1.1.3">
+<h4><span class="header-section-number">5.1.1.3</span> Correção eficiente de defeitos:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#correção-eficiente-de-defeitos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/04-correcao-software.jpg" /></p>
+<p>Identificar e corrigir erros em um software bem estruturado e compreensível é mais rápido e menos propenso a introduzir novos problemas.</p>
+</div>
+<div id="aumento-da-vida-útil-do-software" class="section level4 hasAnchor" number="5.1.1.4">
+<h4><span class="header-section-number">5.1.1.4</span> Aumento da vida útil do software:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#aumento-da-vida-útil-do-software" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/05-longevidade.jpg" width="241" /></p>
+<p>Sistemas com alta manutenibilidade podem ser mantidos e evoluídos por um período mais longo, maximizando o retorno sobre o investimento.</p>
+</div>
+<div id="facilidade-de-suporte" class="section level4 hasAnchor" number="5.1.1.5">
+<h4><span class="header-section-number">5.1.1.5</span> Facilidade de suporte:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#facilidade-de-suporte" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/06-suporte-facil.jpg" width="302" /></p>
+<p>Uma boa manutenibilidade facilita o trabalho das equipes de suporte, permitindo que resolvam problemas e forneçam assistência aos usuários de forma mais eficaz.</p>
+</div>
+<div id="qualidade-resultante-de-um-bom-projeto" class="section level4 hasAnchor" number="5.1.1.6">
+<h4><span class="header-section-number">5.1.1.6</span> Qualidade resultante de um bom projeto:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#qualidade-resultante-de-um-bom-projeto" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/07-blueprint.jpg" width="291" /></p>
+<p>Qualidade e facilidade de manutenção são resultados de um projeto bem feito.</p>
+</div>
 </div>
 </div>
 <div id="técnicas-de-desenvolvimento-para-a-manutenibilidade" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Técnicas de Desenvolvimento para a Manutenibilidade<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#técnicas-de-desenvolvimento-para-a-manutenibilidade" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="princípios-de-projeto" class="section level3 hasAnchor" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Princípios de Projeto:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#princípios-de-projeto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Discutir como princípios de projeto como separação de interesses, abstração, encapsulamento e baixo acoplamento impactam positivamente a manutenibilidade [Pressman, Sommerville]. A separação de interesses é um princípio-chave de projeto e implementação de software [Sommerville, 127].</p>
+<p>Vários fatores influenciam a manutenibilidade de um sistema de software:</p>
+<div id="desenvolvimento-orientado-a-objetos-oo" class="section level4 hasAnchor" number="5.2.0.1">
+<h4><span class="header-section-number">5.2.0.1</span> Desenvolvimento Orientado a Objetos (OO):<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#desenvolvimento-orientado-a-objetos-oo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A OO, com seus conceitos de classes, objetos, encapsulamento, herança e polimorfismo, pode levar a sistemas mais modulares e fáceis de manter. A distribuição homogênea da inteligência do sistema pelas classes aumenta a coesão e reduz o acoplamento.</p>
 </div>
-<div id="qualidade-do-código" class="section level3 hasAnchor" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Qualidade do Código:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#qualidade-do-código" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Enfatizar a importância de práticas de codificação limpa, convenções de estilo consistentes e evitar construções complexas para facilitar a compreensão e modificação do código.</p>
+<div id="projeto-modular" class="section level4 hasAnchor" number="5.2.0.2">
+<h4><span class="header-section-number">5.2.0.2</span> Projeto modular:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#projeto-modular" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/08-modulos.jpg" /></p>
+<p>Um software com modularidade eficaz (Capítulo 12 - pressman) permite que o desenvolvimento seja planejado mais facilmente, incrementos de software sejam definidos e entregues, mudanças sejam acomodadas com mais facilidade, testes e depuração sejam mais eficazes e a manutenção a longo prazo possa ser realizada sem efeitos colaterais graves. A modularização deve ser feita com cuidado, evitando modularizar demais ou de menos.</p>
 </div>
-<div id="documentação" class="section level3 hasAnchor" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Documentação:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#documentação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Ressaltar a necessidade de documentação interna (comentários no código) e externa (manuais, diagramas de projeto) para auxiliar na manutenção [Sommerville, Pressman].</p>
+<div id="coesão-e-acoplamento" class="section level4 hasAnchor" number="5.2.0.3">
+<h4><span class="header-section-number">5.2.0.3</span> Coesão e Acoplamento:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#coesão-e-acoplamento" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Alta coesão dentro dos módulos e baixo acoplamento entre eles tornam o sistema mais fácil de entender e modificar. Se a inteligência do sistema for distribuída de forma mais homogênea pelas classes de uma aplicação, cada objeto conhecerá e fará apenas algumas poucas coisas (que em geral são bem focadas), e a coesão do sistema aumentará. Isso aumenta a facilidade de manutenção do software e reduz o impacto dos efeitos colaterais devido a mudanças.</p>
+<div id="coesão" class="section level5 hasAnchor" number="5.2.0.3.1">
+<h5><span class="header-section-number">5.2.0.3.1</span> COESÃO<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#coesão" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<blockquote>
+<p>Robert C. Martin no inicio dos anos 2000 e diz que uma classe <strong>deve ter apenas uma única responsabilidade</strong> e realizá-la de maneira satisfatória, ou seja, <strong>uma classe não deve assumir responsabilidades que não são suas</strong> .</p>
+</blockquote>
+<p><strong>Classe não-coesa</strong>: a classe “Programa” assume responsabilidades lógicas que não deveriam ser suas. “ObterProduto” deveria ser método de uma classe “Produto”. Ao invés disso “ObterProduto” é um método de uma classe “Progama”.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-1" tabindex="-1"></a><span class="co">// arquivo programa.h</span></span>
+<span id="cb8-2"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-3" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb8-4"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-4" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb8-5"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-5" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-6" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Programa</span>
+<span id="cb8-7"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-7" tabindex="-1"></a> <span class="op">{</span></span>
+<span id="cb8-8"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-8" tabindex="-1"></a>     <span class="kw">public</span> <span class="dt">void</span> ExibirFormulario<span class="op">()</span>    <span class="op">{</span></span>
+<span id="cb8-9"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-9" tabindex="-1"></a>         <span class="co">//implementação</span></span>
+<span id="cb8-10"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-10" tabindex="-1"></a>     <span class="op">}</span></span>
+<span id="cb8-11"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-11" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-12" tabindex="-1"></a>     <span class="kw">public</span> <span class="dt">void</span> ObterProduto<span class="op">()</span>    <span class="op">{</span></span>
+<span id="cb8-13"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-13" tabindex="-1"></a>         <span class="co">//implementação</span></span>
+<span id="cb8-14"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-14" tabindex="-1"></a>     <span class="op">}</span></span>
+<span id="cb8-15"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-15" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-16" tabindex="-1"></a>     <span class="kw">public</span> <span class="dt">void</span> gravarProdutoDB   <span class="op">{</span></span>
+<span id="cb8-17"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-17" tabindex="-1"></a>         <span class="co">//implementação</span></span>
+<span id="cb8-18"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-18" tabindex="-1"></a>     <span class="op">}</span></span>
+<span id="cb8-19"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb8-19" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>Classe coesa</strong>: Na classe “Programa”, o botão de interface chama um método de uma classe “Produto” chamado “gravarProduto()”.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb9-1"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-1" tabindex="-1"></a><span class="co">// arquivo produto.h</span></span>
+<span id="cb9-2"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-2" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-3" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb9-4"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-4" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb9-5"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-5" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-6" tabindex="-1"></a><span class="kw">class</span> Produto <span class="op">{</span></span>
+<span id="cb9-7"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-7" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb9-8"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-8" tabindex="-1"></a>    <span class="co">// Construtor padrão</span></span>
+<span id="cb9-9"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-9" tabindex="-1"></a>    Produto<span class="op">()</span> <span class="op">:</span> id<span class="op">(</span><span class="dv">0</span><span class="op">),</span> nome<span class="op">(</span><span class="st">&quot;&quot;</span><span class="op">),</span> preco<span class="op">(</span><span class="fl">0.0</span><span class="op">)</span> <span class="op">{}</span></span>
+<span id="cb9-10"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-10" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-11" tabindex="-1"></a>    <span class="co">// Construtor com parâmetros</span></span>
+<span id="cb9-12"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-12" tabindex="-1"></a>    Produto<span class="op">(</span><span class="dt">int</span> id<span class="op">,</span> <span class="bu">std::</span>string nome<span class="op">,</span> <span class="dt">double</span> preco<span class="op">)</span> <span class="op">:</span> id<span class="op">(</span>id<span class="op">),</span> nome<span class="op">(</span>nome<span class="op">),</span> preco<span class="op">(</span>preco<span class="op">)</span> <span class="op">{}</span></span>
+<span id="cb9-13"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-13" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-14" tabindex="-1"></a>    <span class="co">// Método público para gravar o produto (apenas para demonstração)</span></span>
+<span id="cb9-15"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-15" tabindex="-1"></a>    <span class="dt">void</span> gravarProduto<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb9-16"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-16" tabindex="-1"></a>        <span class="bu">std::</span>cout <span class="op">&lt;&lt;</span> <span class="st">&quot;Gravando produto...&quot;</span> <span class="op">&lt;&lt;</span> <span class="bu">std::</span>endl<span class="op">;</span></span>
+<span id="cb9-17"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-17" tabindex="-1"></a>        <span class="bu">std::</span>cout <span class="op">&lt;&lt;</span> <span class="st">&quot;ID: &quot;</span> <span class="op">&lt;&lt;</span> id <span class="op">&lt;&lt;</span> <span class="bu">std::</span>endl<span class="op">;</span></span>
+<span id="cb9-18"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-18" tabindex="-1"></a>        <span class="bu">std::</span>cout <span class="op">&lt;&lt;</span> <span class="st">&quot;Nome: &quot;</span> <span class="op">&lt;&lt;</span> nome <span class="op">&lt;&lt;</span> <span class="bu">std::</span>endl<span class="op">;</span></span>
+<span id="cb9-19"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-19" tabindex="-1"></a>        <span class="bu">std::</span>cout <span class="op">&lt;&lt;</span> <span class="st">&quot;Preço: &quot;</span> <span class="op">&lt;&lt;</span> preco <span class="op">&lt;&lt;</span> <span class="bu">std::</span>endl<span class="op">;</span></span>
+<span id="cb9-20"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-20" tabindex="-1"></a>        <span class="bu">std::</span>cout <span class="op">&lt;&lt;</span> <span class="st">&quot;Produto gravado com sucesso!&quot;</span> <span class="op">&lt;&lt;</span> <span class="bu">std::</span>endl<span class="op">;</span></span>
+<span id="cb9-21"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-21" tabindex="-1"></a></span>
+<span id="cb9-22"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-22" tabindex="-1"></a>        <span class="co">// Aqui você colocaria a lógica real para gravar o produto</span></span>
+<span id="cb9-23"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-23" tabindex="-1"></a>        <span class="co">// em um banco de dados, arquivo, etc.</span></span>
+<span id="cb9-24"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-24" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-25"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-25" tabindex="-1"></a></span>
+<span id="cb9-26"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-26" tabindex="-1"></a>    <span class="co">// Métodos getters (opcional, mas boa prática)</span></span>
+<span id="cb9-27"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-27" tabindex="-1"></a>    <span class="dt">int</span> getId<span class="op">()</span> <span class="at">const</span> <span class="op">{</span></span>
+<span id="cb9-28"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-28" tabindex="-1"></a>        <span class="cf">return</span> id<span class="op">;</span></span>
+<span id="cb9-29"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-29" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-30"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-30" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-31" tabindex="-1"></a>    <span class="bu">std::</span>string getNome<span class="op">()</span> <span class="at">const</span> <span class="op">{</span></span>
+<span id="cb9-32"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-32" tabindex="-1"></a>        <span class="cf">return</span> nome<span class="op">;</span></span>
+<span id="cb9-33"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-33" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-34"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-34" tabindex="-1"></a></span>
+<span id="cb9-35"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-35" tabindex="-1"></a>    <span class="dt">double</span> getPreco<span class="op">()</span> <span class="at">const</span> <span class="op">{</span></span>
+<span id="cb9-36"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-36" tabindex="-1"></a>        <span class="cf">return</span> preco<span class="op">;</span></span>
+<span id="cb9-37"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-37" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-38"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-38" tabindex="-1"></a></span>
+<span id="cb9-39"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-39" tabindex="-1"></a>    <span class="co">// Métodos setters (opcional, para modificar os atributos)</span></span>
+<span id="cb9-40"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-40" tabindex="-1"></a>    <span class="dt">void</span> setId<span class="op">(</span><span class="dt">int</span> novoId<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-41"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-41" tabindex="-1"></a>        id <span class="op">=</span> novoId<span class="op">;</span></span>
+<span id="cb9-42"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-42" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-43"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-43" tabindex="-1"></a></span>
+<span id="cb9-44"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-44" tabindex="-1"></a>    <span class="dt">void</span> setNome<span class="op">(</span><span class="at">const</span> <span class="bu">std::</span>string<span class="op">&amp;</span> novoNome<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-45"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-45" tabindex="-1"></a>        nome <span class="op">=</span> novoNome<span class="op">;</span></span>
+<span id="cb9-46"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-46" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-47"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-47" tabindex="-1"></a></span>
+<span id="cb9-48"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-48" tabindex="-1"></a>    <span class="dt">void</span> setPreco<span class="op">(</span><span class="dt">double</span> novoPreco<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-49"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-49" tabindex="-1"></a>        preco <span class="op">=</span> novoPreco<span class="op">;</span></span>
+<span id="cb9-50"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-50" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-51"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-51" tabindex="-1"></a></span>
+<span id="cb9-52"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-52" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
+<span id="cb9-53"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-53" tabindex="-1"></a>    <span class="dt">int</span> id<span class="op">;</span></span>
+<span id="cb9-54"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-54" tabindex="-1"></a>    <span class="bu">std::</span>string nome<span class="op">;</span></span>
+<span id="cb9-55"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-55" tabindex="-1"></a>    <span class="dt">double</span> preco<span class="op">;</span></span>
+<span id="cb9-56"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb9-56" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb10-2"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-2" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb10-3"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-3" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-4" tabindex="-1"></a><span class="pp">#include </span><span class="im">&quot;produto.h&quot;</span></span>
+<span id="cb10-5"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-5" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-6" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Programa</span>
+<span id="cb10-7"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-7" tabindex="-1"></a> <span class="op">{</span></span>
+<span id="cb10-8"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-8" tabindex="-1"></a>       <span class="kw">public</span> <span class="dt">void</span> MostrarFormulario<span class="op">()</span>     <span class="op">{</span></span>
+<span id="cb10-9"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-9" tabindex="-1"></a>         <span class="co">//Implementação</span></span>
+<span id="cb10-10"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-10" tabindex="-1"></a>       <span class="op">}</span></span>
+<span id="cb10-11"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-11" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-12" tabindex="-1"></a>     <span class="kw">public</span> <span class="dt">void</span> BotaoGravarProduto<span class="op">(</span> <span class="op">)</span> <span class="op">{</span></span>
+<span id="cb10-13"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-13" tabindex="-1"></a>         Produto<span class="op">.</span>gravarProduto<span class="op">();</span></span>
+<span id="cb10-14"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-14" tabindex="-1"></a>     <span class="op">}</span></span>
+<span id="cb10-15"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-15" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb10-16" tabindex="-1"></a> <span class="op">}</span></span></code></pre></div>
+</div>
+<div id="acoplamento" class="section level5 hasAnchor" number="5.2.0.3.2">
+<h5><span class="header-section-number">5.2.0.3.2</span> ACOPLAMENTO<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#acoplamento" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Acoplamento forte: as classes são construídas umas herdando as outras</p>
+<p><img src="images/manutencao-software/02-manutenibilidade/09-acoplamento-forte.jpg" /></p>
+<p>Acoplamento fraco: as classes são construídas umas interfaceando com as outras</p>
+<p><img src="images/manutencao-software/02-manutenibilidade/10-acoplamento-fraco.jpg" /></p>
+</div>
+</div>
+<div id="encapsulamento-de-informações" class="section level4 hasAnchor" number="5.2.0.4">
+<h4><span class="header-section-number">5.2.0.4</span> Encapsulamento de informações:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#encapsulamento-de-informações" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>O encapsulamento ajuda a proteger os dados e a reduzir as dependências entre diferentes partes do sistema, facilitando a manutenção e a prevenção de efeitos colaterais inesperados.</p>
+<p>Considere a classe CartaoCredito</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb11-1"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&quot;stdafx.h&quot;</span></span>
+<span id="cb11-2"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-2" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb11-3"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-3" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb11-4"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-4" tabindex="-1"></a> </span>
+<span id="cb11-5"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-5" tabindex="-1"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb11-6"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-6" tabindex="-1"></a> </span>
+<span id="cb11-7"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-7" tabindex="-1"></a><span class="kw">class</span> CartaoCredito</span>
+<span id="cb11-8"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-8" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb11-9"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-9" tabindex="-1"></a>  <span class="co">// Esta declaração esta errada</span></span>
+<span id="cb11-10"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-10" tabindex="-1"></a>  <span class="co">// Deste modo é possive capturar o numero do cartão</span></span>
+<span id="cb11-11"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-11" tabindex="-1"></a>  <span class="co">// A classe expos o numero para que seja acessivel de outra classe</span></span>
+<span id="cb11-12"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-12" tabindex="-1"></a>  <span class="co">// para não expor os numero use private</span></span>
+<span id="cb11-13"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-13" tabindex="-1"></a> </span>
+<span id="cb11-14"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-14" tabindex="-1"></a><span class="co">// private: </span></span>
+<span id="cb11-15"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-15" tabindex="-1"></a> <span class="kw">public</span><span class="op">:</span></span>
+<span id="cb11-16"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-16" tabindex="-1"></a> </span>
+<span id="cb11-17"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-17" tabindex="-1"></a> string  numeroCartao<span class="op">;</span> <span class="co">// &lt;======================= olha isso</span></span>
+<span id="cb11-18"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-18" tabindex="-1"></a> <span class="dt">double</span>  gastos<span class="op">;</span></span>
+<span id="cb11-19"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-19" tabindex="-1"></a> </span>
+<span id="cb11-20"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-20" tabindex="-1"></a><span class="co">//public:</span></span>
+<span id="cb11-21"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-21" tabindex="-1"></a>  <span class="dt">void</span> cobranca<span class="op">(</span>string nCartao<span class="op">,</span> <span class="dt">double</span> valor<span class="op">)</span></span>
+<span id="cb11-22"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-22" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb11-23"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-23" tabindex="-1"></a>    numeroCartao <span class="op">=</span> nCartao<span class="op">;</span></span>
+<span id="cb11-24"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-24" tabindex="-1"></a>    gastos <span class="op">=</span> gastos <span class="op">+</span> valor<span class="op">;</span></span>
+<span id="cb11-25"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-25" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb11-26"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-26" tabindex="-1"></a> </span>
+<span id="cb11-27"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-27" tabindex="-1"></a><span class="co">// construtor</span></span>
+<span id="cb11-28"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-28" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-29" tabindex="-1"></a>   CartaoCredito<span class="op">()</span></span>
+<span id="cb11-30"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-30" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb11-31"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-31" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb11-32"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb11-32" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
+<p>Considere a implementação abaixo</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&quot;stdafx.h&quot;</span></span>
+<span id="cb12-2"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-2" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb12-3"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-3" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb12-4"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-4" tabindex="-1"></a><span class="pp">#include </span><span class="im">&quot;cartaocredito.h&quot;</span></span>
+<span id="cb12-5"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-5" tabindex="-1"></a> </span>
+<span id="cb12-6"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-6" tabindex="-1"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb12-7"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-7" tabindex="-1"></a> </span>
+<span id="cb12-8"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-8" tabindex="-1"></a><span class="dt">void</span> metodoMalicioso<span class="op">(</span>CartaoCredito<span class="op">&amp;</span> cartao<span class="op">)</span></span>
+<span id="cb12-9"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-9" tabindex="-1"></a> <span class="op">{</span></span>
+<span id="cb12-10"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-10" tabindex="-1"></a>    cartao<span class="op">.</span>gastos <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb12-11"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-11" tabindex="-1"></a>    cout <span class="op">&lt;&lt;</span> <span class="st">&quot;Seu numero de cartão: &quot;</span> <span class="op">&lt;&lt;</span> cartao<span class="op">.</span>numeroCartao<span class="op">;</span></span>
+<span id="cb12-12"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-12" tabindex="-1"></a> <span class="op">}</span></span>
+<span id="cb12-13"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-13" tabindex="-1"></a> </span>
+<span id="cb12-14"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-14" tabindex="-1"></a><span class="dt">int</span> _tmain<span class="op">(</span><span class="dt">int</span> argc<span class="op">,</span> _TCHAR<span class="op">*</span> argv<span class="op">[])</span></span>
+<span id="cb12-15"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-15" tabindex="-1"></a> <span class="op">{</span></span>
+<span id="cb12-16"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-16" tabindex="-1"></a>   <span class="co">// Uma transação hipotetica</span></span>
+<span id="cb12-17"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-17" tabindex="-1"></a>   CartaoCredito transacao<span class="op">;</span></span>
+<span id="cb12-18"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-18" tabindex="-1"></a>   transacao<span class="op">.</span>cobranca<span class="op">(</span><span class="st">&quot;3453 3636 0001 1267&quot;</span><span class="op">,</span> <span class="fl">350.00</span><span class="op">);</span></span>
+<span id="cb12-19"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-19" tabindex="-1"></a> </span>
+<span id="cb12-20"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-20" tabindex="-1"></a>   <span class="co">// Metodo malicioso Injeta um gasto valor de 0 e imprime o numero do cartão</span></span>
+<span id="cb12-21"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-21" tabindex="-1"></a>   metodoMalicioso<span class="op">(</span>transacao<span class="op">);</span></span>
+<span id="cb12-22"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-22" tabindex="-1"></a> </span>
+<span id="cb12-23"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-23" tabindex="-1"></a>   cout <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb12-24"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-24" tabindex="-1"></a> </span>
+<span id="cb12-25"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-25" tabindex="-1"></a>   system<span class="op">(</span><span class="st">&quot;pause&quot;</span><span class="op">);</span></span>
+<span id="cb12-26"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-26" tabindex="-1"></a> </span>
+<span id="cb12-27"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-27" tabindex="-1"></a>   <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb12-28"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#cb12-28" tabindex="-1"></a> <span class="op">}</span></span></code></pre></div>
+<p>Devido ao erro de encapsulamento do atributo <strong>numeroCartao</strong> da classe <strong>CartaoCredito</strong>, o método independente <strong>metodoMalicioso</strong> tem acesso aos atributos instríssecos da classe.</p>
+</div>
+<div id="padrões-de-projeto" class="section level4 hasAnchor" number="5.2.0.5">
+<h4><span class="header-section-number">5.2.0.5</span> Padrões de projeto:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#padrões-de-projeto" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/manutencao-software/02-manutenibilidade/11-blueprints.jpg" width="400" /></p>
+<p>Aplicar padrões de projeto ajuda a criar soluções bem estabelecidas e compreensíveis para problemas de design comuns. Isso facilita a comunicação entre os desenvolvedores e torna o código mais previsível e manutenível.</p>
+<p><a href="https://refactoring.guru/pt-br/design-patterns/cpp">Documentação do site refactoring.guru</a></p>
+<p><strong>Criacionais</strong></p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nome do Padrão</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abstract Factory</td>
+<td>Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas 1 classes concretas. Permite criar diferentes “produtos” seguindo uma interface comum, de forma que o código cliente não dependa das implementações específicas desses produtos.</td>
+</tr>
+<tr class="even">
+<td>Builder</td>
+<td>Separa a construção de um objeto complexo de sua representação, de modo que o mesmo processo de construção pode criar diferentes representações. 2 Útil quando a criação de um objeto envolve muitos passos ou configurações opcionais, oferecendo uma forma mais flexível e legível de construir objetos complexos em comparação com construtores sobrecarregados.</td>
+</tr>
+<tr class="odd">
+<td>Factory Method</td>
+<td>Define uma interface para criar um objeto, mas permite que as subclasses alterem o tipo de objetos que serão criados. 3 Delega a lógica de instanciação para subclasses, tornando o código mais flexível para extensões futuras, pois novas classes de produtos podem ser introduzidas sem modificar o código cliente existente.</td>
+</tr>
+<tr class="even">
+<td>Prototype</td>
+<td>Especifica os tipos de objetos a serem criados usando uma instância prototípica e cria novos objetos copiando este protótipo. 4 Permite criar novos objetos evitando o conhecimento detalhado das classes concretas e pode ser mais eficiente em alguns casos do que usar construtores padrão, especialmente quando a criação de instâncias é um processo custoso.</td>
+</tr>
+<tr class="odd">
+<td>Singleton</td>
+<td>Garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global para ela. Útil para gerenciar recursos compartilhados, configurações globais ou serviços únicos dentro de um sistema. É importante implementar o padrão Singleton com cuidado para evitar problemas de concorrência e testabilidade.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Estruturais</strong></p>
+<table>
+<colgroup>
+<col width="23%" />
+<col width="76%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nome do Padrão</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adapter</td>
+<td>Permite que classes com interfaces incompatíveis trabalhem juntas. Atua como um invólucro (wrapper) que converte a interface de uma classe em outra interface esperada pelos clientes. Facilita a reutilização de classes existentes que não atendem diretamente às necessidades da aplicação.</td>
+</tr>
+<tr class="even">
+<td>Bridge</td>
+<td>Desacopla uma abstração de sua implementação, de modo que as duas podem evoluir independentemente. Em vez de ter uma hierarquia de classes única que combina abstração e implementação, o padrão Bridge introduz duas hierarquias separadas: uma para a abstração e outra para a implementação, permitindo maior flexibilidade e evitando a proliferação de classes.</td>
+</tr>
+<tr class="odd">
+<td>Composite</td>
+<td>Compõe objetos em estruturas de árvore para representar hierarquias do tipo “todo-parte”. Permite que os clientes tratem objetos individuais e composições 1 de objetos de maneira uniforme. Facilita a criação de estruturas complexas e a aplicação de operações de forma recursiva sobre essas estruturas.</td>
+</tr>
+<tr class="even">
+<td>Decorator</td>
+<td>Adiciona responsabilidades a um objeto dinamicamente. Fornece uma alternativa flexível ao uso de subclasses para estender a funcionalidade. Envolve um objeto existente com um novo objeto “decorador” que adiciona comportamento adicional, mantendo a mesma interface do objeto original.</td>
+</tr>
+<tr class="odd">
+<td>Facade</td>
+<td>Fornece uma interface unificada para um conjunto de interfaces em um subsistema. Define uma interface de nível superior que torna o subsistema mais fácil de usar. Simplifica a interação com um sistema complexo, expondo apenas um ponto de entrada de alto nível.</td>
+</tr>
+<tr class="even">
+<td>Flyweight</td>
+<td>Utiliza o compartilhamento para suportar eficientemente um grande número de objetos de granularidade fina. Separa o estado intrínseco (compartilhado) do estado extrínseco (não compartilhado) de um objeto. O estado intrínseco é armazenado nos objetos Flyweight e compartilhado, enquanto o estado extrínseco é passado para os métodos do Flyweight quando necessário. Isso pode reduzir significativamente o consumo de memória quando muitos objetos semelhantes precisam ser criados.</td>
+</tr>
+<tr class="odd">
+<td>Proxy</td>
+<td>Fornece um marcador (placeholder) para outro objeto a fim de controlar o acesso a ele. Um Proxy atua como um intermediário, controlando quando e como o objeto real é acessado. Pode ser usado para diversas finalidades, como lazy initialization, controle de acesso, logging, etc.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comportamentais</strong></p>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nome do Padrão</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chain of Responsibility</td>
+<td>Um padrão comportamental</td>
+</tr>
+<tr class="even">
+<td>Command</td>
+<td>Um padrão comportamental que permite enviar solicitações sem saber quem as recebe ou o que está sendo solicitado</td>
+</tr>
+<tr class="odd">
+<td>Interpreter</td>
+<td>Um padrão comportamental</td>
+</tr>
+<tr class="even">
+<td>Iterator</td>
+<td>Um padrão comportamental</td>
+</tr>
+<tr class="odd">
+<td>Mediator</td>
+<td>Um padrão que promove o baixo acoplamento entre classes</td>
+</tr>
+<tr class="even">
+<td>Memento</td>
+<td>Um padrão que permite salvar e restaurar o estado de um objeto</td>
+</tr>
+<tr class="odd">
+<td>Observer</td>
+<td>Um padrão que permite que um mesmo objeto tenha várias representações</td>
+</tr>
+<tr class="even">
+<td>Strategy</td>
+<td>Um padrão que permite definir uma família de algoritmos e torná-los intercambiáveis</td>
+</tr>
+<tr class="odd">
+<td>Template Method</td>
+<td>Um padrão comportamental</td>
+</tr>
+<tr class="even">
+<td>Visitor</td>
+<td>Um padrão comportamental</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="padrões-e-convenções-de-codificação" class="section level4 hasAnchor" number="5.2.0.6">
+<h4><span class="header-section-number">5.2.0.6</span> Padrões e convenções de codificação:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#padrões-e-convenções-de-codificação" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A adoção de padrões e convenções de codificação bem definidos leva a um código-fonte autodocumentado e inteligível, facilitando a leitura e a compreensão.</p>
+<p><img src="images/manutencao-software/02-manutenibilidade/12-formatacao.jpg" width="869" /></p>
+</div>
+<div id="documentação" class="section level4 hasAnchor" number="5.2.0.7">
+<h4><span class="header-section-number">5.2.0.7</span> Documentação:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#documentação" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Embora métodos ágeis busquem minimizar a documentação formal, é importante criar documentos que serão consultados mais adiante no processo de desenvolvimento. Descrições precisas contribuem para a redução dos custos de manutenção.</p>
+</div>
+<div id="qualidade-do-código" class="section level4 hasAnchor" number="5.2.0.8">
+<h4><span class="header-section-number">5.2.0.8</span> Qualidade do código:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#qualidade-do-código" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A produção de códigos de alta qualidade e legíveis é fundamental para a implementação de software manutenível.</p>
+</div>
+<div id="desenvolvimento-guiado-por-testes-tdd" class="section level4 hasAnchor" number="5.2.0.9">
+<h4><span class="header-section-number">5.2.0.9</span> Desenvolvimento Guiado por Testes (TDD):<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#desenvolvimento-guiado-por-testes-tdd" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>O TDD envolve a escrita de testes antes da implementação do código. Isso leva a um código mais testável e, consequentemente, mais manutenível, pois a testabilidade é um fator de qualidade importante.</p>
+<p><img src="images/VerificacaoValidacao/Modelo-V.jpg" width="550" /></p>
+<p>A realização de testes (unitários, de integração, de ponta a ponta) garante que as modificações não introduzam novos defeitos e que o sistema continue funcionando corretamente. Testes de regressão são importantes para garantir que alterações não produzam efeitos colaterais involuntários.</p>
+</div>
+<div id="refatoração" class="section level4 hasAnchor" number="5.2.0.10">
+<h4><span class="header-section-number">5.2.0.10</span> Refatoração:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#refatoração" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A refatoração aprimora a estrutura interna de um projeto (ou código-fonte) sem alterar sua funcionalidade ou comportamento externos. Ela mantém o código simples e manutenível e evita a degradação do código que aumenta os custos e as dificuldades de manutenção.</p>
+</div>
+<div id="gerenciamento-de-configuração" class="section level4 hasAnchor" number="5.2.0.11">
+<h4><span class="header-section-number">5.2.0.11</span> Gerenciamento de configuração:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#gerenciamento-de-configuração" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>O gerenciamento de configuração gerencia as alterações de forma apropriada, controla as versões do software e dos artefatos do projeto, e mantém a integridade do sistema ao longo do tempo. A matriz de rastreabilidade documenta as dependências entre requisitos, decisões de arquitetura e causas de defeito, auxiliando na determinação do impacto de uma alteração proposta.</p>
+<p>Más práticas de desenvolvimento, como <strong>falta de estabilidade da equipe</strong> e <strong>incentivos inadequados para escrever software manutenível</strong> durante o desenvolvimento, podem impactar negativamente a manutenibilidade.</p>
+</div>
+<div id="integração-contínua-e-entrega-contínua-cicd" class="section level4 hasAnchor" number="5.2.0.12">
+<h4><span class="header-section-number">5.2.0.12</span> Integração Contínua e Entrega Contínua (CI/CD):<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#integração-contínua-e-entrega-contínua-cicd" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A CI/CD facilita a detecção precoce de problemas e garante que as alterações sejam integradas e testadas frequentemente, reduzindo o risco de grandes problemas durante a manutenção e evolução. Testes de regressão automatizados são uma parte crucial desse processo.</p>
+</div>
+<div id="metodologias-ágeis" class="section level4 hasAnchor" number="5.2.0.13">
+<h4><span class="header-section-number">5.2.0.13</span> Metodologias Ágeis:<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#metodologias-ágeis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Embora a documentação formal seja minimizada, os métodos ágeis enfatizam a importância de software funcionando e a atenção contínua à excelência técnica e bom design, o que contribui para a manutenibilidade. A refatoração é uma prática comum em metodologias ágeis.</p>
 
 </div>
 </div>
