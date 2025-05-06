@@ -88,6 +88,8 @@ introdução-à-manutenibilidade
 definição-preliminar
 importância-da-manutenibilidade
 exercícios-2
+testes-de-multipla-escolha
+respostas-dos-testes-de-multipla-escolha
 fatoração-i
 aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento
 manutenibilidade

@@ -86,6 +86,41 @@ Discutir por que a manutenibilidade é crucial para reduzir os custos e o esfor�
 
 ## Exercícios
 
+### Testes de multipla escolha
+
+| Teste 01 |
+|------------------------------------------------------------------------|
+| Com base nas Fontes e, como a refatoração é caracterizada no contexto da manutenção de software? |
+| A) Como uma técnica para substituir completamente um sistema legado. |
+| B) Como um método formal para provar a correção matemática de um software. |
+| C) Como uma forma de manutenção preventiva que ajuda a manter o código simples e manutenível. |
+| D) Como uma atividade exclusiva da fase inicial de codificação e projeto. |
+| E) Como um processo para migrar bancos de dados de um formato para outro durante a reengenharia. |
+
+| Teste 02 |
+|------------------------------------------------------------------------|
+| Você construiu um sistema ERP e vendeu este a um cliente. Qual das atividades abaixo representa explicitamente um exemplo de manutenção a ser realizada? |
+| A) Modernização completa do sistema ERP. |
+| B) Substituição do sistema ERP existente por um novo fornecedor. |
+| C) Criação de um relatório gerencial de comissão da equipe de vendas. |
+| D) Realização de testes de aceitação pelo cliente. |
+| E) Implementação de novos módulos que integram departamentos ainda não cobertos. |
+
+### Respostas dos testes de multipla escolha
+
+| Teste        | Resposta |
+|--------------|----------|
+| **Teste_01** | C        |
+| **Teste_02** | C        |
+| **Teste_03** |          |
+| **Teste_04** |          |
+| **Teste_05** |          |
+| **Teste_06** |          |
+| **Teste_07** |          |
+| **Teste_08** |          |
+| **Teste_09** |          |
+| **Teste_10** |          |
+
 ### Fatoração I
 
 Baixe o código SQL da tabela Clientes, do arquivo clientes1.sql da pasta exercicios/fatoracao. Acrescente chave primária a tabela clientes, definindo o atributo cpf como a chave primária. Faça a publicação do código refatorado.
@@ -110,11 +145,11 @@ O código final do arquivo clientes1.sql ficaria assim, depois de refatorado:
 ``` sql
 create table public.clientes
 (
-	cpf integer not null,
-	nome varchar(200),
-	idade integer,
-	endereco varchar(500),
-	nascimento varchar(100)
+    cpf integer not null,
+    nome varchar(200),
+    idade integer,
+    endereco varchar(500),
+    nascimento varchar(100)
 );
 
 alter table public.clientes add constraint "chave_primaria_clientes" primary key(cpf);
