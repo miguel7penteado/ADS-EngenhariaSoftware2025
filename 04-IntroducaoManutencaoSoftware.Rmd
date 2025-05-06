@@ -90,7 +90,7 @@ Discutir por que a manutenibilidade é crucial para reduzir os custos e o esfor�
 
 | Teste 01 |
 |------------------------------------------------------------------------|
-| Com base nas Fontes e, como a refatoração é caracterizada no contexto da manutenção de software? |
+| Com base nas Fontes Pressman e Sommerville , como a refatoração é caracterizada no contexto da manutenção de software? |
 | A) Como uma técnica para substituir completamente um sistema legado. |
 | B) Como um método formal para provar a correção matemática de um software. |
 | C) Como uma forma de manutenção preventiva que ajuda a manter o código simples e manutenível. |
@@ -106,51 +106,91 @@ Discutir por que a manutenibilidade é crucial para reduzir os custos e o esfor�
 | D) Realização de testes de aceitação pelo cliente. |
 | E) Implementação de novos módulos que integram departamentos ainda não cobertos. |
 
+| Teste 03 |
+|------------------------------------------------------------------------|
+| De acordo com o capítulo "Manutenção e Reengenharia" do livro Engenharia de Software do professor Roger Pressman, qual dos seguintes tópicos é explicitamente incluído no estudo da Manutenção de Software? |
+| A) Manutenibilidade |
+| B) Gerência de Configuração |
+| C) Outras Estratégias de Teste |
+| D) Metodologia Ativa de Ensino |
+| E) Desenvolvimento Baseado em Componentes e Impactos na Manutenção |
+
+| Teste 04 |
+|------------------------------------------------------------------------|
+| Com base nas informações dos Livros "Engenharia de Software" de Pressman e de Sommerville, como os CUSTOS associados à MANUTENÇÃO e evolução de software geralmente se comparam aos CUSTOS de DESENVOLVIMENTO inicial ? |
+| A) Os custos de manutenção são frequentemente mais altos do que os custos iniciais de desenvolvimento. |
+| B) Os custos de manutenção são sempre significativamente menores do que os de desenvolvimento inicial. |
+| C) Os custos de manutenção são aproximadamente iguais aos custos de desenvolvimento inicial. |
+| D) As fontes indicam que a manutenção de software raramente representa um esforço técnico significativo. |
+| E) As fontes não fornecem informações sobre a comparação de custos entre manutenção e desenvolvimento. |
+
+| Teste 05 |
+|------------------------------------------------------------------------|
+| Segundo Sommerville, a refatoração, que é um processo de melhorar a estrutura interna de um sistema de software sem alterar seu comportamento observável, pode ser considerada uma forma de: |
+| A) Manutenção Corretiva. |
+| B) Manutenção Adaptativa. |
+| C) Teste de Unidade. |
+| D) Manutenção Preventiva. |
+| E) Gerenciamento de Configuração. |
+
+| Teste 06 |
+|------------------------------------------------------------------------|
+| As atividades de teste de aceitação, onde usuários finais testam o sistema em seu ambiente operacional real para validar se ele atende às suas necessidades, estão mais diretamente relacionadas a qual aspecto da pós-implantação e manutenção/suporte? |
+| A) Suporte ao Usuário e Validação do Cliente. |
+| B) Teste de Integração Contínua. |
+| C) Teste de Unidade. |
+| D) Refatoração de código. |
+| E) Gerenciamento de versões. |
+
+| Teste 07 |
+|------------------------------------------------------------------------|
+| Qual atividade de apoio é crucial para gerenciar as mudanças em um software ao longo do tempo, sendo fundamental durante o processo de manutenção/evolução? |
+| A) Teste Caixa-Branca. |
+| B) Estimativa de Esforço. |
+| C) Gerenciamento de Configuração (e ferramenta GIT). |
+| D) Modelagem de Requisitos. |
+| E) Análise de Valor Limite. |
+
+| Teste 08 |
+|------------------------------------------------------------------------|
+| Considerando o objetivo geral dos testes de software, conforme mencionado por SommerVille e Pressman, qual é a meta principal ao realizar testes durante as atividades de manutenção Corretiva? |
+| A) Provar que o software está completamente livre de erros. |
+| B) Descobrir a presença de erros e defeitos para que possam ser corrigidos. |
+| C) Apenas medir a velocidade de execução do software. |
+| D) Demonstrar que o software se comporta corretamente em todos os cenários possíveis. |
+| E) Gerar novas funcionalidades automaticamente. |
+
+| Teste 09 |
+|------------------------------------------------------------------------|
+| Quando um sistema de software existente precisa ser modificado para operar corretamente com uma nova versão de sistema operacional, um novo banco de dados ou outras mudanças no ambiente de hardware/software em que ele é executado, qual tipo de manutenção está sendo realizada? |
+| A) Manutenção Perfectiva. |
+| B) Manutenção Adaptativa. |
+| C) Manutenção Corretiva. |
+| D) Reengenharia de Software. |
+| E) Teste de Validação. |
+
+| Teste 10 |
+|------------------------------------------------------------------------|
+| Adicionar novas funcionalidades, melhorar o desempenho do software, ou aprimorar a usabilidade de um sistema existente são exemplos de qual tipo de manutenção de software? |
+| A) Manutenção Corretiva. |
+| B) Manutenção Adaptativa. |
+| D) Manutenção Perfectiva. |
+| C) Teste de Regressão. |
+| E) Suporte ao Usuário. |
+
 ### Respostas dos testes de multipla escolha
 
 | Teste        | Resposta |
 |--------------|----------|
 | **Teste_01** | C        |
 | **Teste_02** | C        |
-| **Teste_03** |          |
-| **Teste_04** |          |
-| **Teste_05** |          |
-| **Teste_06** |          |
-| **Teste_07** |          |
-| **Teste_08** |          |
-| **Teste_09** |          |
-| **Teste_10** |          |
+| **Teste_03** | A        |
+| **Teste_04** | A        |
+| **Teste_05** | D        |
+| **Teste_06** | A        |
+| **Teste_07** | C        |
+| **Teste_08** | B        |
+| **Teste_09** | B        |
+| **Teste_10** | C        |
 
-### Fatoração I
-
-Baixe o código SQL da tabela Clientes, do arquivo clientes1.sql da pasta exercicios/fatoracao. Acrescente chave primária a tabela clientes, definindo o atributo cpf como a chave primária. Faça a publicação do código refatorado.
-
-``` cmd
-
-git clone https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025.git
-```
-
-Teste o seu código no seu servidor postgres da núvem.
-
-Resposta:
-
-Testei o código a seguir no servidor para adicionar CPF como chave primaria da tabela clientes:
-
-``` sql
-alter table public.clientes add constraint "chave_primaria_clientes" primary key(cpf);
-```
-
-O código final do arquivo clientes1.sql ficaria assim, depois de refatorado:
-
-``` sql
-create table public.clientes
-(
-    cpf integer not null,
-    nome varchar(200),
-    idade integer,
-    endereco varchar(500),
-    nascimento varchar(100)
-);
-
-alter table public.clientes add constraint "chave_primaria_clientes" primary key(cpf);
-```
+### 

@@ -1,0 +1,109 @@
+# Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT
+
+## O que é a ferramenta GIT
+
+Git é um sistema de controle de versão distribuído, o que significa que ele permite que múltiplos desenvolvedores trabalhem em um projeto simultaneamente, mantendo um histórico completo das alterações de forma organizada e eficiente.
+
+### **1. O Conceito de Repositórios:** 
+
+### **Repositórios "Local" e  "Remoto"**
+
+Um repositório Git (ou "repo") é essencialmente um diretório que contém todos os arquivos do seu projeto e o histórico completo de todas as alterações feitas nesses arquivos.
+
+-   **Repositório Local:**
+
+    -   É a cópia do projeto que reside na sua máquina pessoal.
+
+    -   É aqui que você realiza seu trabalho diário: edita arquivos, adiciona novas funcionalidades, corrige bugs, etc.
+
+    -   Cada desenvolvedor possui seu próprio repositório local, com o histórico completo do projeto, permitindo trabalhar offline.
+
+    -   **Comando chave para criar:** `git init` (para um novo projeto) ou `git clone` (para um projeto existente).
+
+-   **Repositório Remoto:**
+
+    -   É uma versão do seu projeto hospedada em um servidor acessível pela rede (por exemplo, no GitHub, GitLab, Bitbucket).
+
+    -   Serve como um ponto central para colaboração, permitindo que diferentes membros da equipe compartilhem suas alterações e sincronizem seus trabalhos.
+
+    -   Facilita o backup do projeto e o acesso de qualquer lugar.
+
+    -   **Principais interações (comandos):**
+
+        -   `git clone <url_do_repositorio>`: Baixa uma cópia de um repositório remoto para criar um repositório local.
+
+        -   `git pull`: Atualiza seu repositório local com as últimas alterações do repositório remoto. (Combinação de `git fetch` e `git merge`).
+
+        -   `git push`: Envia as alterações (commits) do seu repositório local para o repositório remoto.
+
+### **2. Ramos de Desenvolvimento (Branches)**
+
+Ramos (ou "branches") são linhas de desenvolvimento independentes dentro de um repositório. Pense neles como cópias do seu projeto onde você pode trabalhar em novas funcionalidades ou correções sem afetar a linha principal de desenvolvimento (geralmente chamada de `main` ou `master`).
+
+-   **Conceito:**
+
+    -   O ramo principal, também chamado de tronco principal (`main`/`master`) geralmente contém o código estável e pronto para produção.
+
+    -   Ao criar um novo ramo, você cria um ponteiro para um determinado commit, permitindo que você desenvolva em paralelo.
+
+-   **Utilidade:**
+
+    -   **Isolamento:** Trabalhar em uma nova funcionalidade em um ramo separado garante que o ramo principal permaneça intacto e funcional.
+
+    -   **Experimentação:** Permite testar novas ideias sem risco de quebrar o código existente.
+
+    -   **Colaboração:** Vários desenvolvedores podem trabalhar em diferentes ramos simultaneamente e depois juntar (mesclar) suas alterações.
+
+-   **Comandos Chave:**
+
+    -   `git branch <nome_do_ramo>`: Cria um novo ramo.
+
+    -   `git checkout <nome_do_ramo>` (ou `git switch <nome_do_ramo>` em versões mais recentes do Git): Muda para o ramo especificado.
+
+    -   `git merge <nome_do_ramo>`: Incorpora as alterações de um ramo específico no ramo atual.
+
+    -   `git branch -d <nome_do_ramo>`: Deleta um ramo (após ter sido mesclado).
+
+### **3. Monitoramento de Arquivos: Estados Rastreados**
+
+Git monitora os arquivos em seu diretório de trabalho e os classifica em diferentes estados à medida que você os modifica e prepara para salvar no histórico do projeto.
+
+O diretório de trabalho é o local onde você edita seus arquivos. A "Staging Area" (ou "Index") é uma área intermediária onde você agrupa as alterações que deseja incluir no próximo "commit". O diretório `.git` (repositório local) é onde o Git armazena o histórico e metadados do projeto.
+
+-   **Untracked (Não Rastreado):**
+
+    -   Arquivos novos que você acabou de adicionar ao seu diretório de trabalho, mas que o Git ainda não "conhece" ou não está monitorando.
+
+    -   Eles não serão incluídos nos commits a menos que você os adicione explicitamente.
+
+    -   Para começar a rastrear: `git add <arquivo>`
+
+-   **Tracked (Rastreado):**
+
+    -   Arquivos que o Git já conhece e está monitorando. Eles fizeram parte de algum commit anterior ou foram adicionados com `git add`.
+
+    -   Um arquivo rastreado pode estar em um dos seguintes sub-estados:
+
+        -   **Unmodified (Não Modificado):** O arquivo no seu diretório de trabalho é idêntico à versão que está no último commit. Nenhuma alteração foi feita desde o último snapshot salvo.
+
+        -   **Modified (Modificado):** Você alterou o arquivo desde o último commit, mas ainda não preparou essa alteração para ser incluída no próximo commit. O Git detecta que há diferenças entre a versão no seu diretório de trabalho e a versão no último commit.
+
+        -   **Staged (Preparado / Em Área de Preparação):**
+
+            -   Você marcou um arquivo modificado (ou um novo arquivo que era `untracked`) para ser incluído no próximo commit.
+
+            -   Isso é feito usando o comando `git add <arquivo>`. Ao fazer isso, você está adicionando um "snapshot" da versão atual do arquivo à "Staging Area".
+
+            -   A Staging Area permite que você escolha seletivamente quais alterações farão parte do próximo commit, em vez de commitar todas as modificações de uma vez.
+
+**Fluxo Típico de Trabalho:**
+
+1.  Você **modifica** arquivos no seu diretório de trabalho (arquivos que já eram `tracked` se tornam `modified`, ou você cria novos arquivos que são `untracked`).
+
+2.  Você seleciona as alterações que quer incluir no próximo commit usando `git add <nome_do_arquivo_ou_diretorio>` (ou `git add .` para adicionar todas as modificações e novos arquivos no diretório atual e subdiretórios). Isso move os arquivos para o estado `staged`.
+
+3.  Você grava permanentemente as alterações que estão na Staging Area no histórico do seu repositório local usando `git commit -m "Uma mensagem descritiva sobre as alterações"`. Após o commit, os arquivos que estavam `staged` voltam ao estado `unmodified` (pois agora a versão no seu diretório de trabalho e no último commit são as mesmas).
+
+-   **Comando útil para verificar o estado:** `git status` (mostra quais arquivos estão untracked, modified, staged, etc.)
+
+Entender esses conceitos é fundamental para usar o Git de forma eficaz. A prática leva à perfeição, então comece a experimentar com seus próprios projetos!

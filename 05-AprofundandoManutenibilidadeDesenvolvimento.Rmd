@@ -269,7 +269,7 @@ Aplicar padrões de projeto ajuda a criar soluções bem estabelecidas e compree
 **Criacionais**
 
 | Nome do Padrão | Descrição |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | Abstract Factory | Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas 1 classes concretas. Permite criar diferentes "produtos" seguindo uma interface comum, de forma que o código cliente não dependa das implementações específicas desses produtos. |
 | Builder | Separa a construção de um objeto complexo de sua representação, de modo que o mesmo processo de construção pode criar diferentes representações. 2 Útil quando a criação de um objeto envolve muitos passos ou configurações opcionais, oferecendo uma forma mais flexível e legível de construir objetos complexos em comparação com construtores sobrecarregados. |
 | Factory Method | Define uma interface para criar um objeto, mas permite que as subclasses alterem o tipo de objetos que serão criados. 3 Delega a lógica de instanciação para subclasses, tornando o código mais flexível para extensões futuras, pois novas classes de produtos podem ser introduzidas sem modificar o código cliente existente. |
@@ -279,7 +279,7 @@ Aplicar padrões de projeto ajuda a criar soluções bem estabelecidas e compree
 **Estruturais**
 
 | Nome do Padrão | Descrição |
-|-----------------|-------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Adapter | Permite que classes com interfaces incompatíveis trabalhem juntas. Atua como um invólucro (wrapper) que converte a interface de uma classe em outra interface esperada pelos clientes. Facilita a reutilização de classes existentes que não atendem diretamente às necessidades da aplicação. |
 | Bridge | Desacopla uma abstração de sua implementação, de modo que as duas podem evoluir independentemente. Em vez de ter uma hierarquia de classes única que combina abstração e implementação, o padrão Bridge introduz duas hierarquias separadas: uma para a abstração e outra para a implementação, permitindo maior flexibilidade e evitando a proliferação de classes. |
 | Composite | Compõe objetos em estruturas de árvore para representar hierarquias do tipo "todo-parte". Permite que os clientes tratem objetos individuais e composições 1 de objetos de maneira uniforme. Facilita a criação de estruturas complexas e a aplicação de operações de forma recursiva sobre essas estruturas. |
@@ -291,7 +291,7 @@ Aplicar padrões de projeto ajuda a criar soluções bem estabelecidas e compree
 **Comportamentais**
 
 | Nome do Padrão | Descrição |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | Chain of Responsibility | Um padrão comportamental |
 | Command | Um padrão comportamental que permite enviar solicitações sem saber quem as recebe ou o que está sendo solicitado |
 | Interpreter | Um padrão comportamental |
@@ -342,3 +342,112 @@ A CI/CD facilita a detecção precoce de problemas e garante que as alterações
 #### Metodologias Ágeis:
 
 Embora a documentação formal seja minimizada, os métodos ágeis enfatizam a importância de software funcionando e a atenção contínua à excelência técnica e bom design, o que contribui para a manutenibilidade. A refatoração é uma prática comum em metodologias ágeis.
+
+## Exercícios
+
+### Testes de multipla escolha
+
+| Teste 01 |
+|------------------------------------------------------------------------|
+| Quando um sistema de software existente requer modificações para continuar operando corretamente devido a alterações no ambiente tecnológico, como a atualização do sistema operacional ou do banco de dados em que ele roda, qual tipo de manutenção de software está sendo realizado? |
+| A) Manutenção Perfectiva (Implementação de novos requisitos). |
+| B) Manutenção Corretiva (Correção de Erros). |
+| C) Manutenção Adaptativa (Modificação para novo ambiente). |
+| D) Reengenharia de Software. |
+| E) Teste de Validação. |
+
+| Teste 02 |
+|------------------------------------------------------------------------|
+| Um dos objetivos da engenharia de software é incrementar a facilidade com que as alterações podem ser acomodadas e reduzir o esforço necessário para fazê-las, contribuindo diretamente para a manutenibilidade. Qual prática de desenvolvimento, mencionada nas fontes, foca em melhorar a estrutura interna de um sistema de software sem alterar seu comportamento observável, tornando-o potencialmente mais fácil de entender e mudar? |
+| A) Teste Caixa-Preta. |
+| B) Gerenciamento de Configuração. |
+| C) Refatoração. |
+| D) Teste de Aceitação. |
+| E) Análise de Valor Limite. |
+
+| Teste 03 |
+|------------------------------------------------------------------------|
+| Adicionar novas funcionalidades, aprimorar a usabilidade ou melhorar o desempenho de um sistema de software existente são atividades que visam estender seu valor de negócio e, consequentemente, seu tempo de uso portanto a VIDA ÚTIL. De acordo com Sommerville 9ed, que tipo de manutenção engloba a implementação de requisitos novos ou alterados? |
+| A) Manutenção Perfectiva. |
+| B) Manutenção Corretiva. |
+| C) Manutenção Adaptativa. |
+| D) Teste de Sistema. |
+| E) Reestruturação de Programa. |
+
+| Teste 04 |
+|------------------------------------------------------------------------|
+| As revisões técnicas e inspeções são atividades de controle de qualidade (do projeto) que verificam a qualidade dos entregáveis e podem revelar e corrigir erros antes dos testes. Qual é um dos principais objetivos dessas atividades ? |
+| A) Descobrir erros e omissões nos artefatos de software antes do início dos testes. |
+| B) Apenas documentar o processo de desenvolvimento. |
+| C) Gerar automaticamente código-fonte executável. |
+| D) Medir a complexidade ciclomática do código. |
+| E) Garantir que o software está 100% livre de defeitos. |
+
+| Teste 05 |
+|------------------------------------------------------------------------|
+| O reúso de software (código, especialmente o código orientado a objetos) é uma estratégia que pode trazer diversas vantagens desejáveis para manutenibilidade. Qual das seguintes vantagens do reúso de software é diretamente relacionada à redução de custos e a um desenvolvimento de software mais rápido? |
+| A) Aumento da complexidade do sistema. |
+| B) Aumento da necessidade de suporte externo. |
+| C) Diminuição da confiança no sistema. |
+| D) Redução de custos e desenvolvimento de software mais rápido. |
+| E) Perda de controle sobre a funcionalidade do software. |
+
+| Teste 06 |
+|------------------------------------------------------------------------|
+| Extensão de Vida Útil é um dos benefícios do software que possui boa manutenibilidade. Contudo, ao avaliar um sistema de software legado para decidir se ele deve ser substituído, transformado (reengenharia) ou mantido, quais fatores importantes, segundo as fontes, devem ser avaliados para ajudar a tomar essa decisão estratégica que impacta a vida útil do software? |
+| A) O valor de negócio que o sistema legado ainda oferece e a qualidade técnica do software. |
+| B) Apenas o custo inicial de desenvolvimento e o ano de criação do sistema. |
+| C) O número de usuários do sistema e a cor da interface. |
+| D) A preferência da nova equipe de desenvolvimento pela linguagem utilizada no legado. |
+| E) A quantidade de documentação, mesmo que desatualizada ou incompleta. |
+
+| Teste 07 |
+|------------------------------------------------------------------------|
+| Adaptação a Mudanças e Facilidade de Manutenção são benefícios do software que possui boa manutenibilidade. O gerenciamento de configuração de software (SCM) é uma atividade de apoio crucial para gerenciar as mudanças em um sistema de software ao longo do tempo. Qual das seguintes atividades é um componente essencial do gerenciamento de configuração de software, conforme descrito nas fontes, que facilita a gestão de diferentes estados do software e é vital durante a manutenção? |
+| A) Teste Caixa-Branca. |
+| B) Análise de Requisitos. |
+| C) Controle de Versão. |
+| D) Estimativa de Esforço. |
+| E) Programação em Pares. |
+
+| Teste 08 |
+|------------------------------------------------------------------------|
+| Boa manutenibilidade resulta de um projeto de boa qualidade. Conforme Pressman 8ed, engenheiros de software bem-sucedidos compartilham hábitos e peculiaridades de trabalho. Qual das opções a seguir é listada como um desses hábitos que contribui diretamente para a qualidade do software e sua manutenibilidade? |
+| A) Evitar testes formais sempre que possível. |
+| B) Desejo de refabricar continuamente o projeto e o código e de desenvolver aplicações que possam ser mantidas. |
+| C) Usar a linguagem de programação mais popular, independentemente da aplicação. |
+| D) Focar apenas na velocidade de desenvolvimento inicial. |
+| E) Ignorar a documentação, pois ela se torna desatualizada rapidamente. |
+
+| Teste 09 |
+|------------------------------------------------------------------------|
+| Existem técnicas para desenvolvimento da manutenibilidade no projeto. De acordo com Sommerville 9ed, qual é o objetivo principal da refatoração em software, visando diretamente a manutenibilidade? |
+| A) Adicionar novas funcionalidades ao sistema sem alterar o código existente. |
+| B) Melhorar a estrutura interna do software sem alterar seu comportamento observável, tornando-o mais fácil de entender e mudar. |
+| C) Corrigir erros de lógica de programação ou defeitos funcionais. |
+| D) Aumentar o desempenho e a eficiência da execução do software. |
+| E) Converter código legado para uma nova linguagem de programação. |
+
+| Teste 10 |
+|------------------------------------------------------------------------|
+| Gerenciamento de Configuração: Qual atividade essencial do gerenciamento de configuração de software (SCM), conforme descrito por Pressman 8ed , é crucial para rastrear e controlar as diferentes versões de itens de configuração de software ao longo do ciclo de vida e durante a manutenção? |
+| A) Teste de Aceitação pelo usuário final. |
+| B) Análise de Viabilidade Técnica. |
+| C) Controle de Versão. |
+| D) Estimativa de Custos e Prazos. |
+| E) Auditoria de Requisitos Funcionais. |
+
+### Respostas dos testes de multipla escolha
+
+| Teste        | Resposta |
+|--------------|----------|
+| **Teste_01** | C        |
+| **Teste_02** | C        |
+| **Teste_03** | A        |
+| **Teste_04** | A        |
+| **Teste_05** | D        |
+| **Teste_06** | A        |
+| **Teste_07** | C        |
+| **Teste_08** | B        |
+| **Teste_09** | B        |
+| **Teste_10** | C        |

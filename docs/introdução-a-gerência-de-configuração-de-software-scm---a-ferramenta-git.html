@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Aula 6 Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT | ADS - Engenharia de Software 2025 - Anotações de aula</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Aula 6 Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Aula 6 Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT | ADS - Engenharia de Software 2025 - Anotações de aula" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Professor Miguel Suez Xve Penteado" />
+
+
+<meta name="date" content="2025-05-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"/>
+<link rel="next" href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ADS - Engenharia de Software 2025 - Anotações de aula</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre estas anotações</a>
+<ul>
+<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#acesso-ao-gitbook-celular"><i class="fa fa-check"></i><b>0.0.1</b> ACESSO AO GITBOOK CELULAR</a></li>
+<li class="chapter" data-level="0.0.2" data-path="index.html"><a href="index.html#httpsmiguel7penteado.github.ioads-engenhariasoftware2025"><i class="fa fa-check"></i><b>0.0.2</b> https://miguel7penteado.github.io/ADS-EngenhariaSoftware2025</a></li>
+<li class="chapter" data-level="0.0.3" data-path="index.html"><a href="index.html#app-epub-android"><i class="fa fa-check"></i><b>0.0.3</b> APP EPUB ANDROID</a></li>
+<li class="chapter" data-level="0.0.4" data-path="index.html"><a href="index.html#moon-reader"><i class="fa fa-check"></i><b>0.0.4</b> <strong>Moon+ Reader</strong></a></li>
+<li class="chapter" data-level="0.0.5" data-path="index.html"><a href="index.html#livros-texto-da-disciplina"><i class="fa fa-check"></i><b>0.0.5</b> Livros Texto da Disciplina</a></li>
+<li class="chapter" data-level="0.0.6" data-path="index.html"><a href="index.html#alunos-2025"><i class="fa fa-check"></i><b>0.0.6</b> Alunos 2025</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introdução-a-disciplina-de-engenharia-de-software.html"><a href="introdução-a-disciplina-de-engenharia-de-software.html"><i class="fa fa-check"></i>INTRODUÇÃO A DISCIPLINA DE ENGENHARIA DE SOFTWARE</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="introdução-a-disciplina-de-engenharia-de-software.html"><a href="introdução-a-disciplina-de-engenharia-de-software.html#o-que-é-engenharia-de-software"><i class="fa fa-check"></i><b>0.1</b> O que é ENGENHARIA DE SOFTWARE</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html"><i class="fa fa-check"></i><b>1</b> QUALIDADE DE SOFTWARE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#compliance"><i class="fa fa-check"></i><b>1.1</b> COMPLIANCE</a></li>
+<li class="chapter" data-level="1.2" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#qualidade"><i class="fa fa-check"></i><b>1.2</b> QUALIDADE</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#qualidade-aplicada-a-produto"><i class="fa fa-check"></i><b>1.2.1</b> QUALIDADE APLICADA A PRODUTO</a></li>
+<li class="chapter" data-level="1.2.2" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#qualidade-aplicada-a-processo"><i class="fa fa-check"></i><b>1.2.2</b> QUALIDADE APLICADA A PROCESSO</a></li>
+<li class="chapter" data-level="1.2.3" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#caso-macdonalds---qualidade-de-produto-e-processo"><i class="fa fa-check"></i><b>1.2.3</b> CASO MACDONALDS - Qualidade de Produto e Processo</a></li>
+<li class="chapter" data-level="1.2.4" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#qualidade-nas-organizações"><i class="fa fa-check"></i><b>1.2.4</b> QUALIDADE NAS ORGANIZAÇÕES</a></li>
+<li class="chapter" data-level="1.2.5" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-iso-9000"><i class="fa fa-check"></i><b>1.2.5</b> Família ISO 9000</a></li>
+<li class="chapter" data-level="1.2.6" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-iso-14000"><i class="fa fa-check"></i><b>1.2.6</b> Família ISO 14000</a></li>
+<li class="chapter" data-level="1.2.7" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-iso-27000"><i class="fa fa-check"></i><b>1.2.7</b> Família ISO 27000</a></li>
+<li class="chapter" data-level="1.2.8" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#segmentos-das-organizações-e-adoção-das-normas-de-qualidade"><i class="fa fa-check"></i><b>1.2.8</b> Segmentos das Organizações e Adoção das normas de Qualidade</a></li>
+<li class="chapter" data-level="1.2.9" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#qualidade-na-engenharia-de-software"><i class="fa fa-check"></i><b>1.2.9</b> QUALIDADE NA ENGENHARIA DE SOFTWARE</a></li>
+<li class="chapter" data-level="1.2.10" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-nbr-iso-9126"><i class="fa fa-check"></i><b>1.2.10</b> Família NBR ISO 9126</a></li>
+<li class="chapter" data-level="1.2.11" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-nbr-iso-12207"><i class="fa fa-check"></i><b>1.2.11</b> Família NBR ISO 12207</a></li>
+<li class="chapter" data-level="1.2.12" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#família-nbr-iso-25000"><i class="fa fa-check"></i><b>1.2.12</b> Família NBR ISO 25000</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#exercício-de-fixação"><i class="fa fa-check"></i><b>1.3</b> Exercício de Fixação:</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#testes"><i class="fa fa-check"></i><b>1.3.1</b> Testes:</a></li>
+<li class="chapter" data-level="1.3.2" data-path="qualidade-de-software.html"><a href="qualidade-de-software.html#repostas-dos-testes"><i class="fa fa-check"></i><b>1.3.2</b> Repostas dos testes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html"><i class="fa fa-check"></i><b>2</b> Verificação de Validação de Software</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#verificação-de-software"><i class="fa fa-check"></i><b>2.1</b> Verificação de Software:</a></li>
+<li class="chapter" data-level="2.2" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#validação-de-software"><i class="fa fa-check"></i><b>2.2</b> Validação de Software:</a></li>
+<li class="chapter" data-level="2.3" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#classificação-das-técnicas-de-verificação-e-validação"><i class="fa fa-check"></i><b>2.3</b> Classificação das Técnicas de Verificação e Validação:</a></li>
+<li class="chapter" data-level="2.4" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#verificação-e-validação-de-software-por-técnicas-estáticas"><i class="fa fa-check"></i><b>2.4</b> Verificação e Validação de software por Técnicas Estáticas</a></li>
+<li class="chapter" data-level="2.5" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#verificação-e-validação-de-software-por-técnicas-dinâmicas"><i class="fa fa-check"></i><b>2.5</b> Verificação e Validação de software por Técnicas Dinâmicas</a></li>
+<li class="chapter" data-level="2.6" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#exercícios"><i class="fa fa-check"></i><b>2.6</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#testes-sobre-verificação-e-validação-i"><i class="fa fa-check"></i><b>2.6.1</b> Testes Sobre Verificação e Validação I</a></li>
+<li class="chapter" data-level="2.6.2" data-path="verificação-de-validação-de-software.html"><a href="verificação-de-validação-de-software.html#respostas-para-os-testes"><i class="fa fa-check"></i><b>2.6.2</b> Respostas para os Testes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html"><i class="fa fa-check"></i><b>3</b> Verificação de Validação de Software II - Continuação</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#fundamentos-de-teste-de-software"><i class="fa fa-check"></i><b>3.1</b> Fundamentos de Teste de Software</a></li>
+<li class="chapter" data-level="3.2" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#os-testes-e-o-ciclo-de-vida-do-software"><i class="fa fa-check"></i><b>3.2</b> Os testes e o Ciclo de Vida do Software</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-unidade-ou-unitários"><i class="fa fa-check"></i><b>3.2.1</b> Teste de Unidade ou Unitários</a></li>
+<li class="chapter" data-level="3.2.2" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-integração"><i class="fa fa-check"></i><b>3.2.2</b> Teste de Integração</a></li>
+<li class="chapter" data-level="3.2.3" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#teste-de-validação"><i class="fa fa-check"></i><b>3.2.3</b> Teste de Validação</a></li>
+<li class="chapter" data-level="3.2.4" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#testes-de-sistema"><i class="fa fa-check"></i><b>3.2.4</b> Testes de Sistema</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#modelo-v"><i class="fa fa-check"></i><b>3.3</b> Modelo V</a></li>
+<li class="chapter" data-level="3.4" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#testes-unitários"><i class="fa fa-check"></i><b>3.4</b> Testes Unitários</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#testes-estruturais-caixa-branca"><i class="fa fa-check"></i><b>3.4.1</b> Testes Estruturais (Caixa-Branca)</a></li>
+<li class="chapter" data-level="3.4.2" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#testes-funcionais-caixa-preta"><i class="fa fa-check"></i><b>3.4.2</b> Testes Funcionais (Caixa-Preta)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#exercícios-1"><i class="fa fa-check"></i><b>3.5</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#testes-1"><i class="fa fa-check"></i><b>3.5.1</b> Testes</a></li>
+<li class="chapter" data-level="3.5.2" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#respostas-dos-testes"><i class="fa fa-check"></i><b>3.5.2</b> Respostas dos Testes</a></li>
+<li class="chapter" data-level="3.5.3" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#questões-dissertativas"><i class="fa fa-check"></i><b>3.5.3</b> Questões Dissertativas:</a></li>
+<li class="chapter" data-level="3.5.4" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#respostas-questões-dissertativas"><i class="fa fa-check"></i><b>3.5.4</b> Respostas Questões Dissertativas:</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#cadastro-de-clientes"><i class="fa fa-check"></i><b>3.6</b> Cadastro de Clientes</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#tabela-clientes"><i class="fa fa-check"></i><b>3.6.1</b> Tabela Clientes</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#cadastro-de-fornecedores"><i class="fa fa-check"></i><b>3.7</b> Cadastro de Fornecedores</a></li>
+<li class="chapter" data-level="3.8" data-path="verificação-de-validação-de-software-ii---continuação.html"><a href="verificação-de-validação-de-software-ii---continuação.html#cadastro-de-produtos"><i class="fa fa-check"></i><b>3.8</b> Cadastro de Produtos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html"><i class="fa fa-check"></i><b>4</b> Introdução à Manutenção de Software</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#manutenção-definição-e-características"><i class="fa fa-check"></i><b>4.1</b> 1- Manutenção: definição e características”</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#definição-de-manutenção-de-software"><i class="fa fa-check"></i><b>4.1.1</b> Definição de Manutenção de Software:</a></li>
+<li class="chapter" data-level="4.1.2" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#natureza-da-mudança"><i class="fa fa-check"></i><b>4.1.2</b> Natureza da Mudança:</a></li>
+<li class="chapter" data-level="4.1.3" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#tipos-de-manutenção"><i class="fa fa-check"></i><b>4.1.3</b> Tipos de Manutenção:</a></li>
+<li class="chapter" data-level="4.1.4" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#custos-da-manutenção"><i class="fa fa-check"></i><b>4.1.4</b> Custos da Manutenção:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#introdução-à-manutenibilidade"><i class="fa fa-check"></i><b>4.2</b> 2- Introdução à Manutenibilidade</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#definição-preliminar"><i class="fa fa-check"></i><b>4.2.1</b> Definição Preliminar:</a></li>
+<li class="chapter" data-level="4.2.2" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#importância-da-manutenibilidade"><i class="fa fa-check"></i><b>4.2.2</b> Importância da Manutenibilidade:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#exercícios-2"><i class="fa fa-check"></i><b>4.3</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#testes-de-multipla-escolha"><i class="fa fa-check"></i><b>4.3.1</b> Testes de multipla escolha</a></li>
+<li class="chapter" data-level="4.3.2" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#respostas-dos-testes-de-multipla-escolha"><i class="fa fa-check"></i><b>4.3.2</b> Respostas dos testes de multipla escolha</a></li>
+<li class="chapter" data-level="4.3.3" data-path="introdução-à-manutenção-de-software.html"><a href="introdução-à-manutenção-de-software.html#section"><i class="fa fa-check"></i><b>4.3.3</b> </a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><i class="fa fa-check"></i><b>5</b> APROFUNDANDO A MANUTENIBILIDADE E AS TÉCNICAS DE DESENVOLVIMENTO</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#manutenibilidade"><i class="fa fa-check"></i><b>5.1</b> Manutenibilidade</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#atributos-da-manutenibilidade"><i class="fa fa-check"></i><b>5.1.1</b> Atributos da Manutenibilidade:</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#técnicas-de-desenvolvimento-para-a-manutenibilidade"><i class="fa fa-check"></i><b>5.2</b> Técnicas de Desenvolvimento para a Manutenibilidade</a></li>
+<li class="chapter" data-level="5.3" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#exercícios-3"><i class="fa fa-check"></i><b>5.3</b> Exercícios</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#testes-de-multipla-escolha-1"><i class="fa fa-check"></i><b>5.3.1</b> Testes de multipla escolha</a></li>
+<li class="chapter" data-level="5.3.2" data-path="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html"><a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html#respostas-dos-testes-de-multipla-escolha-1"><i class="fa fa-check"></i><b>5.3.2</b> Respostas dos testes de multipla escolha</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><i class="fa fa-check"></i><b>6</b> Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#o-que-é-a-ferramenta-git"><i class="fa fa-check"></i><b>6.1</b> O que é a ferramenta GIT</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#o-conceito-de-repositórios"><i class="fa fa-check"></i><b>6.1.1</b> <strong>1. O Conceito de Repositórios:</strong></a></li>
+<li class="chapter" data-level="6.1.2" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#repositórios-local-e-remoto"><i class="fa fa-check"></i><b>6.1.2</b> <strong>Repositórios “Local” e “Remoto”</strong></a></li>
+<li class="chapter" data-level="6.1.3" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#ramos-de-desenvolvimento-branches"><i class="fa fa-check"></i><b>6.1.3</b> <strong>2. Ramos de Desenvolvimento (Branches)</strong></a></li>
+<li class="chapter" data-level="6.1.4" data-path="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html"><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#monitoramento-de-arquivos-estados-rastreados"><i class="fa fa-check"></i><b>6.1.4</b> <strong>3. Monitoramento de Arquivos: Estados Rastreados</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><i class="fa fa-check"></i><b>7</b> ABORDAGENS MODERNAS E ATIVIDADES DE APOIO À MANUTENÇÃO</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#desenvolvimento-baseado-em-componentes-e-impactos-na-manutenção"><i class="fa fa-check"></i><b>7.1</b> Desenvolvimento Baseado em Componentes e Impactos na Manutenção</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#conceito-de-desenvolvimento-baseado-em-componentes-dbc"><i class="fa fa-check"></i><b>7.1.1</b> Conceito de Desenvolvimento Baseado em Componentes (DBC):</a></li>
+<li class="chapter" data-level="7.1.2" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#impactos-na-manutenção"><i class="fa fa-check"></i><b>7.1.2</b> Impactos na Manutenção:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#desenvolvimento-orientado-a-aspectos-e-impactos-na-manutenção"><i class="fa fa-check"></i><b>7.2</b> Desenvolvimento Orientado a Aspectos e Impactos na Manutenção</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#conceito-de-desenvolvimento-orientado-a-aspectos-doa"><i class="fa fa-check"></i><b>7.2.1</b> Conceito de Desenvolvimento Orientado a Aspectos (DOA):</a></li>
+<li class="chapter" data-level="7.2.2" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#impactos-na-manutenção-1"><i class="fa fa-check"></i><b>7.2.2</b> Impactos na Manutenção:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#atividades-de-apoio-a-manutenção"><i class="fa fa-check"></i><b>7.3</b> Atividades de Apoio a Manutenção</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#gerenciamento-de-configuração-na-manutenção"><i class="fa fa-check"></i><b>7.3.1</b> Gerenciamento de Configuração na Manutenção:</a></li>
+<li class="chapter" data-level="7.3.2" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#reengenharia"><i class="fa fa-check"></i><b>7.3.2</b> Reengenharia:</a></li>
+<li class="chapter" data-level="7.3.3" data-path="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html"><a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html#testes-de-regressão"><i class="fa fa-check"></i><b>7.3.3</b> Testes de Regressão:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html"><i class="fa fa-check"></i><b>8</b> Gerência de Configuração</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#introdução-à-gerência-de-configuração"><i class="fa fa-check"></i><b>8.1</b> Introdução à Gerência de Configuração</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#definição-de-gerência-de-configuração-gc"><i class="fa fa-check"></i><b>8.1.1</b> Definição de Gerência de Configuração (GC):</a></li>
+<li class="chapter" data-level="8.1.2" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#a-natureza-da-mudança-em-software"><i class="fa fa-check"></i><b>8.1.2</b> A Natureza da Mudança em Software:</a></li>
+<li class="chapter" data-level="8.1.3" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#importância-da-gc"><i class="fa fa-check"></i><b>8.1.3</b> Importância da GC:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#elementos-da-gerência-de-configuração"><i class="fa fa-check"></i><b>8.2</b> Elementos da Gerência de Configuração</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#itens-de-configuração-de-software-icis"><i class="fa fa-check"></i><b>8.2.1</b> Itens de Configuração de Software (ICIs)</a></li>
+<li class="chapter" data-level="8.2.2" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#identificação"><i class="fa fa-check"></i><b>8.2.2</b> Identificação:</a></li>
+<li class="chapter" data-level="8.2.3" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#controle-de-versão"><i class="fa fa-check"></i><b>8.2.3</b> Controle de Versão:</a></li>
+<li class="chapter" data-level="8.2.4" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#controle-de-mudanças"><i class="fa fa-check"></i><b>8.2.4</b> Controle de Mudanças:</a></li>
+<li class="chapter" data-level="8.2.5" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#auditoria-de-configuração"><i class="fa fa-check"></i><b>8.2.5</b> Auditoria de Configuração:</a></li>
+<li class="chapter" data-level="8.2.6" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#relatório-de-status"><i class="fa fa-check"></i><b>8.2.6</b> Relatório de Status:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#processo-de-gerência-de-configuração"><i class="fa fa-check"></i><b>8.3</b> Processo de Gerência de Configuração</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#planejamento-da-gc"><i class="fa fa-check"></i><b>8.3.1</b> Planejamento da GC:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#ferramentas-de-gerência-de-configuração"><i class="fa fa-check"></i><b>8.4</b> Ferramentas de Gerência de Configuração</a></li>
+<li class="chapter" data-level="8.5" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#gc-em-contextos-ágeis-e-tradicionais"><i class="fa fa-check"></i><b>8.5</b> GC em Contextos Ágeis e Tradicionais</a></li>
+<li class="chapter" data-level="8.6" data-path="gerência-de-configuração.html"><a href="gerência-de-configuração.html#referências"><i class="fa fa-check"></i><b>8.6</b> Referências:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="revisão-para-np2.html"><a href="revisão-para-np2.html"><i class="fa fa-check"></i><b>9</b> Revisão para NP2</a></li>
+<li class="chapter" data-level="10" data-path="revisão-para-a-substitutiva.html"><a href="revisão-para-a-substitutiva.html"><i class="fa fa-check"></i><b>10</b> Revisão para a Substitutiva</a></li>
+<li class="chapter" data-level="11" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>11</b> Referencias</a></li>
+<li class="chapter" data-level="12" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html"><i class="fa fa-check"></i><b>12</b> Apêndice I - Estudo da - ERP Agrotec</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#entrega-01---módulo-cadastros"><i class="fa fa-check"></i><b>12.1</b> Entrega #01 - Módulo Cadastros</a></li>
+<li class="chapter" data-level="12.2" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#interface-janelaprincipal"><i class="fa fa-check"></i><b>12.2</b> Interface JanelaPrincipal</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#como-executar-a-janela-principal"><i class="fa fa-check"></i><b>12.2.1</b> Como executar a janela principal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#cadastro-de-clientes-1"><i class="fa fa-check"></i><b>12.3</b> Cadastro de Clientes</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#tabela-clientes-1"><i class="fa fa-check"></i><b>12.3.1</b> Tabela Clientes</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#cadastro-de-fornecedores-1"><i class="fa fa-check"></i><b>12.4</b> Cadastro de Fornecedores</a></li>
+<li class="chapter" data-level="12.5" data-path="apêndice-i---estudo-da---erp-agrotec.html"><a href="apêndice-i---estudo-da---erp-agrotec.html#cadastro-de-produtos-1"><i class="fa fa-check"></i><b>12.5</b> Cadastro de Produtos</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="apendice-ii.html"><a href="apendice-ii.html"><i class="fa fa-check"></i><b>13</b> Apendice II</a></li>
+<li class="chapter" data-level="14" data-path="apendice-iii.html"><a href="apendice-iii.html"><i class="fa fa-check"></i><b>14</b> Apendice III</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ADS - Engenharia de Software 2025 - Anotações de aula</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Aula 6</span> Introdução a Gerência de Configuração de Software (SCM) - A Ferramenta GIT<a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="o-que-é-a-ferramenta-git" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> O que é a ferramenta GIT<a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#o-que-é-a-ferramenta-git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Git é um sistema de controle de versão distribuído, o que significa que ele permite que múltiplos desenvolvedores trabalhem em um projeto simultaneamente, mantendo um histórico completo das alterações de forma organizada e eficiente.</p>
+<div id="o-conceito-de-repositórios" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> <strong>1. O Conceito de Repositórios:</strong><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#o-conceito-de-repositórios" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="repositórios-local-e-remoto" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> <strong>Repositórios “Local” e “Remoto”</strong><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#repositórios-local-e-remoto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Um repositório Git (ou “repo”) é essencialmente um diretório que contém todos os arquivos do seu projeto e o histórico completo de todas as alterações feitas nesses arquivos.</p>
+<ul>
+<li><p><strong>Repositório Local:</strong></p>
+<ul>
+<li><p>É a cópia do projeto que reside na sua máquina pessoal.</p></li>
+<li><p>É aqui que você realiza seu trabalho diário: edita arquivos, adiciona novas funcionalidades, corrige bugs, etc.</p></li>
+<li><p>Cada desenvolvedor possui seu próprio repositório local, com o histórico completo do projeto, permitindo trabalhar offline.</p></li>
+<li><p><strong>Comando chave para criar:</strong> <code>git init</code> (para um novo projeto) ou <code>git clone</code> (para um projeto existente).</p></li>
+</ul></li>
+<li><p><strong>Repositório Remoto:</strong></p>
+<ul>
+<li><p>É uma versão do seu projeto hospedada em um servidor acessível pela rede (por exemplo, no GitHub, GitLab, Bitbucket).</p></li>
+<li><p>Serve como um ponto central para colaboração, permitindo que diferentes membros da equipe compartilhem suas alterações e sincronizem seus trabalhos.</p></li>
+<li><p>Facilita o backup do projeto e o acesso de qualquer lugar.</p></li>
+<li><p><strong>Principais interações (comandos):</strong></p>
+<ul>
+<li><p><code>git clone &lt;url_do_repositorio&gt;</code>: Baixa uma cópia de um repositório remoto para criar um repositório local.</p></li>
+<li><p><code>git pull</code>: Atualiza seu repositório local com as últimas alterações do repositório remoto. (Combinação de <code>git fetch</code> e <code>git merge</code>).</p></li>
+<li><p><code>git push</code>: Envia as alterações (commits) do seu repositório local para o repositório remoto.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="ramos-de-desenvolvimento-branches" class="section level3 hasAnchor" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> <strong>2. Ramos de Desenvolvimento (Branches)</strong><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#ramos-de-desenvolvimento-branches" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ramos (ou “branches”) são linhas de desenvolvimento independentes dentro de um repositório. Pense neles como cópias do seu projeto onde você pode trabalhar em novas funcionalidades ou correções sem afetar a linha principal de desenvolvimento (geralmente chamada de <code>main</code> ou <code>master</code>).</p>
+<ul>
+<li><p><strong>Conceito:</strong></p>
+<ul>
+<li><p>O ramo principal, também chamado de tronco principal (<code>main</code>/<code>master</code>) geralmente contém o código estável e pronto para produção.</p></li>
+<li><p>Ao criar um novo ramo, você cria um ponteiro para um determinado commit, permitindo que você desenvolva em paralelo.</p></li>
+</ul></li>
+<li><p><strong>Utilidade:</strong></p>
+<ul>
+<li><p><strong>Isolamento:</strong> Trabalhar em uma nova funcionalidade em um ramo separado garante que o ramo principal permaneça intacto e funcional.</p></li>
+<li><p><strong>Experimentação:</strong> Permite testar novas ideias sem risco de quebrar o código existente.</p></li>
+<li><p><strong>Colaboração:</strong> Vários desenvolvedores podem trabalhar em diferentes ramos simultaneamente e depois juntar (mesclar) suas alterações.</p></li>
+</ul></li>
+<li><p><strong>Comandos Chave:</strong></p>
+<ul>
+<li><p><code>git branch &lt;nome_do_ramo&gt;</code>: Cria um novo ramo.</p></li>
+<li><p><code>git checkout &lt;nome_do_ramo&gt;</code> (ou <code>git switch &lt;nome_do_ramo&gt;</code> em versões mais recentes do Git): Muda para o ramo especificado.</p></li>
+<li><p><code>git merge &lt;nome_do_ramo&gt;</code>: Incorpora as alterações de um ramo específico no ramo atual.</p></li>
+<li><p><code>git branch -d &lt;nome_do_ramo&gt;</code>: Deleta um ramo (após ter sido mesclado).</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="monitoramento-de-arquivos-estados-rastreados" class="section level3 hasAnchor" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> <strong>3. Monitoramento de Arquivos: Estados Rastreados</strong><a href="introdução-a-gerência-de-configuração-de-software-scm---a-ferramenta-git.html#monitoramento-de-arquivos-estados-rastreados" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Git monitora os arquivos em seu diretório de trabalho e os classifica em diferentes estados à medida que você os modifica e prepara para salvar no histórico do projeto.</p>
+<p>O diretório de trabalho é o local onde você edita seus arquivos. A “Staging Area” (ou “Index”) é uma área intermediária onde você agrupa as alterações que deseja incluir no próximo “commit”. O diretório <code>.git</code> (repositório local) é onde o Git armazena o histórico e metadados do projeto.</p>
+<ul>
+<li><p><strong>Untracked (Não Rastreado):</strong></p>
+<ul>
+<li><p>Arquivos novos que você acabou de adicionar ao seu diretório de trabalho, mas que o Git ainda não “conhece” ou não está monitorando.</p></li>
+<li><p>Eles não serão incluídos nos commits a menos que você os adicione explicitamente.</p></li>
+<li><p>Para começar a rastrear: <code>git add &lt;arquivo&gt;</code></p></li>
+</ul></li>
+<li><p><strong>Tracked (Rastreado):</strong></p>
+<ul>
+<li><p>Arquivos que o Git já conhece e está monitorando. Eles fizeram parte de algum commit anterior ou foram adicionados com <code>git add</code>.</p></li>
+<li><p>Um arquivo rastreado pode estar em um dos seguintes sub-estados:</p>
+<ul>
+<li><p><strong>Unmodified (Não Modificado):</strong> O arquivo no seu diretório de trabalho é idêntico à versão que está no último commit. Nenhuma alteração foi feita desde o último snapshot salvo.</p></li>
+<li><p><strong>Modified (Modificado):</strong> Você alterou o arquivo desde o último commit, mas ainda não preparou essa alteração para ser incluída no próximo commit. O Git detecta que há diferenças entre a versão no seu diretório de trabalho e a versão no último commit.</p></li>
+<li><p><strong>Staged (Preparado / Em Área de Preparação):</strong></p>
+<ul>
+<li><p>Você marcou um arquivo modificado (ou um novo arquivo que era <code>untracked</code>) para ser incluído no próximo commit.</p></li>
+<li><p>Isso é feito usando o comando <code>git add &lt;arquivo&gt;</code>. Ao fazer isso, você está adicionando um “snapshot” da versão atual do arquivo à “Staging Area”.</p></li>
+<li><p>A Staging Area permite que você escolha seletivamente quais alterações farão parte do próximo commit, em vez de commitar todas as modificações de uma vez.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>Fluxo Típico de Trabalho:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Você <strong>modifica</strong> arquivos no seu diretório de trabalho (arquivos que já eram <code>tracked</code> se tornam <code>modified</code>, ou você cria novos arquivos que são <code>untracked</code>).</p></li>
+<li><p>Você seleciona as alterações que quer incluir no próximo commit usando <code>git add &lt;nome_do_arquivo_ou_diretorio&gt;</code> (ou <code>git add .</code> para adicionar todas as modificações e novos arquivos no diretório atual e subdiretórios). Isso move os arquivos para o estado <code>staged</code>.</p></li>
+<li><p>Você grava permanentemente as alterações que estão na Staging Area no histórico do seu repositório local usando <code>git commit -m "Uma mensagem descritiva sobre as alterações"</code>. Após o commit, os arquivos que estavam <code>staged</code> voltam ao estado <code>unmodified</code> (pois agora a versão no seu diretório de trabalho e no último commit são as mesmas).</p></li>
+</ol>
+<ul>
+<li><strong>Comando útil para verificar o estado:</strong> <code>git status</code> (mostra quais arquivos estão untracked, modified, staged, etc.)</li>
+</ul>
+<p>Entender esses conceitos é fundamental para usar o Git de forma eficaz. A prática leva à perfeição, então comece a experimentar com seus próprios projetos!</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="aprofundando-a-manutenibilidade-e-as-técnicas-de-desenvolvimento.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="abordagens-modernas-e-atividades-de-apoio-à-manutenção.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/miguel7penteado/ADS-EngenhariaSoftware2025/edit/main/06-FerramentaGIT.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["ADS-EngenhariaSoftware II 2025.pdf", "ADS-EngenhariaSoftware II 2025.epub", "ADS-EngenhariaSoftware II 2025.word"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
